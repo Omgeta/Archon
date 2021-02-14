@@ -1,0 +1,19 @@
+{
+  "name": "archon",
+  "version": "1.0.0",
+  "description": "Discord Bot",
+  "main": "dist/Archon.js",
+  "scripts": {
+    "start": "tsc && node dist/Archon.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "author": "Omgeta",
+  "devDependencies": {
+    "@types/node": "^14.14.27",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "discord-akairo": "^8.1.0",
+    "discord.js": "^12.5.1",
+    "path": "^0.12.7"
+  }
+}
