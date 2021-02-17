@@ -4,7 +4,7 @@
   "description": "Discord Bot",
   "main": "dist/Archon.js",
   "scripts": {
-    "start": "tsc && node dist/Archon.js",
+    "start": "rm -r dist/* && tsc && node dist/Archon.js",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
   },

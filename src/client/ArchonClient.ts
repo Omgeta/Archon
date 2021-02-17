@@ -40,7 +40,9 @@ export default class ArchonClient extends AkairoClient {
             },
             otherwise: ""
         },
-        ignorePermissions: owners
+        ignorePermissions: owners,
+        ignoreCooldown: owners,
+        blockBots: true
     });
 
     public constructor(config: BotOptions) {
@@ -58,7 +60,6 @@ export default class ArchonClient extends AkairoClient {
             listenerHandler: this.listenerHandler,
             process
         });
-
         this.commandHandler.loadAll();
         this.listenerHandler.loadAll();
     }
