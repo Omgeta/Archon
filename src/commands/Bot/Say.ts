@@ -1,6 +1,5 @@
+import { TextChannel, Message } from "discord.js";
 import { Command } from "discord-akairo";
-import { TextChannel } from "discord.js";
-import { Message } from "discord.js";
 
 export default class SayCommand extends Command {
     public constructor() {
@@ -38,7 +37,11 @@ export default class SayCommand extends Command {
         });
     }
 
-    public exec(message: Message, { text, targetChannel }: { text: string, targetChannel: TextChannel }): Promise<Message> {
-        return targetChannel.send(text);
+    public async exec(message: Message, { text, targetChannel }: { text: string, targetChannel: TextChannel }): Promise<Message> {
+        try {
+            return await targetChannel.send(text);
+        } catch (e) {
+            return message.channel.send("Sorry, I couldn't send a message there");
+        }
     }
 }

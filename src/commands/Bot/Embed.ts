@@ -1,5 +1,5 @@
-import { Command } from "discord-akairo";
 import { TextChannel, Message, MessageEmbed } from "discord.js";
+import { Command } from "discord-akairo";
 
 export default class EmbedCommand extends Command {
     public constructor() {
@@ -22,8 +22,9 @@ export default class EmbedCommand extends Command {
         });
     }
 
-    private *args() {
+    private *args(message: Message) {
         const subCommand = yield { type: ["new", "edit"], default: "new" };
+        if (subCommand === "edit") message.channel.send("Fetching message...");
         const target = yield (subCommand === "new") ? { type: "textChannel", default: message => message.channel } : { type: "guildMessage" };
 
         return { subCommand, target };
@@ -33,11 +34,12 @@ export default class EmbedCommand extends Command {
         const newEmbed = (subCommand === "new") ? new MessageEmbed() : new MessageEmbed((target as Message).embeds[0]);
 
         // Filters
-        const confirmFilter = (reaction, user) => { return reaction.emoji.name === "✅"; };
-        const fieldFilter = (message, user) => { return ["title", "description", "url", "image", "thumbnail", "color"].includes(message.content.toLowerCase()); };
-        const httpsFilter = (message, user) => { return message.content.startsWith("https://"); };
-        const hexFilter = (message, user) => { return message.content.match(/^#(?:[0-9a-fA-F]{3}){1,2}$/); };
-        const stringFilter = (message, user) => { return true; };
+        const userFilter = (user) => { return user.id === message.author.id; };
+        const confirmFilter = (reaction, user) => { return reaction.emoji.name === "✅" && userFilter(user); };
+        const fieldFilter = (response) => { return ["title", "description", "url", "image", "thumbnail", "color"].includes(response.content.toLowerCase()) && userFilter(response.author); };
+        const httpsFilter = (response) => { return response.content.startsWith("https://") && userFilter(response.author); };
+        const hexFilter = (response) => { return response.content.match(/^#(?:[0-9a-fA-F]{3}){1,2}$/) && userFilter(response.author); };
+        const stringFilter = (response) => { return true && userFilter(response.author); };
 
         // TODO: Someone please fix this code
         let completed = false;
@@ -64,7 +66,7 @@ export default class EmbedCommand extends Command {
 
             try {
                 const fieldCollector = await previewMessage.channel.awaitMessages(fieldFilter, { max: 1, time: 6e4 });
-                const fieldName = fieldCollector.first().content;
+                const fieldName = fieldCollector.first().content.toLowerCase();
 
                 await previewMessage.channel.send(`Enter a value to set ${fieldName} to...`);
 
@@ -78,6 +80,7 @@ export default class EmbedCommand extends Command {
                 if (!completed) { return message.channel.send("Embed construction timed out"); }
             }
 
+            confirmCollector.stop();
         }
     }
 }
