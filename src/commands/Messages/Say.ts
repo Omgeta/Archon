@@ -5,10 +5,10 @@ export default class SayCommand extends Command {
     public constructor() {
         super("say", {
             aliases: ["say", "echo"],
-            category: "Bot",
+            category: "Messages",
             description: {
                 content: "Get the bot to say something",
-                usage: "say < message >",
+                usage: "say <message>",
                 examples: [
                     "say hello"
                 ]

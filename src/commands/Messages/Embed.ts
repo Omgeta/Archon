@@ -5,10 +5,10 @@ export default class EmbedCommand extends Command {
     public constructor() {
         super("embed", {
             aliases: ["embed", "emb"],
-            category: "Admin",
+            category: "Messages",
             description: {
                 content: "Send or edit embed messages",
-                usage: "embed < subcommand > < target >",
+                usage: "embed <subcommand> <target>",
                 examples: [
                     "embed",
                     "embed new",
