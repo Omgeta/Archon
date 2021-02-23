@@ -18,8 +18,12 @@ export default class PrefixCommand extends Command {
             args: [
                 {
                     id: "newPrefix",
-                    type: "string",
-                    default: null
+                    type: (message, phrase) => {
+                        if (phrase && message.member.hasPermission("MANAGE_GUILD")) {
+                            return phrase;
+                        }
+                        return null;
+                    }
                 }
             ],
             ratelimit: 3
