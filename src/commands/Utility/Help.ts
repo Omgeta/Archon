@@ -1,6 +1,7 @@
 import { Message } from "discord.js";
 import { Command } from "discord-akairo";
 import { ArchonEmbed } from "../../";
+import { prefix } from "../../Config";
 
 export default class HelpCommand extends Command {
     public constructor() {
@@ -27,6 +28,8 @@ export default class HelpCommand extends Command {
     }
 
     public exec(message: Message, { command }: { command: Command }): Promise<Message> {
+        const guildPrefix = this.client.settings.get(message.guild.id, "prefix", prefix);
+
         if (command) {
             return message.util.send(new ArchonEmbed()
                 .setTitle(`Help || ${command}`)
@@ -46,7 +49,7 @@ export default class HelpCommand extends Command {
         } else {
             const embed = new ArchonEmbed()
                 .setTitle("Help")
-                .setFooter(`${this.client.commandHandler.prefix}${this.description.usage} for more information on a specific command`);
+                .setFooter(`${guildPrefix}${this.description.usage} for more information on a specific command`);
 
             for (const category of this.handler.categories.values()) {
                 if (["default"].includes(category.id)) continue;

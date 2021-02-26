@@ -12,5 +12,8 @@ export default class ReadyListener extends Listener {
 
     public exec(): void {
         console.log(`${this.client.user.tag} is online`);
+        this.client.user.setActivity("the waifu wars", {
+            type: "COMPETING"
+        });
     }
 }

@@ -6,7 +6,7 @@ export default class PrefixCommand extends Command {
     public constructor() {
         super("prefix", {
             aliases: ["prefix"],
-            category: "Admin",
+            category: "Utility",
             description: {
                 content: "Check or set the bot's prefix'",
                 usage: "prefix <new-prefix>",
@@ -26,6 +26,7 @@ export default class PrefixCommand extends Command {
                     }
                 }
             ],
+            channel: "guild",
             ratelimit: 3
         });
     }

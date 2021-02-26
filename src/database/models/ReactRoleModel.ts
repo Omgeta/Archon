@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const guildSchema = new mongoose.Schema({
+const reactRoleSchema = new mongoose.Schema({
     id: {
         type: String,
         required: true
@@ -11,4 +11,4 @@ const guildSchema = new mongoose.Schema({
     }
 }, { minimize: false });
 
-export const guildModel = mongoose.model("guild", guildSchema);
+export const reactRoleModel = mongoose.model("reactRole", reactRoleSchema);
