@@ -19,8 +19,7 @@ export default class HelpCommand extends Command {
             args: [
                 {
                     id: "command",
-                    type: "commandAlias",
-                    default: null
+                    type: "commandAlias"
                 }
             ],
             ratelimit: 3

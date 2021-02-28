@@ -12,6 +12,7 @@ export default class ReadyListener extends Listener {
         });
     }
 
+    // TODO: optimize this function
     private async cleanseReactRole(): Promise<void> {
         for (const guildId of this.client.reactRole.items.keys()) {
             const guild: Guild = await this.client.guilds.cache.get(guildId);

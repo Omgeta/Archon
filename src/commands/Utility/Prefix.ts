@@ -22,6 +22,7 @@ export default class PrefixCommand extends Command {
                         if (phrase && message.member.hasPermission("MANAGE_GUILD")) {
                             return phrase;
                         }
+
                         return null;
                     }
                 }

@@ -11,10 +11,7 @@ export default abstract class MessageReactionListener extends Listener {
         const message = reaction.message;
         const { guild } = message;
 
-        const fetchedGuild = this.client.reactRole.items.get(guild.id);
-        if (!fetchedGuild) return;
-
-        const fetchedMessage = fetchedGuild[message.id];
+        const fetchedMessage = this.client.reactRole.get(guild.id, message.id, null);
         if (!fetchedMessage) return;
 
         for (const key of Object.keys(fetchedMessage)) {

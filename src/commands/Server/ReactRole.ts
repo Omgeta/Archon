@@ -5,7 +5,7 @@ export default class ReactRoleCommand extends Command {
     public constructor() {
         super("reactrole", {
             aliases: ["reactrole", "rr"],
-            category: "Admin",
+            category: "Server",
             description: {
                 content: "Bind reactions to roles",
                 usage: "reactrole <messageId> <emoji> <role>",
@@ -27,7 +27,9 @@ export default class ReactRoleCommand extends Command {
                     type: "role"
                 }
             ],
-            ratelimit: 5
+            ratelimit: 5,
+            userPermissions: ["MANAGE_GUILD"],
+            clientPermissions: ["MANAGE_ROLES"]
         });
     }
 

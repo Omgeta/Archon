@@ -32,7 +32,7 @@ export default class ArchonClient extends AkairoClient {
                 return this.settings.get(message.guild.id, "prefix", prefix);
             }
 
-            return prefix;
+            return "";
         },
         allowMention: true,
         handleEdits: true,

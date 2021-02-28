@@ -5,7 +5,7 @@ import { ArchonEmbed } from "../../";
 export default class InfoCommand extends Command {
     public constructor() {
         super("info", {
-            aliases: ["info", "support", "discord"],
+            aliases: ["info", "information", "support", "discord"],
             category: "Utility",
             description: {
                 content: "Know more about me",

@@ -7,7 +7,6 @@ export async function resolveGuildMessage(guild: Guild, messageId: string): Prom
         try {
             return await (channel as TextChannel).messages.fetch(messageId);
         } catch (err) {
-            console.log(err);
             return null;
         }
     }
