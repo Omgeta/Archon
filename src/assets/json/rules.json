@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Welcome to the Inazuma Bakufu",
+        "description": "We are a Genshin Impact discord server with a special focus on discussions on the Electro Archon of Eternity, Raiden.\n\nBe sure to read all the rules to ensure that you know how to behave in this server.\n\nWe hope you have a fun stay!\n\nServer Link: <https://discord.gg/cytxTu52EQ>",
+        "image": {
+            "url": "https://i.imgur.com/2iWeSmA.gif"
+        },
+        "color": "#800080"
+    },
+    {
+        "title": "Rule #1 - General Etiquette",
+        "description": "• Be kind, respectful and polite when interacting with others. Harassment and abuse will not be tolerated.\n\n• Discrimination and usage of racial slurs of any kind is not allowed.\n\n• Avoid sensitive topics such as politics or religion.\n\n• Spam of any form is not allowed.\n\n• Do not send unsolicited DMs to members.\n\n• Advertising and self-promotion is allowed in appropriate text channels and at reasonable frequencies, should the content produced be meaningful to the community.\n\n• When commenting about others' creative content, ensure your criticism is reasonable and constructive.",
+        "color": "#800080"
+    },
+    {
+        "title": "Rule #2 - Channel Usage",
+        "description": "• Channels are not where conversations on a specific topic should be held, but rather where they should be started\n\n• Keep conversations in English. We can't moderate what we can't read after all. If you really need to speak in a different language, you can take it to DMs.",
+        "color": "#800080"
+    },
+    {
+        "title": "Rule #3 - NSFW Content",
+        "description": "• NSFW Content is not allowed anywhere on this server (except for in marked NSFW channels).\n\n• Overly NSFW profile pictures are not allowed.\n\n• If you are not sure what constitutes restricted content, check with a moderator first.",
+        "color": "#800080"
+    }
+]
