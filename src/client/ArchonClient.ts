@@ -1,8 +1,8 @@
 import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from "discord-akairo";
-import { User, Message } from "discord.js";
+import { Message } from "discord.js";
 import { join } from "path";
 import { prefix, owners } from "../Config";
-import { guildModel, reactRoleModel } from "../database/models";
+import { guildModel, reactRoleModel } from "../database";
 
 declare module "discord-akairo" {
     interface AkairoClient {

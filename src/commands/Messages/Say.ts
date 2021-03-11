@@ -21,14 +21,18 @@ export default class SayCommand extends Command {
                     prompt: {
                         start: message => `What would you like me to say ${message.author}?`,
                         retry: message => `I can't say that! Try again, ${message.author}`
-                    },
-                    unordered: true
+                    }
                 },
                 {
                     id: "targetChannel",
                     type: "textChannel",
                     match: "option",
                     flag: ["--channel", "-c", "--target", "-t"],
+                    prompt: {
+                        start: message => `Which channel would you like me to send messages to ${message.author}?`,
+                        retry: message => `I can't see that channel! Try again, ${message.author}`,
+                        optional: true
+                    },
                     default: message => message.channel
                 }
             ],

@@ -23,9 +23,33 @@ export default class EmbedCommand extends Command {
     }
 
     private *args(message: Message) {
-        const subCommand = yield { type: ["new", "edit"], default: "new" };
+        const subCommand = yield {
+            type: ["new", "edit"],
+            prompt: {
+                start: `Would you like to create a new embed or edit an existing one? (new/edit) ${message.author}`,
+                retry: `That isn't a valid subcommand! Try again ${message.author}`
+            }
+        };
+
         if (subCommand === "edit") message.channel.send("Fetching message...");
-        const target = yield (subCommand === "new") ? { type: "textChannel", default: message => message.channel } : { type: "guildMessage" };
+
+        const target = yield (subCommand === "new") ?
+            {
+                type: "textChannel",
+                prompt: {
+                    start: `Which channel do you want to send the message to ${message.author}?`,
+                    retry: `I can't find that channel! Try again ${message.author}`,
+                    optional: true
+                },
+                default: message => message.channel
+            } :
+            {
+                type: ["message", "guildMessage"],
+                prompt: {
+                    start: `Which message do you want to edit ${message.author}?`,
+                    retry: `I can't find that message! Try again ${message.author}`
+                }
+            };
 
         return { subCommand, target };
     }

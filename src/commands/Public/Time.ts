@@ -31,7 +31,7 @@ export default class TimeCommand extends Command {
         return dayjs.duration(resetTime.diff(currentTime));
     }
 
-    private outputTime(currentTime: dayjs.Dayjs) {
+    private formatTime(currentTime: dayjs.Dayjs) {
         return `${currentTime.format("h:mm A")} (*${this.timeToReset(currentTime).format("H[h] m[m]")} until reset*)`;
     }
 
@@ -46,11 +46,11 @@ export default class TimeCommand extends Command {
             .setDescription(
                 `
                 **America:**
-                ${this.outputTime(NA)}
+                ${this.formatTime(NA)}
                 **Europe:**
-                ${this.outputTime(EU)}
+                ${this.formatTime(EU)}
                 **Asia/SAR:**
-                ${this.outputTime(AS)}
+                ${this.formatTime(AS)}
                 `
             )
         );

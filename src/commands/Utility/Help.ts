@@ -1,5 +1,5 @@
-import { Message } from "discord.js";
-import { Command } from "discord-akairo";
+import { Message, PermissionResolvable } from "discord.js";
+import { Command, Flag } from "discord-akairo";
 import { ArchonEmbed } from "../../";
 import { prefix } from "../../Config";
 
@@ -10,7 +10,7 @@ export default class HelpCommand extends Command {
             category: "Utility",
             description: {
                 content: "Check how to use the different commands",
-                usage: "help <commandname>",
+                usage: "help <command>",
                 examples: [
                     "help",
                     "help ping"
@@ -19,7 +19,18 @@ export default class HelpCommand extends Command {
             args: [
                 {
                     id: "command",
-                    type: "commandAlias"
+                    type: async (message, phrase) => {
+                        if (phrase) {
+                            const toCommand = this.handler.resolver.type("commandAlias");
+                            const command = toCommand(message, phrase);
+                            if (!command || !message.member.hasPermission(command.userPermissions)) {
+                                await message.util.send(`No such command \`${phrase}\` found`);
+                                return Flag.cancel();
+                            }
+
+                            return command;
+                        }
+                    }
                 }
             ],
             ratelimit: 3
@@ -54,7 +65,7 @@ export default class HelpCommand extends Command {
                 if (["default"].includes(category.id)) continue;
 
                 embed.addField(category.id, category
-                    .filter(cmd => cmd.aliases.length > 0)
+                    .filter(cmd => cmd.aliases.length > 0 && message.member.hasPermission(cmd.userPermissions as PermissionResolvable))
                     .map(cmd => `\`${cmd}\``)
                     .join(", " || "*No commands in this category*"), true
                 );

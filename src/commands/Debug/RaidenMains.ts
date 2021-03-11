@@ -21,11 +21,19 @@ export default class RaidenMainsCommand extends Command {
                 {
                     id: "subcommand",
                     type: ["info", "roles"],
-                    default: "info"
+                    prompt: {
+                        start: message => `Which subcommand would you like to call? (info/roles) ${message.author}?`,
+                        retry: message => `That isn't a valid subcommand! Try again ${message.author}`
+                    }
                 },
                 {
                     id: "target",
                     type: "textChannel",
+                    prompt: {
+                        start: message => `Where would you like me to send the messages to ${message.author}?`,
+                        retry: message => `I can't find that channel! Try again ${message.author}`,
+                        optional: true
+                    },
                     default: message => message.channel
                 }
             ],

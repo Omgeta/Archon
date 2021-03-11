@@ -16,20 +16,33 @@ export default class ReactRoleCommand extends Command {
             args: [
                 {
                     id: "target",
-                    type: "guildMessage"
+                    type: ["message", "guildMessage"],
+                    prompt: {
+                        start: message => `Which message would you like to add reactions to ${message.author}?`,
+                        retry: message => `That's not a valid message! Try again ${message.author}`
+                    }
                 },
                 {
                     id: "emoji",
-                    type: "emoji"
+                    type: "emoji",
+                    prompt: {
+                        start: message => `Which emoji would you like to bind ${message.author}?`,
+                        retry: message => `That's not a valid emoji! Try again ${message.author}`
+                    }
                 },
                 {
                     id: "role",
-                    type: "role"
+                    type: "role",
+                    prompt: {
+                        start: message => `Which role would you like to bind ${message.author}?`,
+                        retry: message => `That's not a valid role! Try again ${message.author}`
+                    }
                 }
             ],
             ratelimit: 5,
             userPermissions: ["MANAGE_GUILD"],
-            clientPermissions: ["MANAGE_ROLES"]
+            clientPermissions: ["MANAGE_ROLES"],
+            channel: "guild"
         });
     }
 
