@@ -27,7 +27,7 @@ export default class TimeCommand extends Command {
     }
 
     private timeToReset(currentTime: dayjs.Dayjs) {
-        const resetTime = currentTime.add(1, "day").hour(4).minute(0);
+        const resetTime = currentTime.add(1, "day").hour(4).minute(0).second(0);
         return dayjs.duration(resetTime.diff(currentTime));
     }
 

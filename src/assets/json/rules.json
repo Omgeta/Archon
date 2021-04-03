@@ -19,7 +19,7 @@
     },
     {
         "title": "Rule #3 - NSFW Content",
-        "description": "• NSFW Content is not allowed anywhere on this server (except for in marked NSFW channels).\n\n• Overly NSFW profile pictures are not allowed.\n\n• If you are not sure what constitutes restricted content, check with a moderator first.",
+        "description": "• NSFW Content is not allowed anywhere on this server.\n\n• Overly NSFW profile pictures are not allowed.\n\n• If you are not sure what constitutes restricted content, check with a moderator first.",
         "color": "#800080"
     }
 ]

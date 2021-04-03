@@ -18,7 +18,8 @@ export default class EmbedCommand extends Command {
             },
             ratelimit: 3,
             userPermissions: ["MANAGE_MESSAGES"],
-            channel: "guild"
+            channel: "guild",
+            lock: "user"
         });
     }
 
@@ -31,11 +32,10 @@ export default class EmbedCommand extends Command {
             }
         };
 
-        if (subCommand === "edit") message.channel.send("Fetching message...");
 
         const target = yield (subCommand === "new") ?
             {
-                type: "textChannel",
+                type: "channel",
                 prompt: {
                     start: `Which channel do you want to send the message to ${message.author}?`,
                     retry: `I can't find that channel! Try again ${message.author}`,
@@ -44,12 +44,14 @@ export default class EmbedCommand extends Command {
                 default: message => message.channel
             } :
             {
-                type: ["message", "guildMessage"],
+                type: "guildMessage",
                 prompt: {
                     start: `Which message do you want to edit ${message.author}?`,
                     retry: `I can't find that message! Try again ${message.author}`
                 }
             };
+
+        if (subCommand === "edit") message.channel.send("Fetching message...");
 
         return { subCommand, target };
     }
@@ -60,7 +62,7 @@ export default class EmbedCommand extends Command {
         // Filters
         const userFilter = (user) => { return user.id === message.author.id; };
         const confirmFilter = (reaction, user) => { return reaction.emoji.name === "✅" && userFilter(user); };
-        const fieldFilter = (response) => { return ["title", "description", "url", "image", "thumbnail", "color"].includes(response.content.toLowerCase()) && userFilter(response.author); };
+        const fieldFilter = (response) => { return ["author", "icon", "title", "description", "url", "image", "thumbnail", "color"].includes(response.content.toLowerCase()) && userFilter(response.author); };
         const httpsFilter = (response) => { return response.content.startsWith("https://") && userFilter(response.author); };
         const hexFilter = (response) => { return response.content.match(/^#(?:[0-9a-fA-F]{3}){1,2}$/) && userFilter(response.author); };
         const stringFilter = (response) => { return true && userFilter(response.author); };
@@ -72,6 +74,8 @@ export default class EmbedCommand extends Command {
                 .setTitle("__Preview__")
                 .setColor(newEmbed.color)
                 .addFields(
+                    { name: "Author", value: newEmbed.author ? newEmbed.author.name : "-" },
+                    { name: "Icon", value: newEmbed.author ? newEmbed.author.iconURL : "-" },
                     { name: "Title", value: newEmbed.title ? newEmbed.title : "-" },
                     { name: "URL", value: newEmbed.url ? newEmbed.url : "-" },
                     { name: "Description", value: newEmbed.description ? newEmbed.description : "-" },
@@ -94,13 +98,17 @@ export default class EmbedCommand extends Command {
 
                 await previewMessage.channel.send(`Enter a value to set ${fieldName} to...`);
 
-                const valueFilter = (["image", "thumbnail", "url"].includes(fieldName)) ? httpsFilter : ((fieldName === "color" ? hexFilter : stringFilter));
+                const valueFilter = (["image", "thumbnail", "url", "icon"].includes(fieldName)) ? httpsFilter : ((fieldName === "color" ? hexFilter : stringFilter));
                 const collectedValue = await previewMessage.channel.awaitMessages(valueFilter, { max: 1, time: 3e4 });
 
                 const value = collectedValue.first().content;
-                if (["image", "thumbnail"].includes(fieldName)) newEmbed[fieldName].url = value;
+                if (fieldName === "image") newEmbed.image ? newEmbed.image.url = value : newEmbed.setImage(value);
+                else if (fieldName === "thumbnail") newEmbed.thumbnail ? newEmbed.thumbnail.url = value : newEmbed.setThumbnail(value);
+                else if (fieldName === "icon") newEmbed.author ? newEmbed.author.iconURL = value : newEmbed.setAuthor(null, value);
+                else if (fieldName === "author") newEmbed.author ? newEmbed.author.name = value : newEmbed.setAuthor(value, null);
                 else newEmbed[fieldName] = value;
             } catch (err) {
+                console.log(err);
                 if (!completed) { return message.channel.send("Embed construction timed out"); }
             }
 

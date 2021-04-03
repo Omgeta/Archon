@@ -27,7 +27,7 @@ export default class InfoCommand extends Command {
 
                 This bot provides general and Genshin-specific features which aim to improve the functionality of Genshin Impact discord servers and improve quality of life for all users.
 
-                If you have any issues or questions, approach omgeta#8841 at the RaidenMains discord server.
+                If you have any issues or questions, DM omgeta#8841 at the RaidenMains discord server.
                 \u200b
                 `
             )

@@ -3,6 +3,7 @@ import { Command } from "discord-akairo";
 import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
 import roles from "../../assets/json/roles.json";
+import leaderboard from "../../assets/json/leaderboard.json";
 
 export default class RaidenMainsCommand extends Command {
     public constructor() {
@@ -14,13 +15,14 @@ export default class RaidenMainsCommand extends Command {
                 usage: "raidenmains <subcommand> <channel>",
                 examples: [
                     "raidenmains info #rules",
-                    "raidenmains roles #roles"
+                    "raidenmains roles #roles",
+                    "raidenmains leaderboard #leaderboard"
                 ]
             },
             args: [
                 {
                     id: "subcommand",
-                    type: ["info", "roles"],
+                    type: ["info", "roles", "leaderboard"],
                     prompt: {
                         start: message => `Which subcommand would you like to call? (info/roles) ${message.author}?`,
                         retry: message => `That isn't a valid subcommand! Try again ${message.author}`
@@ -59,11 +61,26 @@ export default class RaidenMainsCommand extends Command {
         }
     }
 
+    private async sendLeaderboard(target: TextChannel): Promise<void> {
+        let description = "";
+        for (const entry of leaderboard) {
+            description += `**${entry.Discord}** - ${entry.Total}/28800\n\n`;
+        }
+        await target.send(new MessageEmbed()
+            .setTitle("The Leaderboard")
+            .setAuthor("Primogem Count", "https://media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
+            .setDescription(description)
+            .setImage("https://cdn.discordapp.com/attachments/813407840315113483/822168395738775562/New_Project_4.gif")
+        );
+    }
+
     public async exec(message: Message, { subcommand, target }: { subcommand: string, target: TextChannel }): Promise<Message> {
         if (subcommand === "info") {
             await this.sendInformation(target);
         } else if (subcommand === "roles") {
             await this.sendRoles(target);
+        } else if (subcommand === "leaderboard") {
+            await this.sendLeaderboard(target);
         }
 
         return message.channel.send(`Finished sending raiden information to ${target}`);
