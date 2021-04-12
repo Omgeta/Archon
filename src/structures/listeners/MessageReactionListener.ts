@@ -11,12 +11,15 @@ export default abstract class MessageReactionListener extends Listener {
         const message = reaction.message;
         const { guild } = message;
 
-        const fetchedMessage = this.client.reactRole.get(guild.id, message.id, null);
+        const guildReactions = this.client.settings.get(guild.id, "reactrole", null);
+        if (!guildReactions) return;
+
+        const fetchedMessage = guildReactions.find(msg => msg.id === message.id);
         if (!fetchedMessage) return;
 
-        for (const key of Object.keys(fetchedMessage)) {
-            if (reaction.emoji.name === key) {
-                const roleId = fetchedMessage[key];
+        for (const emojiName in fetchedMessage.reactions) {
+            if (reaction.emoji.name === emojiName) {
+                const roleId = fetchedMessage.reactions[emojiName];
                 const role = await guild.roles.cache.get(roleId);
 
                 if (role) {

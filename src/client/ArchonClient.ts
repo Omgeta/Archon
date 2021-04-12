@@ -2,14 +2,13 @@ import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from 
 import { Message } from "discord.js";
 import { join } from "path";
 import { prefix, owners } from "../Config";
-import { guildModel, reactRoleModel } from "../database";
+import { guildModel } from "../database";
 
 declare module "discord-akairo" {
     interface AkairoClient {
         commandHandler: CommandHandler;
         listenerHandler: ListenerHandler;
         settings: MongooseProvider;
-        reactRole: MongooseProvider;
     }
 }
 
@@ -21,7 +20,6 @@ interface BotOptions {
 export default class ArchonClient extends AkairoClient {
     public config: BotOptions;
     public settings: MongooseProvider;
-    public reactRole: MongooseProvider;
     public listenerHandler: ListenerHandler = new ListenerHandler(this, {
         directory: join(__dirname, "..", "listeners")
     });
@@ -64,7 +62,6 @@ export default class ArchonClient extends AkairoClient {
 
         this.config = config;
         this.settings = new MongooseProvider(guildModel);
-        this.reactRole = new MongooseProvider(reactRoleModel);
     }
 
     private async _init(): Promise<void> {
@@ -81,7 +78,6 @@ export default class ArchonClient extends AkairoClient {
     public async start(): Promise<string> {
         await this._init();
         await this.settings.init();
-        await this.reactRole.init();
         return this.login(this.config.token);
     }
 }

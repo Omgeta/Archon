@@ -1,6 +1,6 @@
 import { Guild, Message } from "discord.js";
 import { Listener } from "discord-akairo";
-import { isEmpty, resolveGuildMessage } from "../../";
+import { resolveGuildMessage } from "../../";
 
 export default class ReadyListener extends Listener {
     public constructor() {
@@ -12,26 +12,36 @@ export default class ReadyListener extends Listener {
         });
     }
 
-    // TODO: optimize this function
-    private async cleanseReactRole(): Promise<void> {
-        for (const guildId of this.client.reactRole.items.keys()) {
-            const guild: Guild = await this.client.guilds.cache.get(guildId);
-            const messages = this.client.reactRole.items.get(guildId);
+    private async cleanReactions(guild: Guild, settings) {
+        const initialLength = settings.reactrole.length;
+        if (!initialLength) delete settings.reactrole;
 
-            if (!guild || isEmpty(messages)) {
-                console.log(`Removing guild ${guildId} from the database`);
-                await this.client.reactRole.clear(guildId);
+        for (let i = 0; i < initialLength; i++) {
+            const message = settings.reactrole[i];
+            const reactionMessage: Message = await resolveGuildMessage(guild, message.id);
+            if (!reactionMessage) {
+                console.log(`Removing message ${message.id} from the database`);
+                settings.reactrole.remove(i);
                 continue;
             }
 
-            for (const messageId in messages) {
-                const message: Message = await resolveGuildMessage(guild, messageId);
-                if (!message) {
-                    console.log(`Removing message ${messageId} from the database`);
-                    await this.client.reactRole.delete(guildId, messageId);
-                }
+            // TODO: check and delete nonexistent emojis and roles
+            // const { reactions } = message;
+        }
+
+        await this.client.settings.set(guild.id, "reactrole", settings.reactrole);
+    }
+
+    private async cleanDatabase(): Promise<void> {
+        for (const [guildId, settings] of this.client.settings.items) {
+            const guild: Guild = await this.client.guilds.cache.get(guildId);
+
+            if (!guild) {
+                console.log(`Removing guild ${guildId} from the database`);
+                await this.client.settings.clear(guildId);
             }
 
+            if (settings.reactrole) await this.cleanReactions(guild, settings);
         }
     }
 
@@ -42,6 +52,6 @@ export default class ReadyListener extends Listener {
             type: "COMPETING"
         });
 
-        await this.cleanseReactRole();
+        await this.cleanDatabase();
     }
 }

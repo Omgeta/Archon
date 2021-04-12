@@ -39,6 +39,8 @@ export default class RedditAddCommand extends Command {
     }
 
     public async exec(message: Message, { subreddit, targetChannel }: { subreddit: string, targetChannel: TextChannel }): Promise<Message> {
+
+
         return message.util.send("Reddit add executed");
         // TODO: check db for subreddits in channel
         // TODO: if sub already in channel then exit

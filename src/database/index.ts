@@ -1,2 +1,1 @@
-export * from "./models/GuildModel";
-export * from "./models/ReactRoleModel";
+export { guildModel } from "./models/GuildModel";

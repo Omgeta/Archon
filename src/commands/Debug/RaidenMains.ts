@@ -1,5 +1,5 @@
 import { Message, TextChannel, MessageEmbed } from "discord.js";
-import { Command } from "discord-akairo";
+import { Command, Argument } from "discord-akairo";
 import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
 import roles from "../../assets/json/roles.json";
@@ -30,7 +30,7 @@ export default class RaidenMainsCommand extends Command {
                 },
                 {
                     id: "target",
-                    type: "textChannel",
+                    type: Argument.union("newsChannel", "textChannel"),
                     prompt: {
                         start: message => `Where would you like me to send the messages to ${message.author}?`,
                         retry: message => `I can't find that channel! Try again ${message.author}`,
@@ -75,12 +75,13 @@ export default class RaidenMainsCommand extends Command {
     }
 
     public async exec(message: Message, { subcommand, target }: { subcommand: string, target: TextChannel }): Promise<Message> {
-        if (subcommand === "info") {
-            await this.sendInformation(target);
-        } else if (subcommand === "roles") {
-            await this.sendRoles(target);
-        } else if (subcommand === "leaderboard") {
-            await this.sendLeaderboard(target);
+        switch (subcommand) {
+            case "info":
+                await this.sendInformation(target); break;
+            case "roles":
+                await this.sendRoles(target); break;
+            case "leaderboard":
+                await this.sendLeaderboard(target); break;
         }
 
         return message.channel.send(`Finished sending raiden information to ${target}`);

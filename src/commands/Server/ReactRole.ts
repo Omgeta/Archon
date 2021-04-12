@@ -16,7 +16,7 @@ export default class ReactRoleCommand extends Command {
             args: [
                 {
                     id: "target",
-                    type: ["message", "guildMessage"],
+                    type: "guildMessage",
                     prompt: {
                         start: message => `Which message would you like to add reactions to ${message.author}?`,
                         retry: message => `That's not a valid message! Try again ${message.author}`
@@ -47,10 +47,22 @@ export default class ReactRoleCommand extends Command {
     }
 
     public exec(message: Message, { target, emoji, role }: { target: Message, emoji: GuildEmoji | ReactionEmoji, role: Role }): Promise<Message> {
-        const reactions = this.client.reactRole.get(message.guild.id, target.id, {});
+        const guildReactions = this.client.settings.get(message.guild.id, "reactrole", []);
 
-        reactions[emoji.name] = role.id;
-        this.client.reactRole.set(message.guild.id, target.id, reactions);
+        const targetIndex = guildReactions.findIndex(msg => msg.id === target.id);
+        if (targetIndex === -1) {
+            const newMessage = {
+                id: target.id,
+                reactions: {
+                    [emoji.name]: role.id
+                }
+            };
+            guildReactions.push(newMessage);
+        } else {
+            guildReactions[targetIndex][emoji.name] = role.id;
+        }
+
+        this.client.settings.set(message.guild.id, "reactrole", guildReactions);
 
         target.react(emoji);
 
