@@ -1,5 +1,5 @@
 import { TextChannel, Message } from "discord.js";
-import { Command } from "discord-akairo";
+import { Command, Argument } from "discord-akairo";
 
 export default class SayCommand extends Command {
     public constructor() {
@@ -25,7 +25,7 @@ export default class SayCommand extends Command {
                 },
                 {
                     id: "targetChannel",
-                    type: "textChannel",
+                    type: Argument.union("newsChannel", "textChannel"),
                     match: "option",
                     flag: ["--channel", "-c", "--target", "-t"],
                     prompt: {
