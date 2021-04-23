@@ -57,12 +57,12 @@ export default class EmbedCommand extends Command {
     }
 
     public async exec(message: Message, { subCommand, target }: { subCommand: string, target: TextChannel | Message }): Promise<Message> {
-        const newEmbed = (subCommand === "new") ? new MessageEmbed() : new MessageEmbed((target as Message).embeds[0]);
+        let newEmbed = (subCommand === "new") ? new MessageEmbed() : new MessageEmbed((target as Message).embeds[0]);
 
         // Filters
         const userFilter = (user) => { return user.id === message.author.id; };
         const confirmFilter = (reaction, user) => { return reaction.emoji.name === "✅" && userFilter(user); };
-        const fieldFilter = (response) => { return ["author", "icon", "title", "description", "url", "image", "thumbnail", "color"].includes(response.content.toLowerCase()) && userFilter(response.author); };
+        const fieldFilter = (response) => { return ["author", "icon", "title", "description", "url", "image", "thumbnail", "color", "load"].includes(response.content.toLowerCase()) && userFilter(response.author); };
         const httpsFilter = (response) => { return response.content.startsWith("https://") && userFilter(response.author); };
         const hexFilter = (response) => { return response.content.match(/^#(?:[0-9a-fA-F]{3}){1,2}$/) && userFilter(response.author); };
         const stringFilter = (response) => { return true && userFilter(response.author); };
@@ -102,7 +102,9 @@ export default class EmbedCommand extends Command {
                 const collectedValue = await previewMessage.channel.awaitMessages(valueFilter, { max: 1, time: 3e4 });
 
                 const value = collectedValue.first().content;
-                if (fieldName === "image") newEmbed.image ? newEmbed.image.url = value : newEmbed.setImage(value);
+
+                if (fieldName === "load") newEmbed = new MessageEmbed(JSON.parse(value));
+                else if (fieldName === "image") newEmbed.image ? newEmbed.image.url = value : newEmbed.setImage(value);
                 else if (fieldName === "thumbnail") newEmbed.thumbnail ? newEmbed.thumbnail.url = value : newEmbed.setThumbnail(value);
                 else if (fieldName === "icon") newEmbed.author ? newEmbed.author.iconURL = value : newEmbed.setAuthor(null, value);
                 else if (fieldName === "author") newEmbed.author ? newEmbed.author.name = value : newEmbed.setAuthor(value, null);

@@ -2,6 +2,13 @@ import { Message, GuildMember, MessageEmbed } from "discord.js";
 import { Command } from "discord-akairo";
 import leaderboard from "../../assets/json/leaderboard.json";
 
+interface LeaderboardItem {
+    Ranking: number,
+    Discord: string,
+    Screenshots: string,
+    Guarantee: number,
+    Total: number
+}
 
 export default class LeaderboardCommand extends Command {
     public constructor() {
@@ -27,7 +34,7 @@ export default class LeaderboardCommand extends Command {
         });
     }
 
-    private indexLeaderboard(username: string): Record<string, unknown> {
+    private indexLeaderboard(username: string): LeaderboardItem {
         for (const entry of leaderboard) {
             if (entry.Discord === username) return entry;
         }

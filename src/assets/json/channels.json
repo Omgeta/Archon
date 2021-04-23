@@ -1,22 +1,37 @@
 [
     {
-        "title": "Server Information",
-        "description": "**[Server]**\n\n<#801373104055123989> - Newest arrivals to the Inazuma Bakufu\n<#817338880117178387> - View the information, rules and channels of the server.\n<#807100480819036190> - View the roles of the server.\n<#807997623335518289> - Our partners and affiliates. Be sure to check them out.\n\n\n**[Important]**\n\n<#801372863474171904> - Important community and Genshin announcements are made here.\n<#801373281235238924> - Latest Genshin Impact news straight from MiHoYo.\n<#804718655648301146> - Leave your legitimate server suggestions here.\n<#807994053975081003> - Best posts collated by the community.\n<#813476069654134855> - Polls concerning the server will be held here.",
+        "title": "Channels | Server & Information",
+        "description": "• <#817338880117178387> - Read up about the basic information and rules of the server.\n• <#807100480819036190> - Check out our roles and pick out some of your favourite ones.\n• <#807997623335518289> - Our lovely partners and affiliates. Make sure to check them out!\n• <#801372863474171904> - Important community and Genshin announcements are made here.\n• <#801373281235238924> - Latest Genshin Impact news straight from MiHoYo.\n• <#804718655648301146> - Leave your any legitimate server suggestions here for us to check out.",
         "color": "#800080"
     },
     {
-        "title": "Community Channels",
-        "description": "**[General]**\n\n<#796035266639822881> - Genshin-related discussion.\n<#801705257386246145> - Post your favourite images and videos.\n<#809524414647369738> - Share any art here. Always remember to link the source and credit the artist\n<#801383694996602890> - Play around with our server bots.\n<#816293366501212192> - Flex your biggest pulls (or fails).\n<#805154279601602581> - Discuss with fellow lore heads and enthusiasts about the world of Genshin Impact!\n<#813190950250741831> - A temporary channel for theory crafting. Once the server grows more, the proper category and channels dedicated for theory crafting will be released.\n",
+        "title": "Channels | Discussion",
+        "description": "• <#796035266639822881> - Discuss about the server and Genshin Impact.\n• <#801383694996602890> - Play around with our server bots.\n• <#816293366501212192> - Flex your biggest pulls (or fails).\n• <#805154279601602581> - Discuss with fellow lore heads and enthusiasts about Teyvat!\n",
         "color": "#800080"
     },
     {
-        "title": "Leaks Channels",
-        "description": "**[Broken Pipe]**\n\n<#802921298200231937> - A special archive solely for Raiden leaks\n<#808313572564140062> - An archive of leaks of upcoming characters\n<#806208252488319026> - A compilation of all leaks of future content we get our hands on\n<#806208193910669322> - Discussions place for leaks",
+        "title": "Channels | Media",
+        "description": "• <#801705257386246145> - Post your favourite images and videos.\n• <#809524414647369738> - Share your favourite works of art here. Always remember to link the source and credit the artist!\n• <#822761512690647051> - Share funny memes.",
         "color": "#800080"
     },
     {
-        "title": "Divine Shrine",
-        "description": "**[Raiden Religion]**\n\n<#805376342946349066> - A leaderboard for people who are saving for Raiden. All are ranked according to the amount of Primogems they have accumulated for our Shogun.\n<#804238038015672381> - To join the leaderboards, please submit a photo of your Pity Counter, Genesis Crystals, Primogems, and state whether it is guaranteed pity or not, in the Google Document made by our members\n<#805766526040408084> - Spam Raiden emotes! :meyaya: ",
+        "title": "Channels | Leaks",
+        "description": "• <#802921298200231937> - A special archive solely for Raiden leaks.\n• <#808313572564140062> - An archive of leaks of upcoming characters.\n• <#806208252488319026> - A compilation of all leaks of future content we get our hands on.\n• <#806208193910669322> - Discuss any leaks that interest you. Be warned of spoilers!",
         "color": "#800080"
+    },
+    {
+        "title": "Channels | Resources",
+        "description": "• <#813190950250741831> - A temporary channel for theory crafting. Once the server grows more, the proper category and channels dedicated for theory crafting will be released.",
+        "color": "#800080"
+    },
+    {
+        "title": "Channels | Raiden Mei",
+        "description": "• <#805376342946349066> - A leaderboard for people who are saving for Raiden ranked by the Primogems they have accumulated for our Shogun.\n• <#804238038015672381> - To join the leaderboards, please submit a photo of your Pity Counter, Genesis Crystals, Primogems, and state whether it is guaranteed pity or not, in the Google Document made by our members\n• <#805766526040408084> - Spam Raiden emotes! <:meibless:832555689045393429> ",
+        "color": "#800080"
+    },
+    {
+        "title": "Moderation | Punishment & Appeals",
+        "description": "• Breaking our rules will result in punishment based on the severity of the case.\n\n• Attempting to bypass punishments will result in subsequent harsher action being taken against you, such as escalating your original punishment into a permanent ban.\n\n• If you wish to appeal any punishments, you can contact a moderator to submit a ban appeal.",
+        "color": "#DD2233"
     }
 ]

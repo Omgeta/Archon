@@ -1,25 +1,35 @@
 [
     {
-        "title": "Welcome to the Inazuma Bakufu",
-        "description": "We are a Genshin Impact discord server with a special focus on discussions on the Electro Archon of Eternity, Raiden.\n\nBe sure to read all the rules to ensure that you know how to behave in this server.\n\nWe hope you have a fun stay!\n\nServer Link: <https://discord.gg/cytxTu52EQ>",
+        "title": "The Inazuma Bakufu | Raiden Mei",
+        "description": "\nWelcome to the Bakufu, a discord server dedicated to the Herrscher of Thunder and Electro Archon: Raiden Mei.\n\nBe sure to read all of the rules so that you know how to behave in the server.\n\nHave fun!\n\n**[Discord](https://discord.gg/cytxTu52EQ)** | **[r/RaidenMains](https://www.reddit.com/r/RaidenMains/)** | **[r/RaidenMei](https://www.reddit.com/r/RaidenMei/)**",
         "image": {
-            "url": "https://i.imgur.com/2iWeSmA.gif"
+            "url": "https://cdn.discordapp.com/attachments/809524414647369738/810562952389197894/87774153_p0.jpg"
         },
+        "color": "#DD2233"
+    },
+    {
+        "title": "Rule #1 | Respect & Etiquette",
+        "description": "• Be kind, respectful and polite when interacting with others. Harassment and abuse of any form will not be tolerated.\n\n• Discrimination, usage of racial slurs and derogotary remarks to anyone of any race, sexuality, gender or religion will not be tolerated.\n\n• Please avoid sensitive topics such as politics, religion, death and tragic events. Do not be overly edgy.\n\n• Spam of any form is not allowed.\n\n• Sending innappropriate DMs to any of our server members is not allowed.",
         "color": "#800080"
     },
     {
-        "title": "Rule #1 - General Etiquette",
-        "description": "• Be kind, respectful and polite when interacting with others. Harassment and abuse will not be tolerated.\n\n• Discrimination and usage of racial slurs of any kind is not allowed.\n\n• Avoid sensitive topics such as politics or religion.\n\n• Spam of any form is not allowed.\n\n• Do not send unsolicited DMs to members.\n\n• Advertising and self-promotion is allowed in appropriate text channels and at reasonable frequencies, should the content produced be meaningful to the community.\n\n• When commenting about others' creative content, ensure your criticism is reasonable and constructive.",
+        "title": "Rule #2 | Channel Usage",
+        "description": "• Please use our server channels according to their intended purpose.\n\n• Conversations in a channel that naturally derail into another topic are allowed as long as they are short and concise and do not distract from the purpose of the channel. However, we would still encourage you to move the conversation to it's appropriate channels if possible.\n\n• Keep your usernames and conversations in English, your username should also be pingable. We can't moderate what we can't read after all, so if you need to speak in a different language, please do so in DMs.",
         "color": "#800080"
     },
     {
-        "title": "Rule #2 - Channel Usage",
-        "description": "• Channels are not where conversations on a specific topic should be held, but rather where they should be started\n\n• Keep conversations in English. We can't moderate what we can't read after all. If you really need to speak in a different language, you can take it to DMs.",
+        "title": "Rule #3 | Creative Content",
+        "description": "• Please credit the creators(s) of any shared art/cosplay/media material that is not your own.\n\n• Advertising and self-promotion is allowed only in the appropriate text channels and at reasonable frequencies, should the content be meaningful to the community.\n\n• Please ensure that your comments about others' creative content are kept reasonable and constructive. Bashing of any users or content creators is strictly not allowed.",
         "color": "#800080"
     },
     {
-        "title": "Rule #3 - NSFW Content",
-        "description": "• NSFW Content is not allowed anywhere on this server.\n\n• Overly NSFW profile pictures are not allowed.\n\n• If you are not sure what constitutes restricted content, check with a moderator first.",
+        "title": "Rule #4 | NSFW Content",
+        "description": "• NSFW is strictly prohibited in the server, this includes NSFW profile pictures and any other forms of media that contain explicit and/or obscene content that includes but is not limited to:\n\n- 'loli' or children (inclusive of 'legal lolis')\n- full frontal nudity\n- cropped porn/hentai\n- bare tops and bottoms for women and no bare bottoms for men\n- bondage\n- genital fluids\n- bare genitals seen\n- implied sexual acts\n- linking of porn/hentai/eromanga/manhwa/comics\n- beastiality or necrophilia\n\n• Users who post content that contain any of the above or any content the mods deem inappropriate will be severely punished.",
+        "color": "#800080"
+    },
+    {
+        "title": "Rule #5 | Security",
+        "description": "• All users must have a verified email account before they are able to speak in server channels.\n\n• Alternate accounts are not allowed and will be removed.\n\n• Raiding/doxxing and the encouragement of such behaviour is a violation of the Discord ToS and will result in severe punishment.",
         "color": "#800080"
     }
 ]

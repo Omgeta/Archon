@@ -1,4 +1,4 @@
-import { TextChannel, Message } from "discord.js";
+import { NewsChannel, TextChannel, Message } from "discord.js";
 import { Command, Argument } from "discord-akairo";
 
 export default class SayCommand extends Command {
@@ -41,7 +41,7 @@ export default class SayCommand extends Command {
         });
     }
 
-    public async exec(message: Message, { text, targetChannel }: { text: string, targetChannel: TextChannel }): Promise<Message> {
+    public async exec(message: Message, { text, targetChannel }: { text: string, targetChannel: NewsChannel | TextChannel }): Promise<Message> {
         try {
             return await targetChannel.send(text);
         } catch (e) {

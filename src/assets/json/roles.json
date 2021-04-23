@@ -1,12 +1,27 @@
 [
     {
-        "title": "Primary Roles",
-        "description": "<@&810500594048958494> - The Eternal Raiden Shogun\n<@&801133647485730896> - Server Admins\n<@&811959425824587826> - Server Moderators\n<@&805386984285143060> - Bots\n<@&803652074024730646> - Beloved Nitro Boosters <:stareclass:> \n<@&801371184645931009> - Original 250 Members\n<@&807112576210305085> - All Members",
+        "title": "Roles | Members",
+        "description": "Various primary roles which belong to the members of the community.\n\n• <@&810500594048958494> - The Eternal Raiden Shogun.\n\n• <@&801133647485730896> - Server Admins.\n\n• <@&811959425824587826> - Server Moderators.\n\n• <@&803652074024730646> - Beloved Nitro Boosters.\n\n• <@&818945476673142855> - Trusted members of the community.\n\n• <@&801371184645931009> - Original 250 Members.\n\n• <@&807112576210305085> - All Members.",
         "color": "#800080"
     },
     {
-        "title": "Special Roles",
-        "description": "<@&807683060530675783> - Members of the server who have produced immense content for the server.\n<@&806920564554858496> - Our leak compilers and providers\n<@&811215570476466197> - Translators of foreign texts concerning leaks \n<@&813411660391776357> - Those who are in charge of #raiden-check and #leaderboards \n<@&814574330456571956> - Shiba of Raiden\n<@&814567626604413008> - Our very own miHoYo employees and miHoYo sleeper agents. 100% should be trusted\n<@&815195864464883742> - Those who hold miHoYo stonks\n<@&815597954277834814> - Banished from miHoYo, only gives outdated info. cannot be trusted\n<@&815937852043034654> - children of doblo.",
+        "title": "Roles | Special",
+        "description": "Special roles belonging to the members of the community that have contributed greatly to the server with their talents, efforts and dedication.\n\n• <@&811215570476466197> - Approved translators who have worked hard to provide many leaks and news.\n\n• <@&806920564554858496> - Approved leak compilers and providers\n\n• <@&813411660391776357> - Divine servants in charge of maintaining and moderating Raiden Mei channels.\n\n• <@&822098072174854244> - Honkai addicts in charge of providing announcements for Honkai Impact.\n\n• <@&822812384845496341> - Approved emote artists who have created many lovely emotes for the server.",
+        "color": "#800080"
+    },
+    {
+        "title": "Roles | Region",
+        "description": "Select your server region!\n\n• :red_circle: - <@&801386334237360128>\n\n• :blue_circle: - <@&801386312749547520>\n\n• :green_circle: - <@&801386291165659187>\n\n• :yellow_circle: - <@&801386435504373770>",
+        "color": "#800080"
+    },
+    {
+        "title": "Roles | Pings",
+        "description": "Select roles which you wish to be pinged for!\n\n• :loudspeaker: - <@&801386231233249350>\n\n• :mega: - <@&822827927963697212>\n\n• :mag_right: - <@&811571844787339314>\n\n• :gem: - <@&832580092987047936>\n\n• :pray: - <@&808750641144397904>",
+        "color": "#800080"
+    },
+    {
+        "title": "Roles | Vanity Colors",
+        "description": "Select your favourite colour!\n\n:space_invader: - <@&815008183809605654>\n\n:umbrella2: - <@&814968487743062068>\n\n:crab: - <@&814971196331393046>\n\n:peach: - <@&814984435992756286>\n\n:squid: - <@&814956837556191236>\n\n:chestnut: - <@&814976403777912872>\n\n:cherry_blossom: - <@&814976075494064152>\n\n:cloud_tornado: - <@&814987540368719936>\n\n:fish_cake: - <@&814969875960692736>\n\n:snail: - <@&814958926185365545>\n\n:diamond_shape_with_a_dot_inside: - <@&814969092078305280>\n\n:peacock: - <@&814980649965977630>\n\n:pear: - <@&814966376028438548>\n\n:crocodile: - <@&814986572419039323>\n\n:zap: - <@&814994637450117180>\n\n:tea: - <@&814992719150972980>\n\n:evergreen_tree: - <@&814990645965750273>",
         "color": "#800080"
     }
 ]

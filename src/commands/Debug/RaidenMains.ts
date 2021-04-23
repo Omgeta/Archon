@@ -1,4 +1,4 @@
-import { Message, TextChannel, MessageEmbed } from "discord.js";
+import { Message, TextChannel, MessageEmbed, NewsChannel } from "discord.js";
 import { Command, Argument } from "discord-akairo";
 import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
@@ -45,7 +45,7 @@ export default class RaidenMainsCommand extends Command {
         });
     }
 
-    private async sendInformation(target: TextChannel): Promise<void> {
+    private async sendInformation(target: NewsChannel | TextChannel): Promise<void> {
         for (const embed of rules) {
             await target.send(new MessageEmbed(embed));
         }
@@ -55,13 +55,13 @@ export default class RaidenMainsCommand extends Command {
         }
     }
 
-    private async sendRoles(target: TextChannel): Promise<void> {
+    private async sendRoles(target: NewsChannel | TextChannel): Promise<void> {
         for (const embed of roles) {
             await target.send(new MessageEmbed(embed));
         }
     }
 
-    private async sendLeaderboard(target: TextChannel): Promise<void> {
+    private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
         let description = "";
         for (const entry of leaderboard) {
             description += `**${entry.Discord}** - ${entry.Total}/28800\n\n`;
@@ -70,11 +70,11 @@ export default class RaidenMainsCommand extends Command {
             .setTitle("The Leaderboard")
             .setAuthor("Primogem Count", "https://media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
             .setDescription(description)
-            .setImage("https://cdn.discordapp.com/attachments/813407840315113483/822168395738775562/New_Project_4.gif")
+            .setImage("https://media1.tenor.com/images/4e1787742ca4ef7d4335b9ee3beec2c2/tenor.gif?itemid=14036734")
         );
     }
 
-    public async exec(message: Message, { subcommand, target }: { subcommand: string, target: TextChannel }): Promise<Message> {
+    public async exec(message: Message, { subcommand, target }: { subcommand: string, target: NewsChannel | TextChannel }): Promise<Message> {
         switch (subcommand) {
             case "info":
                 await this.sendInformation(target); break;

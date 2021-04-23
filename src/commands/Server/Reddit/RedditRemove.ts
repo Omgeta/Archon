@@ -4,13 +4,13 @@ import { redditAxios as axios } from "../../../axios";
 
 export default class RedditAddCommand extends Command {
     public constructor() {
-        super("redditadd", {
+        super("redditremove", {
             category: "Server",
             description: {
-                content: "Add subreddits in your server",
-                usage: "reddit add <subreddit> <channel>",
+                content: "Remove subreddits from your server",
+                usage: "reddit remove <subreddit> <channel>",
                 examples: [
-                    "reddit add r/RaidenMains #reddit-feed"
+                    "reddit remove r/RaidenMains #reddit-feed"
                 ]
             },
             args: [
@@ -53,19 +53,17 @@ export default class RedditAddCommand extends Command {
         const subreddit = await this.getSubreddit(subredditName);
 
         const targetIndex = guildReddits.findIndex(chn => chn.id === targetChannel.id);
-        if (targetIndex === -1) {
-            const newChannel = {
-                id: targetChannel.id,
-                subreddits: [subreddit.id]
-            };
-            guildReddits.push(newChannel);
-        } else if (!guildReddits[targetIndex].subreddits.includes(subreddit.id)) {
-            guildReddits[targetIndex].subreddits.push(subreddit.id);
+        if (targetIndex === -1 || !guildReddits[targetIndex].subreddits.includes(subreddit.id)) {
+            return message.channel.send(`${subreddit.display_name_prefixed} does not exist in ${targetChannel}.`);
+        } else if (guildReddits[targetIndex].subreddits.length > 1) {
+            guildReddits[targetIndex].subreddits = guildReddits[targetIndex].subreddits.filter(s => s !== subreddit.id);
+        } else {
+            guildReddits.splice(targetIndex, targetIndex + 1);
         }
 
         this.client.settings.set(message.guild.id, "reddit", guildReddits);
 
-        return message.channel.send(`${subreddit.display_name_prefixed} added to ${targetChannel}`);
+        return message.channel.send(`${subreddit.display_name_prefixed} has been removed from ${targetChannel}`);
     }
 
 }
