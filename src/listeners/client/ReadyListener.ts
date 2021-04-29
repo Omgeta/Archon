@@ -48,8 +48,8 @@ export default class ReadyListener extends Listener {
     public async exec(): Promise<void> {
         console.log(`${this.client.user.tag} is online`);
 
-        this.client.user.setActivity("with Yae", {
-            type: "PLAYING"
+        this.client.user.setActivity("new leaks", {
+            type: "WATCHING"
         });
 
         await this.cleanDatabase();
