@@ -64,13 +64,13 @@ export default class RaidenMainsCommand extends Command {
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
         let description = "";
         for (const entry of leaderboard) {
-            description += `**${entry.Discord}** - ${entry.Total}/28800\n\n`;
+            description += `${entry.Ranking}. **${entry.Discord}** - ${entry.Total}/28800\n\n`;
         }
         await target.send(new MessageEmbed()
-            .setTitle("The Leaderboard")
-            .setAuthor("Primogem Count", "https://media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
-            .setDescription(description)
-            .setImage("https://media1.tenor.com/images/4e1787742ca4ef7d4335b9ee3beec2c2/tenor.gif?itemid=14036734")
+            .setAuthor("", "https://images-ext-1.discordapp.net/external/AefdtAO-E2pokACMM5WuBjMOggFGEgilOrpYumSa5ik/https/media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
+            .setTitle("__**Leaderboard | Primogem Count**__")
+            .setDescription("\u200B\u200B" + description)
+            .setImage("https://media1.tenor.com/images/2aeac774a8d2dad2e2086f6326429a2a/tenor.gif")
         );
     }
 
