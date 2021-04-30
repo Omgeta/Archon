@@ -111,6 +111,3 @@ dist
 
 # Compiled build output
 .dist/
-
-# Secrets files
-src/Config.ts
