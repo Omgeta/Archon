@@ -1,4 +1,7 @@
-import { token, owners, mongodb_uri } from "./Config";
+// import { token, owners, mongodb_uri } from "./Config";
+const mongodb_uri: string = process.env.MONGODB_URI;
+const token: string = process.env.TOKEN;
+const owners: string[] = (process.env.owners || "").split(",");
 
 // Initialize database
 import mongoose from "mongoose";

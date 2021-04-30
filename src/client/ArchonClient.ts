@@ -1,7 +1,9 @@
 import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from "discord-akairo";
 import { Message } from "discord.js";
 import { join } from "path";
-import { prefix, owners } from "../Config";
+// import { prefix, owners } from "../Config";
+const prefix: string = process.env.PREFIX;
+const owners: string[] = (process.env.OWNERS || "").split(",");
 import { guildModel } from "../database";
 
 declare module "discord-akairo" {
