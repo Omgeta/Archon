@@ -7,6 +7,17 @@ export default abstract class MessageReactionListener extends Listener {
         if (this.constructor === MessageReactionListener) throw new Error("Cannot instantiate abstract class");
     }
 
+    protected async fetchPartialReaction(reaction: MessageReaction): Promise<void> {
+        if (reaction.partial) {
+            try {
+                await reaction.fetch();
+            } catch (err) {
+                console.error(`Error when fetching the message: ${err}`);
+                return;
+            }
+        }
+    }
+
     protected async handleReaction(reaction: MessageReaction, user: User, adding: boolean): Promise<void> {
         const message = reaction.message;
         const { guild } = message;

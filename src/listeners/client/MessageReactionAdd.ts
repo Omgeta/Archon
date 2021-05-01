@@ -11,15 +11,7 @@ export default class MessageReactionAddListener extends MessageReactionListener 
     }
 
     public async exec(reaction: MessageReaction, user: User): Promise<void> {
-        if (reaction.partial) {
-            try {
-                await reaction.fetch();
-            } catch (err) {
-                console.error(`Error when fetching the message: ${err}`);
-                return;
-            }
-        }
-
+        await this.fetchPartialReaction(reaction);
         this.handleReaction(reaction, user, true);
     }
 }
