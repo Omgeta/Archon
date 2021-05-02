@@ -1,8 +1,5 @@
-export { default as venti } from "./venti.json";
 export { default as zhongli } from "./zhongli.json";
-export { default as eula } from "./eula.json";
 export { default as jean } from "./jean.json";
-export { default as ganyu } from "./ganyu.json";
 export { default as traveller } from "./traveller.json";
 export { default as northland } from "./northland.json";
 export { default as albedo } from "./albedo.json";
