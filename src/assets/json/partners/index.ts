@@ -14,3 +14,5 @@ export { default as lyn } from "./lyn.json";
 export { default as yanfei } from "./yanfei.json";
 export { default as adv } from "./adv.json";
 export { default as tsaritsa } from "./tsaritsa.json";
+export { default as sayu } from "./sayu.json";
+export { default as kazuha } from "./kazuha.json";
