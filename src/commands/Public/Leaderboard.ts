@@ -1,25 +1,18 @@
-import { Message, GuildMember, MessageEmbed } from "discord.js";
+import { Message, GuildMember } from "discord.js";
 import { Command } from "discord-akairo";
-import leaderboard from "../../assets/json/leaderboard.json";
-
-interface LeaderboardItem {
-    Ranking: number,
-    Discord: string,
-    Screenshots: string,
-    Guarantee: number,
-    Total: number
-}
+import { LeaderboardManager, PYRO_COLOR, ArchonEmbed } from "../../";
 
 export default class LeaderboardCommand extends Command {
     public constructor() {
         super("leaderboard", {
-            aliases: ["leaderboard", "lb"],
+            aliases: ["leaderboard"],
             category: "Public",
             description: {
                 content: "Check your current leaderboard stats",
                 usage: "leaderboard <user>",
                 examples: [
-                    "leaderboard @Omgeta",
+                    "leaderboard @omgeta#8841",
+                    "leaderboard omgeta",
                     "leaderboard"
                 ]
             },
@@ -34,25 +27,30 @@ export default class LeaderboardCommand extends Command {
         });
     }
 
-    private indexLeaderboard(username: string): LeaderboardItem {
-        for (const entry of leaderboard) {
-            if (entry.Discord === username) return entry;
-        }
-    }
-
+    // TODO: add gold, silver, bronze for top 3
+    // TODO: add feature to update leaderboard remotely
+    // TODO: add feature to send full leaderboard
     public exec(message: Message, { member }: { member: GuildMember }): Promise<Message> {
-        const entry = this.indexLeaderboard(member.user.tag);
-        if (entry) {
-            return message.channel.send(new MessageEmbed()
+        const leaderboardManager = new LeaderboardManager();
+
+        const row = leaderboardManager.findUser(member.user.tag);
+        if (row) {
+            return message.channel.send(new ArchonEmbed()
                 .setTitle(member.displayName)
                 .setThumbnail(member.user.displayAvatarURL())
                 .addFields(
-                    { name: "Ranking", value: entry.Ranking },
-                    { name: "Primogems", value: entry.Total }
+                    { name: "Ranking", value: row.Ranking },
+                    { name: "Primogems", value: row.Total }
                 )
             );
         } else {
-            return message.channel.send(`Sorry ${member.displayName} doesn't have an entry here!`);
+            return message.util.send(new ArchonEmbed()
+                .setDescription(
+                    `${member.displayName} doesn't have an entry in the leaderboard!
+                    Please try again`
+                )
+                .setColor(PYRO_COLOR)
+            );
         }
     }
 }
