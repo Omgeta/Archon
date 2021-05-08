@@ -25,13 +25,15 @@ export default class ShowEmojisCommand extends Command {
         });
     }
 
-    // TODO: change arg to "emojis" and use collection instead of array for emojis
     public async exec(message: Message, { emojis }: { emojis: GuildEmoji[] }): Promise<void> {
         const results = [...new Set(emojis)].map(e => `**Name:** ${e} **Image:** ${e.url}`);
-        console.log(results);
 
-        for (let i = 0; i < Math.ceil(results.length / 5); i++) {
-            await message.channel.send(results.slice(i * 5, i * 5 + 5).join("\n"));
+        // Send a message for every 5 emojis
+        const N = 5;
+        const divisions = Math.floor((results.length + N - 1) / N);
+        for (let i = 0; i < divisions; i++) {
+            const content: string = results.slice(i * N, (i + 1) * N).join("\n");
+            await message.channel.send(content);
         }
     }
 }

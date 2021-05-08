@@ -42,7 +42,7 @@ export default class HelpCommand extends Command {
 
         if (command) {
             return message.util.send(new ArchonEmbed()
-                .setTitle(`Help || ${command}`)
+                .setTitle(`__**Help | ${command}**__`)
                 .setDescription(
                     `
                     **Description:**
@@ -58,7 +58,7 @@ export default class HelpCommand extends Command {
             );
         } else {
             const embed = new ArchonEmbed()
-                .setTitle("Help")
+                .setTitle("__**Help**__")
                 .setFooter(`${guildPrefix}${this.description.usage} for more information on a specific command`);
 
             for (const category of this.handler.categories.values()) {

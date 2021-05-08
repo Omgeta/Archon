@@ -1,6 +1,7 @@
 import { Message } from "discord.js";
 import { Command, Flag } from "discord-akairo";
 import { prefix } from "../../Config";
+import { ArchonEmbed, DENDRO_COLOR } from "../../";
 
 export default class PrefixCommand extends Command {
     public constructor() {
@@ -20,12 +21,12 @@ export default class PrefixCommand extends Command {
                     id: "newPrefix",
                     type: async (message, phrase) => {
                         if (phrase) {
-                            if (phrase.length > 3) {
-                                await message.util.send("Prefix cannot be more than 3 characters long");
+                            if (!message.member.hasPermission("MANAGE_GUILD")) {
+                                await message.util.send(`${message.author}, you don't have permission to manage the bot prefix.`);
                                 return Flag.cancel();
                             }
-                            if (!message.member.hasPermission("MANAGE_GUILD")) {
-                                await message.util.send(`${message.author}, you don't have permission to manage this bots' prefix.`);
+                            if (phrase.length > 3) {
+                                await message.util.send("Prefix cannot be more than 3 characters long");
                                 return Flag.cancel();
                             }
 
@@ -42,13 +43,18 @@ export default class PrefixCommand extends Command {
     }
 
     public async exec(message: Message, { newPrefix }: { newPrefix: string }): Promise<Message> {
-        const oldPrefix = this.client.settings.get(message.guild.id, "prefix", prefix);
+        const currPrefix: string = this.client.settings.get(message.guild.id, "prefix", prefix);
 
         if (newPrefix) {
             await this.client.settings.set(message.guild.id, "prefix", newPrefix);
-            return message.util.send(`Prefix has been changed from \`${oldPrefix}\` to \`${newPrefix}\``);
+            return message.channel.send(new ArchonEmbed()
+                .setDescription(`Bot prefix has been changed from \`${currPrefix}\` to \`${newPrefix}\``)
+                .setColor(DENDRO_COLOR)
+            );
         } else {
-            return message.util.send(`Current bot prefix is \`${oldPrefix}\``);
+            return message.util.send(new ArchonEmbed()
+                .setDescription(`Bot prefix is \`${currPrefix}\``)
+            );
         }
     }
 }

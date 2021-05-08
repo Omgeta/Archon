@@ -20,19 +20,17 @@ export default class InfoCommand extends Command {
 
     public exec(message: Message): Promise<Message> {
         return message.util.send(new ArchonEmbed()
-            .setTitle(this.client.user.username)
+            .setTitle(`__**${this.client.user.username}**__`)
             .setDescription(
                 `
                 Behold the Eternal Archon, Raiden.
 
-                This bot provides general and Genshin-specific features which aim to improve the functionality of Genshin Impact discord servers and improve quality of life for all users.
+                Archon aims to provide discord features that are perfect for setting up your Genshin Impact server.
 
-                If you have any issues or questions, DM omgeta#8841 at the RaidenMains discord server.
-                \u200b
+                If you have any issues or questions, DM omgeta#8841.
                 `
             )
             .setThumbnail(this.client.user.avatarURL())
-            .setFooter("Powered by /r/RaidenMains")
         );
     }
 }

@@ -42,7 +42,7 @@ export default class TimeCommand extends Command {
         const AS = now.tz("Asia/Shanghai");
 
         return message.util.send(new ArchonEmbed()
-            .setTitle("Current Server Time")
+            .setTitle("Genshin Server Clock")
             .setDescription(
                 `
                 **America:**

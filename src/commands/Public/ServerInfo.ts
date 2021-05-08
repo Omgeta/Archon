@@ -8,10 +8,10 @@ export default class ServerInfoCommand extends Command {
             aliases: ["serverinfo", "sinfo"],
             category: "Public",
             description: {
-                content: "Get the server information",
-                usage: "serverinfo <guildid>",
+                content: "Gets the server information",
+                usage: "serverinfo",
                 examples: [
-                    "serverinfo 123"
+                    "serverinfo"
                 ]
             },
             ratelimit: 3,
