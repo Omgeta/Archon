@@ -1,6 +1,5 @@
 import { Message } from "discord.js";
 import { Command, Flag } from "discord-akairo";
-import { prefix } from "../../Config";
 import { ArchonEmbed, DENDRO_COLOR } from "../../";
 
 export default class PrefixCommand extends Command {
@@ -43,7 +42,7 @@ export default class PrefixCommand extends Command {
     }
 
     public async exec(message: Message, { newPrefix }: { newPrefix: string }): Promise<Message> {
-        const currPrefix: string = this.client.settings.get(message.guild.id, "prefix", prefix);
+        const currPrefix: string = this.client.settings.get(message.guild.id, "prefix", process.env.PREFIX);
 
         if (newPrefix) {
             await this.client.settings.set(message.guild.id, "prefix", newPrefix);

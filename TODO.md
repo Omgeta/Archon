@@ -1,3 +1,4 @@
-- modmail
+- prompting for all
+- error handling
+- logger
 - reddit
-- twitter

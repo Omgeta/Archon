@@ -1,7 +1,6 @@
 import { Message, PermissionResolvable } from "discord.js";
 import { Command, Flag } from "discord-akairo";
 import { ArchonEmbed } from "../../";
-import { prefix } from "../../Config";
 
 export default class HelpCommand extends Command {
     public constructor() {
@@ -38,7 +37,7 @@ export default class HelpCommand extends Command {
     }
 
     public exec(message: Message, { command }: { command: Command }): Promise<Message> {
-        const guildPrefix = this.client.settings.get(message.guild.id, "prefix", prefix);
+        const guildPrefix = this.client.settings.get(message.guild.id, "prefix", process.env.PREFIX);
 
         if (command) {
             return message.util.send(new ArchonEmbed()
