@@ -4,7 +4,7 @@ import { Command } from "discord-akairo";
 export default class EmbedCommand extends Command {
     public constructor() {
         super("embed", {
-            aliases: ["embed", "emb"],
+            aliases: ["embed"],
             category: "Messages",
             description: {
                 content: "Send or edit embed messages",
