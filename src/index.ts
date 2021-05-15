@@ -3,3 +3,4 @@ export * from "./structures/ArchonEmbed";
 export * from "./utils/MiscUtils";
 export * from "./utils/DiscordUtils";
 export { default as LeaderboardManager } from "./structures/LeaderboardManager";
+export { default as PityCalculator } from "./structures/PityCalculator";
