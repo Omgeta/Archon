@@ -67,14 +67,14 @@ export default class RaidenMainsCommand extends Command {
 
         let description = "";
         for (const entry of leaderboard) {
-            const currCon = Math.floor(entry.Total / 28800) - 1;
+            const currCon = Math.floor(entry.Total / 28800);
             if (currCon < cons) {
                 if (currCon >= 0) description += `__**C${currCon}**__\n\n`;
                 else description += "__**No Guarantee**__\n\n";
                 cons = currCon;
             }
 
-            description += `${entry.Ranking}. **${entry.Discord}** - ${entry.Total}/28800\n\n`;
+            description += `${entry.Ranking}. **${entry.Discord}** - ${entry.Total}/${28800 * (currCon + 1)}\n\n`;
         }
         await target.send(new ArchonEmbed()
             .setAuthor("", "https://images-ext-1.discordapp.net/external/AefdtAO-E2pokACMM5WuBjMOggFGEgilOrpYumSa5ik/https/media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
