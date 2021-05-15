@@ -61,4 +61,19 @@ export default class PityCalculator {
 
         return counts;
     }
+
+    public calculateStr(pity: number): string {
+        const counts = this.calculate(pity);
+        let res = "";
+
+        for (const [con, prob] of Object.entries(counts)) {
+            let x = "";
+            if (parseInt(con) === -1) x = "None";
+            else x = `C${con}`;
+
+            res += `${x} - ${prob * 100}%\n`;
+        }
+
+        return res;
+    }
 }

@@ -30,16 +30,7 @@ export default class PityCalculateCommand extends Command {
 
     public async exec(message: Message, { pity }: { pity: number }): Promise<Message> {
         const pc = new PityCalculator();
-        const counts = pc.calculate(pity);
-
-        let desc = "";
-        for (const [con, prob] of Object.entries(counts)) {
-            let x = "";
-            if (parseInt(con) === -1) x = "None";
-            else x = `C${con}`;
-
-            desc += `**${x}**: ${prob * 100}%\n`;
-        }
+        const desc = pc.calculateStr(pity);
 
         return message.util.send(new ArchonEmbed()
             .setTitle(`${pity} Pities`)
