@@ -17,10 +17,10 @@ export default class PityCalculateCommand extends Command {
             args: [
                 {
                     id: "pity",
-                    type: Argument.range("integer", 1, 13),
+                    type: Argument.range("integer", 1, 15),
                     prompt: {
                         start: message => `How many pities do you wish to calculate for ${message.author}?`,
-                        retry: message => `Number of pities has to between 1 and 13! Try again ${message.author}`
+                        retry: message => `Number of pities has to between 1 and 14! Try again ${message.author}`
                     }
                 }
             ],
@@ -34,7 +34,11 @@ export default class PityCalculateCommand extends Command {
 
         let desc = "";
         for (const [con, prob] of Object.entries(counts)) {
-            desc += `**C${con}**: ${prob * 100}%\n`;
+            let x = "";
+            if (parseInt(con) === -1) x = "None";
+            else x = `C${con}`;
+
+            desc += `**${x}**: ${prob * 100}%\n`;
         }
 
         return message.util.send(new ArchonEmbed()
