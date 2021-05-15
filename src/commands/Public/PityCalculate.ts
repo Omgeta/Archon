@@ -17,10 +17,10 @@ export default class PityCalculateCommand extends Command {
             args: [
                 {
                     id: "pity",
-                    type: Argument.range("integer", 1, 100),
+                    type: Argument.range("integer", 1, 13),
                     prompt: {
                         start: message => `How many pities do you wish to calculate for ${message.author}?`,
-                        retry: message => `Number of pities has to between 1 and 100! Try again ${message.author}`
+                        retry: message => `Number of pities has to between 1 and 13! Try again ${message.author}`
                     }
                 }
             ],

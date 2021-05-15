@@ -50,7 +50,13 @@ export default class PityCalculator {
         const counts = {};
 
         for (const node of x) {
-            counts[node.con] = node.con in counts ? counts[node.con] + node.prob : node.prob;
+            if (node.con in counts) {
+                counts[node.con] += node.prob;
+            } else if (node.con > 6) {
+                counts[6] += node.prob;
+            } else {
+                counts[node.con] = node.prob;
+            }
         }
 
         return counts;
