@@ -1,6 +1,6 @@
 import { Message, GuildMember } from "discord.js";
 import { Command } from "discord-akairo";
-import { LeaderboardManager, PityCalculator, PYRO_COLOR, ArchonEmbed } from "../../";
+import { LeaderboardManager, pityCalculator, PYRO_COLOR, ArchonEmbed } from "../../";
 
 export default class LeaderboardCommand extends Command {
     public constructor() {
@@ -35,8 +35,7 @@ export default class LeaderboardCommand extends Command {
 
         const row = leaderboardManager.findUser(member.user.tag);
         if (row) {
-            const pc = new PityCalculator();
-            const chances = pc.calculateStr(Math.floor(row.Total / 14400));
+            const chances = pityCalculator.calculateStr(Math.floor(row.Total / 14400));
 
             return message.channel.send(new ArchonEmbed()
                 .setTitle(`**${member.displayName}**`)
@@ -49,10 +48,7 @@ export default class LeaderboardCommand extends Command {
             );
         } else {
             return message.util.send(new ArchonEmbed()
-                .setDescription(
-                    `${member.displayName} doesn't have an entry in the leaderboard!
-                    Please try again`
-                )
+                .setDescription(`${member.displayName} doesn't have an entry in the leaderboard! Please try again`)
                 .setColor(PYRO_COLOR)
             );
         }

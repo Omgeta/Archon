@@ -30,8 +30,9 @@ export default class LeaderboardManager {
     }
 
     public findUser(username: string): LeaderboardRow {
+        const usernameFilter = username.toLowerCase();
         for (const row of this._leaderboard) {
-            if (row.Discord === username) return row;
+            if (row.Discord.toLowerCase() === usernameFilter) return row;
         }
     }
 }

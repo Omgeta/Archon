@@ -1,6 +1,6 @@
 import { Message } from "discord.js";
 import { Command, Argument } from "discord-akairo";
-import { PityCalculator, ArchonEmbed } from "../../";
+import { pityCalculator, ArchonEmbed } from "../../";
 
 export default class PityCalculateCommand extends Command {
     public constructor() {
@@ -29,8 +29,7 @@ export default class PityCalculateCommand extends Command {
     }
 
     public async exec(message: Message, { pity }: { pity: number }): Promise<Message> {
-        const pc = new PityCalculator();
-        const desc = pc.calculateStr(pity);
+        const desc = pityCalculator.calculateStr(pity);
 
         return message.util.send(new ArchonEmbed()
             .setTitle(`${pity} Pities`)

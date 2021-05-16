@@ -29,7 +29,7 @@ class PityNode {
     }
 }
 
-export default class PityCalculator {
+export class PityCalculator {
     private final(pity: number): PityNode[] {
         const currNode = new PityNode(-1, false, 1.0);
         let res = [currNode];
@@ -77,3 +77,5 @@ export default class PityCalculator {
         return res;
     }
 }
+
+export const pityCalculator = new PityCalculator();
