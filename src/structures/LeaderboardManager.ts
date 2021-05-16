@@ -37,8 +37,12 @@ export default class LeaderboardManager {
             }
         }
 
-        this._leaderboard = leaderboard;
-        this.updateJSON();
+        // temp
+        if (this._leaderboard !== leaderboard) {
+            this._leaderboard = leaderboard;
+            this.updateJSON();
+        }
+
     }
 
     private async updateJSON() {
