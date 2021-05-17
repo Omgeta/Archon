@@ -34,6 +34,11 @@ export default class SayCommand extends Command {
                         optional: true
                     },
                     default: message => message.channel
+                },
+                {
+                    id: "del",
+                    match: "flag",
+                    flag: ["--delete", "-d"]
                 }
             ],
             userPermissions: ["MANAGE_MESSAGES"],
@@ -41,7 +46,14 @@ export default class SayCommand extends Command {
         });
     }
 
-    public async exec(message: Message, { text, targetChannel }: { text: string, targetChannel: NewsChannel | TextChannel }): Promise<Message> {
+    public async exec(message: Message, { text, targetChannel, del }: { text: string, targetChannel: NewsChannel | TextChannel, del: boolean }): Promise<Message> {
+        if (del) {
+            try {
+                message.delete();
+            } catch (e) {
+                console.log("Could not delete message");
+            }
+        }
         try {
             return await targetChannel.send(text);
         } catch (e) {
