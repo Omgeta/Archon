@@ -24,12 +24,15 @@ winston.addColors({
 export const logger = winston.createLogger({
     levels: logLevels,
     format: winston.format.combine(
-        // winston.format.padLevels({ levels: logLevels }),
-        winston.format.timestamp(),
-        winston.format.printf(log => `${log.timestamp} [${log.level.toUpperCase()}] - ${log.message}`)
+        winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss:ms" }),
+        winston.format.printf(log => `(${log.timestamp}) [${log.level.toUpperCase()}] - ${log.message}`)
     ),
     transports: [
-        new winston.transports.Console({ format: winston.format.colorize() }),
+        new winston.transports.Console({
+            format: winston.format.combine(
+                winston.format.colorize({ all: true })
+            )
+        }),
         new winston.transports.DailyRotateFile({
             filename: "application-%DATE%.log",
             dirname: "logs",

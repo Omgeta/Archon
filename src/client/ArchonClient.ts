@@ -3,7 +3,7 @@ import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from 
 import { Message } from "discord.js";
 import { Logger as WinstonLogger } from "winston";
 import { guildModel } from "../database";
-import { logger } from "../";
+import { logger } from "../utils/Logger";
 
 const prefix: string = process.env.PREFIX;
 const owners: string[] = (process.env.OWNERS || "").split(",");
