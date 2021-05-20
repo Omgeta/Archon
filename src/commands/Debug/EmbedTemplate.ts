@@ -31,7 +31,7 @@ export default class EmbedTemplateCommand extends Command {
         try {
             await this.sendTemplates(message);
         } catch (err) {
-            console.error(err);
+            this.client.log.error(err);
         }
     }
 }

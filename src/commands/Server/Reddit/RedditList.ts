@@ -1,6 +1,6 @@
 import { Message } from "discord.js";
 import { Command } from "discord-akairo";
-import { redditAxios as axios } from "../../../axios";
+import { redditAxios as axios } from "../../../";
 
 export default class RedditAddCommand extends Command {
     public constructor() {
@@ -22,7 +22,7 @@ export default class RedditAddCommand extends Command {
             const response = await axios.get(`/api/info.json?id=t5_${subredditId}`);
             return response.data.data.children[0].data;
         } catch (err) {
-            console.error(err);
+            this.client.log.error(err);
         }
     }
 

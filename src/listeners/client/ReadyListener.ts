@@ -20,7 +20,7 @@ export default class ReadyListener extends Listener {
             const message = settings.reactrole[i];
             const reactionMessage: Message = await resolveGuildMessage(guild, message.id);
             if (!reactionMessage) {
-                console.log(`Removing message ${message.id} from the database`);
+                this.client.log.info(`Removing message ${message.id} from the database`);
                 settings.reactrole.remove(i);
                 continue;
             }
@@ -37,7 +37,7 @@ export default class ReadyListener extends Listener {
             const guild: Guild = await this.client.guilds.cache.get(guildId);
 
             if (!guild) {
-                console.log(`Removing guild ${guildId} from the database`);
+                this.client.log.info(`Removing guild ${guildId} from the database`);
                 await this.client.settings.clear(guildId);
             }
 
@@ -46,7 +46,7 @@ export default class ReadyListener extends Listener {
     }
 
     public async exec(): Promise<void> {
-        console.log(`${this.client.user.tag} is online`);
+        this.client.log.info(`${this.client.user.tag} is online`);
 
         this.client.user.setActivity("new leaks", {
             type: "WATCHING"

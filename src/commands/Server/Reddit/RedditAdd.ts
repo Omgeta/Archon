@@ -1,6 +1,6 @@
 import { Message, TextChannel } from "discord.js";
 import { Command, Argument } from "discord-akairo";
-import { redditAxios as axios } from "../../../axios";
+import { redditAxios as axios } from "../../../";
 
 export default class RedditAddCommand extends Command {
     public constructor() {
@@ -44,7 +44,7 @@ export default class RedditAddCommand extends Command {
             const response = await axios.get(`/r/${subredditName}/about.json`);
             return response.data.data;
         } catch (err) {
-            console.error(err);
+            this.client.log.error(err);
         }
     }
 

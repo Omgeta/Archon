@@ -12,7 +12,7 @@ export default abstract class MessageReactionListener extends Listener {
             try {
                 await reaction.fetch();
             } catch (err) {
-                console.error(`Error when fetching the message: ${err}`);
+                this.client.log.error(`Error when fetching the message: ${err}`);
                 return;
             }
         }

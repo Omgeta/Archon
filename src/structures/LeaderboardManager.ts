@@ -1,7 +1,7 @@
 import fs from "fs";
 import leaderboard from "../assets/json/leaderboard.json";
 import { User } from "discord.js";
-import { Client } from "discord.js";
+import { AkairoClient } from "discord-akairo";
 
 interface LeaderboardRow {
     Ranking: number;
@@ -13,9 +13,9 @@ interface LeaderboardRow {
 }
 
 export default class LeaderboardManager {
-    private _client: Client;
+    private _client: AkairoClient;
     private _leaderboard: LeaderboardRow[];
-    public constructor(client: Client) {
+    public constructor(client: AkairoClient) {
         this._client = client;
         this.leaderboard = leaderboard;
     }
@@ -48,7 +48,7 @@ export default class LeaderboardManager {
     private async updateJSON() {
         fs.writeFile(__dirname + "/../assets/json/leaderboard.json", JSON.stringify(this.leaderboard, null, 2), err => {
             if (err) throw err;
-            console.log("Leaderboard updated.");
+            this._client.log.info("Leaderboard updated");
         });
     }
 

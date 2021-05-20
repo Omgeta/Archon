@@ -1,16 +1,19 @@
+import { join } from "path";
 import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from "discord-akairo";
 import { Message } from "discord.js";
-import { join } from "path";
-// import { prefix, owners } from "../Config";
+import { Logger as WinstonLogger } from "winston";
+import { guildModel } from "../database";
+import { logger } from "../";
+
 const prefix: string = process.env.PREFIX;
 const owners: string[] = (process.env.OWNERS || "").split(",");
-import { guildModel } from "../database";
 
 declare module "discord-akairo" {
     interface AkairoClient {
         commandHandler: CommandHandler;
         listenerHandler: ListenerHandler;
         settings: MongooseProvider;
+        log: WinstonLogger;
     }
 }
 
@@ -22,6 +25,7 @@ interface BotOptions {
 export default class ArchonClient extends AkairoClient {
     public config: BotOptions;
     public settings: MongooseProvider;
+    public log: WinstonLogger = logger;
     public listenerHandler: ListenerHandler = new ListenerHandler(this, {
         directory: join(__dirname, "..", "listeners")
     });

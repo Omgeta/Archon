@@ -47,14 +47,8 @@ export default class SayCommand extends Command {
     }
 
     public async exec(message: Message, { text, targetChannel, del }: { text: string, targetChannel: NewsChannel | TextChannel, del: boolean }): Promise<Message> {
-        if (del) {
-            try {
-                message.delete();
-            } catch (e) {
-                console.log("Could not delete message");
-            }
-        }
         try {
+            if (del) message.delete();
             return await targetChannel.send(text);
         } catch (e) {
             return message.channel.send("Sorry, I couldn't send a message there");

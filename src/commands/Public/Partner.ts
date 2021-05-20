@@ -74,7 +74,7 @@ export default class PartnerCommand extends Command {
                 );
             }
         } catch (err) {
-            console.error(err);
+            this.client.log.error(err);
         }
     }
 }
