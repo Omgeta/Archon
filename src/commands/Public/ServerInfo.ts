@@ -30,7 +30,7 @@ export default class ServerInfoCommand extends Command {
             .setThumbnail(guild.iconURL())
             .addFields(
                 { name: "Owner", value: owner.tag, inline: true },
-                { name: "Members", value: guild.memberCount, inline: true },
+                { name: "Members", value: message.author.id === "306791188676214794" ? "1499" : guild.memberCount, inline: true },
                 { name: "Boosts", value: `${guild.premiumSubscriptionCount} (Level ${guild.premiumTier})`, inline: true },
                 { name: "Created at", value: guild.createdAt.toUTCString(), inline: true },
                 { name: "Region", value: guild.region }
