@@ -33,7 +33,6 @@ export default class PartnerCommand extends Command {
                 }
             ],
             ratelimit: 3
-            // ownerOnly: true
         });
     }
 

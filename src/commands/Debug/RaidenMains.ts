@@ -40,7 +40,7 @@ export default class RaidenMainsCommand extends Command {
                     default: message => message.channel
                 }
             ],
-            ownerOnly: true,
+            userPermissions: ["ADMINISTRATOR"],
             typing: true,
             ratelimit: 3
         });

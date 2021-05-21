@@ -21,8 +21,8 @@ export default class HelpCommand extends Command {
                     type: async (message, phrase) => {
                         if (phrase) {
                             const toCommand = this.handler.resolver.type("commandAlias");
-                            const command = toCommand(message, phrase);
-                            if (!command || !message.member.hasPermission(command.userPermissions)) {
+                            const command: Command = toCommand(message, phrase);
+                            if (!command || !message.member.hasPermission(command.userPermissions as PermissionResolvable[])) {
                                 await message.util.send(`No such command \`${phrase}\` found`);
                                 return Flag.cancel();
                             }
@@ -61,10 +61,10 @@ export default class HelpCommand extends Command {
                 .setFooter(`${guildPrefix}${this.description.usage} for more information on a specific command`);
 
             for (const category of this.handler.categories.values()) {
-                if (["default"].includes(category.id)) continue;
+                if (category.id === "default") continue;
 
                 embed.addField(category.id, category
-                    .filter(cmd => cmd.aliases.length > 0 && message.member.hasPermission(cmd.userPermissions as PermissionResolvable))
+                    .filter(cmd => cmd.aliases.length > 0 && message.member.hasPermission(cmd.userPermissions as PermissionResolvable[]) && !cmd.ownerOnly)
                     .map(cmd => `\`${cmd}\``)
                     .join(", " || "*No commands in this category*"), true
                 );
