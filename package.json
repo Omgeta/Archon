@@ -4,8 +4,8 @@
   "description": "Discord Bot",
   "main": "dist/Archon.js",
   "engines": {
-    "node": ">=15.0.0",
-    "npm": ">=7.0.0"
+    "node": ">=16.0.0",
+    "npm": ">=8.1.0"
   },
   "scripts": {
     "start": "node dist/Archon.js",

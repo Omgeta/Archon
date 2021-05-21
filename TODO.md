@@ -1,5 +1,3 @@
 - embed
 - prompting for all
-- error handling
-- logger
 - reddit
