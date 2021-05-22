@@ -27,11 +27,15 @@ class CustomizableEmbed extends ArchonEmbed {
             case "title":
                 this.setTitle(value); break;
             case "url":
-                this.setURL(value); break;
+                if (isURL(value)) {
+                    this.setURL(value); break;
+                } else {
+                    throw new TypeError("Value must be a URL");
+                }
             case "author":
-                this.setAuthor(value, this.author.iconURL); break;
+                this.setAuthor(value, this.author ? this.author.iconURL : ""); break;
             case "icon":
-                this.setAuthor(this.author.name, value); break;
+                this.setAuthor(this.author ? this.author.name : "", value); break;
             case "description":
                 this.setDescription(value); break;
             case "image":
@@ -159,7 +163,6 @@ export default class EmbedCommand extends Command {
         let removedReactionCollectors: ReactionCollector[] = [];
         [this._reactionCollectors, removedReactionCollectors] = partitionArray(this._reactionCollectors, reactionPred);
         removedReactionCollectors.forEach(e => e.stop());
-        await previewMessage.reactions.removeAll();
 
         let removedMessageCollectors: MessageCollector[] = [];
         [this._messageCollectors, removedMessageCollectors] = partitionArray(this._messageCollectors, messagePred);
@@ -192,8 +195,11 @@ export default class EmbedCommand extends Command {
             return msg.author.id === author.id && keys.includes(firstToken(msg));
         };
         const keyCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 3e4 });
-        keyCollector.on("collect", m => {
+        await keyCollector.on("collect", async m => {
             const key = firstToken(m);
+            await previewMessage.edit(this.toPreviewEmbed(customEmbed)
+                .setDescription(`__**Modifying ${key}**__`)
+            );
             this.addValueListeners(userData, key);
         });
         this.addCollector(keyCollector);
@@ -216,7 +222,7 @@ export default class EmbedCommand extends Command {
     }
 
     private async handleConfirm(userData: UserData) {
-        const { customEmbed, target } = userData;
+        const { previewMessage, customEmbed, target } = userData;
 
         this.client.log.debug("Handling confirm");
         const finalEmbed = this.toFinalEmbed(customEmbed);
@@ -227,6 +233,7 @@ export default class EmbedCommand extends Command {
             this.client.log.debug("Editing message to embed");
             target.edit(finalEmbed);
         }
+        previewMessage.reactions.removeAll();
         await this.clearCollectors(userData);
     }
 
@@ -236,7 +243,8 @@ export default class EmbedCommand extends Command {
         try {
             this.client.log.debug(`Setting ${key} to ${value}`);
             customEmbed.setProperty(key, value);
-            await previewMessage.edit(this.toPreviewEmbed(customEmbed));
+            previewMessage.reactions.removeAll();
+            previewMessage.edit(this.toPreviewEmbed(customEmbed));
         } catch (err) {
             previewMessage.channel.send(new ArchonEmbed()
                 .setDescription(`\`${key}\` cannot be set to \`${value}\``)
