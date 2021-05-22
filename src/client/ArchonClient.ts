@@ -70,7 +70,21 @@ export default class ArchonClient extends AkairoClient {
         this.settings = new MongooseProvider(guildModel);
     }
 
+    private _initTypes() {
+        this.commandHandler.resolver.addType("url", (message, phrase) => {
+            if (!phrase) return null;
+
+            const re = new RegExp("^(http|https)://");
+            if (re.test(phrase)) {
+                return phrase;
+            }
+
+            return null;
+        });
+    }
+
     private async _init(): Promise<void> {
+        this._initTypes();
         this.commandHandler.useListenerHandler(this.listenerHandler);
         this.listenerHandler.setEmitters({
             commandHandler: this.commandHandler,

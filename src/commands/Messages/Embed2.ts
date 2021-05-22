@@ -1,27 +1,70 @@
-import { TextChannel, Message, MessageEmbed, User } from "discord.js";
+import { TextChannel, Message, MessageEmbed, User, ReactionCollector, MessageCollector } from "discord.js";
 import { Command } from "discord-akairo";
-import { ArchonEmbed } from "../../";
+import { ArchonEmbed, partitionArray, isURL } from "../../";
 
-interface EmbedDetails {
-    color?: string;
-    author?: string;
-    icon?: string;
-    title?: string;
-    url?: string;
-    description?: string;
-    image?: string;
-    thumbnail?: string;
-    footer?: string;
+type GenericCollector = ReactionCollector | MessageCollector;
+
+interface UserData {
+    previewMessage: Message;
+    customEmbed: CustomizableEmbed;
+    author: User;
+    target: TextChannel | Message;
+}
+
+class CustomizableEmbed extends ArchonEmbed {
+    public constructor(data = {}) {
+        super(data);
+    }
+
+    public getProperties(): string[] {
+        return ["color", "title", "url", "author", "icon", "description", "image", "thumbnail", "footer"];
+    }
+
+    public setProperty(prop, value) {
+        switch (prop) {
+            case "color":
+                this.setColor(value); break;
+            case "title":
+                this.setTitle(value); break;
+            case "url":
+                this.setURL(value); break;
+            case "author":
+                this.setAuthor(value, this.author.iconURL); break;
+            case "icon":
+                this.setAuthor(this.author.name, value); break;
+            case "description":
+                this.setDescription(value); break;
+            case "image":
+                if (isURL(value)) {
+                    this.setImage(value); break;
+                } else {
+                    throw new TypeError("Value must be a URL");
+                }
+            case "thumbnail":
+                if (isURL(value)) {
+                    this.setThumbnail(value); break;
+                } else {
+                    throw new TypeError("Value must be a URL");
+                }
+            case "footer":
+                this.setFooter(value); break;
+            default:
+                throw new TypeError("Invalid property");
+        }
+        return true;
+    }
 }
 
 export default class EmbedCommand extends Command {
+    private _reactionCollectors: ReactionCollector[] = [];
+    private _messageCollectors: MessageCollector[] = [];
     public constructor() {
-        super("embed2", {
-            aliases: ["embed2"],
+        super("embed", {
+            aliases: ["embed"],
             category: "Messages",
             description: {
                 content: "Send or edit embed messages",
-                usage: "embed <subcommand> <target>",
+                usage: "embed <new/edit> <target>",
                 examples: [
                     "embed",
                     "embed new",
@@ -29,11 +72,8 @@ export default class EmbedCommand extends Command {
                     "embed edit messageID"
                 ]
             },
-            ratelimit: 3,
-            userPermissions: ["MANAGE_MESSAGES"],
-            channel: "guild",
-            lock: "user",
-            ownerOnly: true
+            ratelimit: 20,
+            userPermissions: ["MANAGE_GUILD"]
         });
     }
 
@@ -66,83 +106,163 @@ export default class EmbedCommand extends Command {
 
         if (subCommand === "edit") message.channel.send("Fetching message...");
 
-        return { subCommand, target };
+        return { target };
     }
 
-    private toPreviewEmbed(embed: EmbedDetails): MessageEmbed {
+    private toPreviewEmbed(embed: CustomizableEmbed): MessageEmbed {
+        const authorName = embed.author ? embed.author.name : null;
+        const authorIcon = embed.author ? embed.author.iconURL : null;
+        const imageURL = embed.image ? embed.image.url : null;
+        const thumbnailURL = embed.thumbnail ? embed.thumbnail.url : null;
+        const footerText = embed.footer ? embed.footer.text : null;
+
         const fields = [
-            { name: "Color", value: embed.color ? embed.color : "*N/A*", inline: true },
-            { name: "Author", value: embed.author ? embed.author : "*N/A*", inline: true },
-            { name: "Icon", value: embed.icon ? embed.icon : "*N/A*", inline: true },
+            { name: "Author", value: authorName ? authorName : "*N/A*", inline: true },
+            { name: "Icon", value: authorIcon ? authorIcon : "*N/A*", inline: true },
+            { name: "Color", value: embed.color ? embed.color : "*N/A*" },
             { name: "Title", value: embed.title ? embed.title : "*N/A*", inline: true },
             { name: "URL", value: embed.url ? embed.url : "*N/A*", inline: true },
-            { name: "Description", value: embed.description ? embed.description : "*N/A*", inline: true },
-            { name: "Image", value: embed.image ? embed.image : "*N/A*", inline: true },
-            { name: "Thumbnail", value: embed.thumbnail ? embed.thumbnail : "*N/A*", inline: true },
-            { name: "Footer", value: embed.footer ? embed.footer : "*N/A*", inline: true }
+            { name: "Description", value: embed.description ? embed.description : "*N/A*" },
+            { name: "Image", value: imageURL ? imageURL : "*N/A*", inline: true },
+            { name: "Thumbnail", value: thumbnailURL ? thumbnailURL : "*N/A*", inline: true },
+            { name: "Footer", value: footerText ? footerText : "*N/A*" }
         ];
 
         return new ArchonEmbed()
             .addFields(fields);
     }
 
-    private toFinalEmbed(embed: EmbedDetails): MessageEmbed {
-        const transformedEmbed = {
-            color: embed.color,
-            title: embed.title,
-            url: embed.url,
-            author: {
-                name: embed.author,
-                icon_url: embed.icon
-            },
-            description: embed.description ? embed.description : "Empty",
-            thumbnail: {
-                url: embed.thumbnail
-            },
-            footer: {
-                text: embed.footer
-            }
-        };
-
-        return new ArchonEmbed(transformedEmbed);
+    private toFinalEmbed(embed: CustomizableEmbed): MessageEmbed {
+        this.client.log.debug("Converting to finalEmbed");
+        if (!embed.description) {
+            embed.setDescription("Empty");
+        }
+        return embed;
     }
 
-    private async addConfirmListener(message: Message, embed: EmbedDetails, author: User, target: TextChannel | Message) {
-        await message.react("✅");
-
-        const filter = (reaction, user) => {
-            return reaction.emoji.name === "✅" && user.id === author.id;
-        };
-
-        const confirmCollector = await message.createReactionCollector(filter, { max: 1, time: 6e4 });
-        confirmCollector.on("collect", () => {
-            this.handleConfirm(embed, target);
-        });
-    }
-
-    private async addKeyListeners(message: Message, embed: EmbedDetails) {
-        // PASS
-    }
-
-    private handleConfirm(embed: EmbedDetails, target: TextChannel | Message) {
-        const finalEmbed = this.toFinalEmbed(embed);
-        if (target instanceof TextChannel) {
-            target.send(finalEmbed);
-        } else if (target instanceof Message) {
-            target.edit(finalEmbed);
+    private addCollector(collector: GenericCollector) {
+        if (collector instanceof ReactionCollector) {
+            this._reactionCollectors.push(collector);
+        } else if (collector instanceof MessageCollector) {
+            this._messageCollectors.push(collector);
         }
     }
 
-    private handleKey(embed: EmbedDetails, key: string, value: string) {
-        // filter for certain keys
-        // set value
+    private async clearCollectors(userData: UserData) {
+        const { previewMessage } = userData;
+
+        this.client.log.debug("Clearing collectors");
+
+        const reactionPred = (c: ReactionCollector) => { return c.message !== previewMessage; };
+        const messagePred = (c: MessageCollector) => { return c.channel !== previewMessage.channel; };
+
+        let removedReactionCollectors: ReactionCollector[] = [];
+        [this._reactionCollectors, removedReactionCollectors] = partitionArray(this._reactionCollectors, reactionPred);
+        removedReactionCollectors.forEach(e => e.stop());
+        await previewMessage.reactions.removeAll();
+
+        let removedMessageCollectors: MessageCollector[] = [];
+        [this._messageCollectors, removedMessageCollectors] = partitionArray(this._messageCollectors, messagePred);
+        removedMessageCollectors.forEach(e => e.stop());
     }
 
-    public async exec(message: Message, { subCommand, target }: { subCommand: string, target: TextChannel | Message }): Promise<void> {
-        const workingEmbed: EmbedDetails = {};
+    private async addConfirmListener(userData: UserData) {
+        const { previewMessage, author } = userData;
 
-        const previewMessage = await message.channel.send(this.toPreviewEmbed(workingEmbed));
-        this.addConfirmListener(previewMessage, workingEmbed, message.author, target);
-        this.addKeyListeners(previewMessage, workingEmbed);
+        await previewMessage.react("✅");
+        const filter = (reaction, user) => {
+            return reaction.emoji.name === "✅" && user.id === author.id;
+        };
+        const confirmCollector = await previewMessage.createReactionCollector(filter, { max: 1, time: 6e4 });
+        await confirmCollector.on("collect", async () => {
+            await this.handleConfirm(userData);
+        });
+        this.addCollector(confirmCollector);
+        this.client.log.debug("Listening to confirm");
+    }
+
+    private async addKeyListeners(userData: UserData) {
+        const { previewMessage, customEmbed, author } = userData;
+
+        const keys = customEmbed.getProperties();
+        const firstToken = (msg) => {
+            return msg.content.split(" ")[0].toLowerCase();
+        };
+        const filter = (msg) => {
+            return msg.author.id === author.id && keys.includes(firstToken(msg));
+        };
+        const keyCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 3e4 });
+        keyCollector.on("collect", m => {
+            const key = firstToken(m);
+            this.addValueListeners(userData, key);
+        });
+        this.addCollector(keyCollector);
+        this.client.log.debug("Listening to keys");
+    }
+
+    private async addValueListeners(userData: UserData, key: string) {
+        const { previewMessage, author } = userData;
+
+        const filter = (msg) => {
+            return msg.author.id === author.id;
+        };
+        const valueCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 3e4 });
+        await valueCollector.on("collect", async m => {
+            const value = m.content;
+            await this.handleAssignment(userData, key, value);
+        });
+        this.addCollector(valueCollector);
+        this.client.log.debug("Listening to values.");
+    }
+
+    private async handleConfirm(userData: UserData) {
+        const { customEmbed, target } = userData;
+
+        this.client.log.debug("Handling confirm");
+        const finalEmbed = this.toFinalEmbed(customEmbed);
+        if (target instanceof TextChannel) {
+            this.client.log.debug("Sending message to target channel");
+            target.send(finalEmbed);
+        } else if (target instanceof Message) {
+            this.client.log.debug("Editing message to embed");
+            target.edit(finalEmbed);
+        }
+        await this.clearCollectors(userData);
+    }
+
+    private async handleAssignment(userData: UserData, key: string, value: string) {
+        const { previewMessage, customEmbed } = userData;
+
+        try {
+            this.client.log.debug(`Setting ${key} to ${value}`);
+            customEmbed.setProperty(key, value);
+            await previewMessage.edit(this.toPreviewEmbed(customEmbed));
+        } catch (err) {
+            previewMessage.channel.send(new ArchonEmbed()
+                .setDescription(`\`${key}\` cannot be set to \`${value}\``)
+            );
+        }
+        await this.clearCollectors(userData);
+        this.init(userData);
+    }
+
+    private init(userData: UserData) {
+        this.addConfirmListener(userData);
+        this.addKeyListeners(userData);
+    }
+
+    public async exec(message: Message, { target }: { target: TextChannel | Message }): Promise<void> {
+        const { author } = message;
+        const loadData = target instanceof Message ? target.embeds[0] : undefined;
+        const customEmbed = new CustomizableEmbed(loadData);
+        const previewMessage = await message.channel.send(this.toPreviewEmbed(customEmbed));
+
+        const userData: UserData = {
+            previewMessage,
+            customEmbed,
+            author,
+            target
+        };
+        this.init(userData);
     }
 }
