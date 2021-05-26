@@ -1,11 +1,12 @@
 import { TextChannel, Message, MessageEmbed, User, ReactionCollector, MessageCollector } from "discord.js";
 import { Command } from "discord-akairo";
-import { ArchonEmbed, partitionArray, isURL } from "../../";
+import { ArchonEmbed, partitionArray, isURL } from "../..";
 
 type GenericCollector = ReactionCollector | MessageCollector;
 
 interface UserData {
     previewMessage: Message;
+    customText?: string;
     customEmbed: CustomizableEmbed;
     author: User;
     target: TextChannel | Message;
@@ -113,7 +114,7 @@ export default class EmbedCommand extends Command {
         return { target };
     }
 
-    private toPreviewEmbed(embed: CustomizableEmbed): MessageEmbed {
+    private toPreviewEmbed(text: string, embed: CustomizableEmbed): MessageEmbed {
         const authorName = embed.author ? embed.author.name : null;
         const authorIcon = embed.author ? embed.author.iconURL : null;
         const imageURL = embed.image ? embed.image.url : null;
@@ -121,6 +122,7 @@ export default class EmbedCommand extends Command {
         const footerText = embed.footer ? embed.footer.text : null;
 
         const fields = [
+            { name: "Text", value: text ? text : "*N/A*" },
             { name: "Author", value: authorName ? authorName : "*N/A*", inline: true },
             { name: "Icon", value: authorIcon ? authorIcon : "*N/A*", inline: true },
             { name: "Color", value: embed.color ? embed.color : "*N/A*" },
@@ -185,19 +187,19 @@ export default class EmbedCommand extends Command {
     }
 
     private async addKeyListeners(userData: UserData) {
-        const { previewMessage, customEmbed, author } = userData;
+        const { previewMessage, customText, customEmbed, author } = userData;
 
         const keys = customEmbed.getProperties();
         const firstToken = (msg) => {
             return msg.content.split(" ")[0].toLowerCase();
         };
         const filter = (msg) => {
-            return msg.author.id === author.id && keys.includes(firstToken(msg));
+            return msg.author.id === author.id && [...keys, "text"].includes(firstToken(msg));
         };
         const keyCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 3e4 });
         await keyCollector.on("collect", async m => {
             const key = firstToken(m);
-            await previewMessage.edit(this.toPreviewEmbed(customEmbed)
+            await previewMessage.edit(this.toPreviewEmbed(customText, customEmbed)
                 .setDescription(`__**Modifying ${key}**__`)
             );
             this.addValueListeners(userData, key);
@@ -223,15 +225,16 @@ export default class EmbedCommand extends Command {
 
     private async handleConfirm(userData: UserData) {
         const { previewMessage, customEmbed, target } = userData;
+        const { customText } = userData;
 
         this.client.log.debug("Handling confirm");
         const finalEmbed = this.toFinalEmbed(customEmbed);
         if (target instanceof TextChannel) {
             this.client.log.debug("Sending message to target channel");
-            target.send(finalEmbed);
+            target.send(customText, { embed: finalEmbed });
         } else if (target instanceof Message) {
             this.client.log.debug("Editing message to embed");
-            target.edit(finalEmbed);
+            target.edit(customText, { embed: finalEmbed });
         }
         previewMessage.reactions.removeAll();
         await this.clearCollectors(userData);
@@ -242,9 +245,13 @@ export default class EmbedCommand extends Command {
 
         try {
             this.client.log.debug(`Setting ${key} to ${value}`);
-            customEmbed.setProperty(key, value);
+            if (key === "text") {
+                userData.customText = value;
+            } else {
+                customEmbed.setProperty(key, value);
+            }
             previewMessage.reactions.removeAll();
-            previewMessage.edit(this.toPreviewEmbed(customEmbed));
+            previewMessage.edit(this.toPreviewEmbed(userData.customText, customEmbed));
         } catch (err) {
             previewMessage.channel.send(new ArchonEmbed()
                 .setDescription(`\`${key}\` cannot be set to \`${value}\``)
@@ -263,10 +270,12 @@ export default class EmbedCommand extends Command {
         const { author } = message;
         const loadData = target instanceof Message ? target.embeds[0] : undefined;
         const customEmbed = new CustomizableEmbed(loadData);
-        const previewMessage = await message.channel.send(this.toPreviewEmbed(customEmbed));
+        let customText: string;
+        const previewMessage = await message.channel.send(this.toPreviewEmbed(customText, customEmbed));
 
         const userData: UserData = {
             previewMessage,
+            customText,
             customEmbed,
             author,
             target
