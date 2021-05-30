@@ -1,6 +1,6 @@
 import { Guild, Message } from "discord.js";
 import { Listener } from "discord-akairo";
-import { resolveGuildMessage } from "../../";
+import { resolveGuildMessage, LeaderboardManager } from "../../";
 
 export default class ReadyListener extends Listener {
     public constructor() {
@@ -45,6 +45,10 @@ export default class ReadyListener extends Listener {
         }
     }
 
+    private postInit(): void {
+        this.client.leaderboard = new LeaderboardManager(this.client);
+    }
+
     public async exec(): Promise<void> {
         this.client.log.info(`${this.client.user.tag} is online`);
 
@@ -53,5 +57,8 @@ export default class ReadyListener extends Listener {
         });
 
         await this.cleanDatabase();
+
+
+        this.postInit();
     }
 }

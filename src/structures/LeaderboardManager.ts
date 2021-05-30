@@ -37,17 +37,16 @@ export default class LeaderboardManager {
             }
         }
 
-        // temp
         if (this._data !== newData) {
             this._data = newData;
             this.updateJSON();
+            this._client.log.info("Leaderboard modified.");
         }
     }
 
     private async updateJSON() {
-        fs.writeFile(__dirname + "/../assets/json/leaderboard.json", JSON.stringify(this.data, null, 2), err => {
+        fs.writeFile(__dirname + "/../../src/assets/json/leaderboard.json", JSON.stringify(this.data, null, 2), err => {
             if (err) throw err;
-            this._client.log.info("Leaderboard updated");
         });
     }
 
@@ -60,7 +59,7 @@ export default class LeaderboardManager {
     }
 
     public toString(): string {
-        let cons = 1e99;
+        let cons = 1e9;
 
         let res = "";
         for (const row of this.data) {

@@ -28,7 +28,7 @@ export default class ArchonClient extends AkairoClient {
     public config: BotOptions;
     public settings: MongooseProvider;
     public log: WinstonLogger = logger;
-    public leaderboard: LeaderboardManager = new LeaderboardManager(this)
+    public leaderboard: LeaderboardManager;
     public listenerHandler: ListenerHandler = new ListenerHandler(this, {
         directory: join(__dirname, "..", "listeners")
     });

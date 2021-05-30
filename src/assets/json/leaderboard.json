@@ -1,289 +1,321 @@
 [
-    {
-        "Ranking": 1,
-        "Discord": "Kiana Reeves#3692",
-        "Screenshots": "https://drive.google.com/open?id=1naG04sDMqg0THm7S0K09qvTrHckUX8DX",
-        "Guarantee": 1,
-        "Total": 77962
-    },
-    {
-        "Ranking": 2,
-        "Discord": "omgeta#8841",
-        "Screenshots": "https://drive.google.com/open?id=1n0xW41601VG_b7e92XwTaIltoL0TFFzT, https://drive.google.com/open?id=1tvkLpZHoSeEEX3X_PuwarTtMWe6XuloJ",
-        "Guarantee": 1,
-        "Total": 74735
-    },
-    {
-        "Ranking": 3,
-        "Discord": "🌸Raiden Simp🌸#8731",
-        "Screenshots": "https://drive.google.com/open?id=1h-OY0A12G06oo7LRz43h8klfwdFmEe9A, https://drive.google.com/open?id=1sdHeqYe-_7Fh6tZzrmDM1yNL0FbfCiS6",
-        "Guarantee": 1,
-        "Total": 74043
-    },
-    {
-        "Ranking": 4,
-        "Discord": "Claire#5337",
-        "Screenshots": "https://drive.google.com/open?id=1kUDIwapG9ewcq51lyBz0gURQFk50pqeq, https://drive.google.com/open?id=1jKQFMaw5xnQMOR6VBruu8isQr9HYvtRl",
-        "Guarantee": 1,
-        "Total": 65950
-    },
-    {
-        "Ranking": 5,
-        "Discord": "Scaramouche_gaming#6794",
-        "Screenshots": "https://drive.google.com/open?id=1CB6Gryu96uTYZsR3IlXUbspYOHr2uU1U",
-        "Guarantee": 0,
-        "Total": 57067
-    },
-    {
-        "Ranking": 6,
-        "Discord": "Probably Vergil Awaitin' Pizza 𓆏#6490",
-        "Screenshots": "https://drive.google.com/open?id=1difyeNyfrKzhofRKCjjNaRZceh9gxSwo",
-        "Guarantee": 1,
-        "Total": 50411
-    },
-    {
-        "Ranking": 7,
-        "Discord": "Sleepy Piggy#0874",
-        "Screenshots": "https://drive.google.com/open?id=1IINZpPnaCdHiDF9g6Erp67fSamxupbI6, https://drive.google.com/open?id=1yQpScCusSWZxsIwxrarF1wHMrUeKAFE5",
-        "Guarantee": 1,
-        "Total": 49205
-    },
-    {
-        "Ranking": 8,
-        "Discord": "AX#9789",
-        "Screenshots": "https://drive.google.com/open?id=1Kn8bqafWVix9JNP2vK0a-30ssudq-ThQ",
-        "Guarantee": 1,
-        "Total": 48809
-    },
-    {
-        "Ranking": 9,
-        "Discord": "Eufrasia#2536",
-        "Screenshots": "https://drive.google.com/open?id=1f5ZF_BhWYzReF4jmw6U2IyaOIwZbVg-q",
-        "Guarantee": 0,
-        "Total": 47777
-    },
-    {
-        "Ranking": 10,
-        "Discord": "howistea#7629",
-        "Screenshots": "https://drive.google.com/open?id=1LW05PZLUuoYWNELiwyGkQFbVeRn3BCs9, https://drive.google.com/open?id=1kR3fxT3ZaVGVas1DeslfkuMayGJLpbkz",
-        "Guarantee": 1,
-        "Total": 47584
-    },
-    {
-        "Ranking": 11,
-        "Discord": "kagoou#1905",
-        "Screenshots": "https://drive.google.com/open?id=1hBKuyTIHY0BTiPJTUBGSytkt1M9IKdYB, https://drive.google.com/open?id=1LyQWLrBM3NZ62N5rahEdhpQtGzwA9zmI",
-        "Guarantee": 0,
-        "Total": 47551
-    },
-    {
-        "Ranking": 12,
-        "Discord": "-⚡🌹𝕶𝖚𝖗𝖔🌹⚡-#0777",
-        "Screenshots": "https://drive.google.com/open?id=1bsRcRArarL8-D1Kh1CfkNcZ_FLs2YP45, https://drive.google.com/open?id=1zklKJA7ZQ3Bh-nU3l9cqEvgPh-cuid8n",
-        "Guarantee": 0,
-        "Total": 44245
-    },
-    {
-        "Ranking": 13,
-        "Discord": "𝐌𝟒𝐀𝟏#0184",
-        "Screenshots": "https://drive.google.com/open?id=1iao-_BAKPHH2GELa6JJ5a6--3pbW3igw",
-        "Guarantee": 1,
-        "Total": 44117
-    },
-    {
-        "Ranking": 14,
-        "Discord": "Nizikawa#2289",
-        "Screenshots": "https://drive.google.com/open?id=1WFSm6m4MlBTH_MwhOmFxY5-2Z_XODYTW, https://drive.google.com/open?id=1i3sk5-PXomFZT2K2DoxU2K3ZXLHlkuZa",
-        "Guarantee": 1,
-        "Total": 43474
-    },
-    {
-        "Ranking": 15,
-        "Discord": "Monica#0459",
-        "Screenshots": "https://drive.google.com/open?id=1ww99V1nu6hY6vrPED930AOvT14ZDIlvc, https://drive.google.com/open?id=1rQmAmtXssvJF8lFkGPjgZxEKObTp0UjB",
-        "Guarantee": 0,
-        "Total": 39915
-    },
-    {
-        "Ranking": 16,
-        "Discord": "AedanadeA#2317",
-        "Screenshots": "https://drive.google.com/open?id=1mQxOYk1d0RxYt5pru9l21fr0QNOd_7Gz",
-        "Guarantee": 1,
-        "Total": 36786
-    },
-    {
-        "Ranking": 17,
-        "Discord": "ElAxelZzZ...#0065",
-        "Screenshots": "https://drive.google.com/open?id=1g2CEVnayslkHDdab8E-8s4DZTpQgwQbU",
-        "Guarantee": 1,
-        "Total": 35405
-    },
-    {
-        "Ranking": 18,
-        "Discord": "Iota#5264",
-        "Screenshots": "https://drive.google.com/open?id=1z9dQXFFUl2YInAuxef8molXvyTucCmFV",
-        "Guarantee": 1,
-        "Total": 34752
-    },
-    {
-        "Ranking": 19,
-        "Discord": "Schnitzel5#4828",
-        "Screenshots": "https://drive.google.com/open?id=1JoCoQzalO3fYXP_zfHbC95KpNPXkUjUq",
-        "Guarantee": 1,
-        "Total": 34295
-    },
-    {
-        "Ranking": 20,
-        "Discord": "Typh#0978",
-        "Screenshots": "https://drive.google.com/open?id=1D3cScpcEPjRLoWuBz_2OuRVjpfuyJyv-",
-        "Guarantee": 0,
-        "Total": 30443
-    },
-    {
-        "Ranking": 21,
-        "Discord": "Branjazz#0002",
-        "Screenshots": "https://drive.google.com/open?id=1QQTngzv2uS_X4dHhgIbkCn8ZCUps8nvz",
-        "Guarantee": 1,
-        "Total": 28423
-    },
-    {
-        "Ranking": 22,
-        "Discord": "Kirazuto#7661",
-        "Screenshots": "https://drive.google.com/open?id=1mV3AIv03t7jMs0wZUO7Hp-v2LHoDqpEF",
-        "Guarantee": 0,
-        "Total": 28404
-    },
-    {
-        "Ranking": 23,
-        "Discord": "TheGuyOfGuys#5813",
-        "Screenshots": "https://drive.google.com/open?id=10iI3Tu-TAysHrPP_Ez3OdjOiWqM0-OII",
-        "Guarantee": 0,
-        "Total": 28291
-    },
-    {
-        "Ranking": 24,
-        "Discord": "Raiden Mei Simp#3554",
-        "Screenshots": "https://drive.google.com/open?id=1OgZ5y_4gnH39I79ZtaykPyZky_xVvOpd",
-        "Guarantee": 0,
-        "Total": 27536
-    },
-    {
-        "Ranking": 25,
-        "Discord": "DragonStrike025#0061",
-        "Screenshots": "https://drive.google.com/open?id=178qN-wpKjhiniq5fS7RcjZN64w_BUDqW, https://drive.google.com/open?id=1inohbsxL_g2ITWyt7uq3ysp9GioHwANW",
-        "Guarantee": 0,
-        "Total": 26463
-    },
-    {
-        "Ranking": 26,
-        "Discord": "Loading . . .#0346",
-        "Screenshots": "https://drive.google.com/open?id=1otRVeXcuhtyPinda1QgsxApLN5vRkq-W",
-        "Guarantee": 0,
-        "Total": 23090
-    },
-    {
-        "Ranking": 27,
-        "Discord": "Nep#6636",
-        "Screenshots": "https://drive.google.com/open?id=13VJFINNGlf2Em-LhwAOvQX07_zSE9Xrz",
-        "Guarantee": 0,
-        "Total": 22990
-    },
-    {
-        "Ranking": 28,
-        "Discord": "Dekopin#1111",
-        "Screenshots": "https://drive.google.com/open?id=19WoAER7rb_4JvhybxsVJeDkJxlLWCzfM",
-        "Guarantee": 0,
-        "Total": 22287
-    },
-    {
-        "Ranking": 29,
-        "Discord": "Koga#3808",
-        "Screenshots": "https://drive.google.com/open?id=1FJxNrhMJDj_jI9wH6ruZjcgE0OX6Qotb",
-        "Guarantee": 0,
-        "Total": 20814
-    },
-    {
-        "Ranking": 30,
-        "Discord": "Medzia#3568",
-        "Screenshots": "https://drive.google.com/open?id=1kbvRXh1Wq-L-G1zPcPknwyckPQxZIDS5, https://drive.google.com/open?id=1-Vavy_-JTxvWVIpHDTdOpplx24u2FFd7",
-        "Guarantee": 0,
-        "Total": 20061
-    },
-    {
-        "Ranking": 31,
-        "Discord": "WonderGuard_Spiritomb#9899",
-        "Screenshots": "https://drive.google.com/open?id=111diTgmASk_Tu4s-c-GuSbjtR_MTmvtv",
-        "Guarantee": 0,
-        "Total": 18699
-    },
-    {
-        "Ranking": 32,
-        "Discord": "Mugen#9326",
-        "Screenshots": "https://drive.google.com/open?id=1A6mKlagjtW5dvV2olev0ErTASO3brcrW",
-        "Guarantee": 0,
-        "Total": 16645
-    },
-    {
-        "Ranking": 33,
-        "Discord": "milemile#4891",
-        "Screenshots": "https://drive.google.com/open?id=1KCJG_XvMFjHP73MRfMXVP_hBXsREO3PG",
-        "Guarantee": 0,
-        "Total": 14919
-    },
-    {
-        "Ranking": 34,
-        "Discord": "bami#9647",
-        "Screenshots": "https://drive.google.com/open?id=1PHglCHUrQJE5agSfxFyK8cLO73fh5S9g",
-        "Guarantee": 0,
-        "Total": 14519
-    },
-    {
-        "Ranking": 35,
-        "Discord": "Chad Thundercock#8900",
-        "Screenshots": "https://drive.google.com/open?id=1q06vjfbrjzoKPGC1WgKyWnArC_w5h66W",
-        "Guarantee": 0,
-        "Total": 11688
-    },
-    {
-        "Ranking": 36,
-        "Discord": "Eijí#9994",
-        "Screenshots": "https://drive.google.com/open?id=1mgmoPtwkr4cZHnASipN3Mjc-5zJxubg-, https://drive.google.com/open?id=1vNRMBBn1jDO3UERq6c_vmdVAxe6wgg5q",
-        "Guarantee": 0,
-        "Total": 11491
-    },
-    {
-        "Ranking": 37,
-        "Discord": "qwertyuiop7161#7256",
-        "Screenshots": "https://drive.google.com/open?id=1MCT-KiTU0_JC0TUzACJm0_9GryzhXG1b",
-        "Guarantee": 0,
-        "Total": 11382
-    },
-    {
-        "Ranking": 38,
-        "Discord": "xCadd#3250",
-        "Screenshots": "https://drive.google.com/open?id=1QdRVPjZxeEQ9NYkxOcdwFamcZ-soDRyN",
-        "Guarantee": 0,
-        "Total": 6955
-    },
-    {
-        "Ranking": 39,
-        "Discord": "im in pain#5582",
-        "Screenshots": "https://drive.google.com/open?id=1BoC6KUiXzcMX36zYUSV-gYcg35ra0Jlr",
-        "Guarantee": 0,
-        "Total": 6871
-    },
-    {
-        "Ranking": 40,
-        "Discord": "DarkerThanSnow#2134",
-        "Screenshots": "https://drive.google.com/open?id=1lJQkhZ7UeB_niSxpUSOG08dTMAixJDjL",
-        "Guarantee": 0,
-        "Total": 4685
-    },
-    {
-        "Ranking": 41,
-        "Discord": "Admiral Doomer#2547",
-        "Screenshots": "https://drive.google.com/open?id=1bUSlGsFMfOQW5GNah3wPhZ37rzV8_ZNp",
-        "Guarantee": 0,
-        "Total": 3427
-    }
+  {
+    "Ranking": 1,
+    "Discord": "Lyagren#7480",
+    "Screenshots": "https://drive.google.com/open?id=1bqWSUeeKNJNVjcOZfIVcQ311s70nmLBk, https://drive.google.com/open?id=1vwdu6T6gwPZeXEgdtbZBo92sDFI2BrvH",
+    "Guarantee": 0,
+    "Total": 84957,
+    "DiscordId": "314406662863716353"
+  },
+  {
+    "Ranking": 2,
+    "Discord": "🌸Raiden Simp🌸#8731",
+    "Screenshots": "https://drive.google.com/open?id=1h_IwEtMqgrMeIQZaZ5Gq15D2gvEbS31o, https://drive.google.com/open?id=18lkfkKhE-RidmGDKWv01fMcUT51pUjuU",
+    "Guarantee": 1,
+    "Total": 79111,
+    "DiscordId": "314598295311745025"
+  },
+  {
+    "Ranking": 3,
+    "Discord": "omgeta#8841",
+    "Screenshots": "https://drive.google.com/open?id=1CFq4O2O3ay0eiiIVdsnuAiJgAcJwXoGU, https://drive.google.com/open?id=12rK53dZ0qfjrCPm2-EeD66eAWhJxNdhF",
+    "Guarantee": 1,
+    "Total": 78037,
+    "DiscordId": "277773360270802944"
+  },
+  {
+    "Ranking": 4,
+    "Discord": "OVERLORD#4794",
+    "Screenshots": "https://drive.google.com/open?id=1qCtbPYgwL5oxQUWcd3IWiUD0pgyiBG0_, https://drive.google.com/open?id=1EvRuT_19CMikX0-NYOaqU21qqch-31_v",
+    "Guarantee": 1,
+    "Total": 72070,
+    "DiscordId": "579706194340610098"
+  },
+  {
+    "Ranking": 5,
+    "Discord": "Claire#5337",
+    "Screenshots": "https://drive.google.com/open?id=1AAOzysfdMWjcYC2NDxxKIIckftZVhHta, https://drive.google.com/open?id=1uCABffoza9hYtWiykBmUld_XNLKdnmAr",
+    "Guarantee": 1,
+    "Total": 71072,
+    "DiscordId": "242388745276489728"
+  },
+  {
+    "Ranking": 6,
+    "Discord": "Scaramouche_gaming#6794",
+    "Screenshots": "https://drive.google.com/open?id=1qc9KvR9JfsnSzaHKHY1rH5QCda9jqMkw",
+    "Guarantee": 0,
+    "Total": 62477,
+    "DiscordId": "265216832871333898"
+  },
+  {
+    "Ranking": 7,
+    "Discord": "ΡοIarnik#0001",
+    "Screenshots": "https://drive.google.com/open?id=1BdTqFL4e-DbRcWehqvgtATrI3qNvPD9L, https://drive.google.com/open?id=1f_bqzLUYoUXOkmi0b0piMZv22yD09gUg",
+    "Guarantee": 0,
+    "Total": 57147,
+    "DiscordId": "308219575994941441"
+  },
+  {
+    "Ranking": 8,
+    "Discord": "kagoou#1905",
+    "Screenshots": "https://drive.google.com/open?id=1DsWSd2amPuo3cDx5XH80xJyWykNG7K9-, https://drive.google.com/open?id=16_ajf8YZ547PsiXUm7rKVK-D0L-LbktU",
+    "Guarantee": 0,
+    "Total": 52319,
+    "DiscordId": "747438390927949834"
+  },
+  {
+    "Ranking": 9,
+    "Discord": "AX#9789",
+    "Screenshots": "https://drive.google.com/open?id=1oqPMBQuiUTq97U5RKqXzU7lXIK_qdmwZ",
+    "Guarantee": 1,
+    "Total": 51771,
+    "DiscordId": "710144274905301082"
+  },
+  {
+    "Ranking": 10,
+    "Discord": "Eufrasia#2536",
+    "Screenshots": "https://drive.google.com/open?id=1ZgrQY3tdGQS9_K3CL4oUNcOal6fKJwD2",
+    "Guarantee": 0,
+    "Total": 50711,
+    "DiscordId": "230799800671404042"
+  },
+  {
+    "Ranking": 11,
+    "Discord": "M4A1#0184",
+    "Screenshots": "https://drive.google.com/open?id=14hvc1mPmsFvawdgyfKW-gbz9r2W_VMcb",
+    "Guarantee": 1,
+    "Total": 46829,
+    "DiscordId": "306791188676214794"
+  },
+  {
+    "Ranking": 12,
+    "Discord": "-⚡🌹𝕶𝖚𝖗𝖔🌹⚡-#0777",
+    "Screenshots": "https://drive.google.com/open?id=1LQdhoOymO9lCP6Z3h1Cow_0j-jjwoV0L, https://drive.google.com/open?id=1XNPPPRQmJmEOMD6iYG8THe2HtFybbJ3D",
+    "Guarantee": 0,
+    "Total": 39951,
+    "DiscordId": "342611234581118976"
+  },
+  {
+    "Ranking": 13,
+    "Discord": "Iota#5264",
+    "Screenshots": "https://drive.google.com/open?id=1wpsCe2yiaCg_UzP9xxRdJKDAaE9FBIUX",
+    "Guarantee": 1,
+    "Total": 38180,
+    "DiscordId": "211289591469178881"
+  },
+  {
+    "Ranking": 14,
+    "Discord": "Schnitzel5#4828",
+    "Screenshots": "https://drive.google.com/open?id=1TZCYFSYnGEJkXpN8v0Hk25R74sZ3tvN1",
+    "Guarantee": 1,
+    "Total": 37628,
+    "DiscordId": "407936795490385922"
+  },
+  {
+    "Ranking": 15,
+    "Discord": "ICantFindAName#4020",
+    "Screenshots": "https://drive.google.com/open?id=1H-KDW77o6fWtnxlrtC4W5LHGtj4FQj2f, https://drive.google.com/open?id=1tLLHyx3hVHqHUv4xqhsDSMML6NwgngCR",
+    "Guarantee": 0,
+    "Total": 36939,
+    "DiscordId": "190706140600860672"
+  },
+  {
+    "Ranking": 16,
+    "Discord": "AedanadeA#2317",
+    "Screenshots": "https://drive.google.com/open?id=1lTk4M-AmNaI7irZThBalRypJFpKl6jGb",
+    "Guarantee": 1,
+    "Total": 36920,
+    "DiscordId": "280180012278087682"
+  },
+  {
+    "Ranking": 17,
+    "Discord": "Dekopin#1111",
+    "Screenshots": "https://drive.google.com/open?id=1-1qGaI2zvWiAWpdopo05E29ZxF5nWHim",
+    "Guarantee": 1,
+    "Total": 35785,
+    "DiscordId": "190890853105926144"
+  },
+  {
+    "Ranking": 18,
+    "Discord": "Typh#0978",
+    "Screenshots": "https://drive.google.com/open?id=1oj7SzMmgrsftukcmfPKQx24HTgNpzbPG",
+    "Guarantee": 0,
+    "Total": 33545,
+    "DiscordId": "428409970074058755"
+  },
+  {
+    "Ranking": 19,
+    "Discord": "Raiden Mei Simp#3554",
+    "Screenshots": "https://drive.google.com/open?id=1qZyCAYFoWpwAIXgf1-QcD7TnIJ1RGJgH",
+    "Guarantee": 1,
+    "Total": 33323,
+    "DiscordId": "804074528400605214"
+  },
+  {
+    "Ranking": 20,
+    "Discord": "nox#1908",
+    "Screenshots": "https://drive.google.com/open?id=1lFH7Hb72yN6R20vYm9ZVqeJN4NPKrDgw",
+    "Guarantee": 0,
+    "Total": 31364,
+    "DiscordId": "143792122099662849"
+  },
+  {
+    "Ranking": 21,
+    "Discord": "Kirazuto#7661",
+    "Screenshots": "https://drive.google.com/open?id=1-OBnO0xUaKCqN4g0cj5FehLqxqr4Fhto",
+    "Guarantee": 0,
+    "Total": 30961,
+    "DiscordId": "210870085407997952"
+  },
+  {
+    "Ranking": 22,
+    "Discord": "Seraph#2812",
+    "Screenshots": "https://drive.google.com/open?id=1RHi_-kVPKmevWVLhFVKGBNYFBxkZzEtl",
+    "Guarantee": 0,
+    "Total": 29563,
+    "DiscordId": "318919992546689024"
+  },
+  {
+    "Ranking": 23,
+    "Discord": "ItsAnOo#3843",
+    "Screenshots": "https://drive.google.com/open?id=1cRlRz_ZHh1B1DCirRF16ZEzrCl4HPoxE, https://drive.google.com/open?id=1dWhOeF9_rn3p6Al4UaHx5CkhzpKisXPC",
+    "Guarantee": 0,
+    "Total": 25115,
+    "DiscordId": "447732931000008704"
+  },
+  {
+    "Ranking": 24,
+    "Discord": "arg9244#5716",
+    "Screenshots": "https://drive.google.com/open?id=1-urYcPl0mqJ1tfrkv_A-r_fnM2GhnEXE",
+    "Guarantee": 0,
+    "Total": 23222,
+    "DiscordId": "156105557801959434"
+  },
+  {
+    "Ranking": 25,
+    "Discord": "Medzia#3568",
+    "Screenshots": "https://drive.google.com/open?id=11Z-QiKR5LIMVVc_aK-97RkKJ65w4EdLU, https://drive.google.com/open?id=1FXAyVGgYmJBF-a0ksonHcpy7TGfI6qt6",
+    "Guarantee": 0,
+    "Total": 23174,
+    "DiscordId": "449617686671130634"
+  },
+  {
+    "Ranking": 26,
+    "Discord": "Koga#3808",
+    "Screenshots": "https://drive.google.com/open?id=15q3n3hYNXzgPzFai75SFLOfuyCVzPxO3",
+    "Guarantee": 0,
+    "Total": 22765,
+    "DiscordId": "706453701564563476"
+  },
+  {
+    "Ranking": 27,
+    "Discord": "WonderGuard_Spiritomb#9899",
+    "Screenshots": "https://drive.google.com/open?id=1hRG5S17eAJ9LNvf7ltlTrDRFaDCaaO7k",
+    "Guarantee": 0,
+    "Total": 22413,
+    "DiscordId": "457896566624092161"
+  },
+  {
+    "Ranking": 28,
+    "Discord": "Chad Thundercock#8900",
+    "Screenshots": "https://drive.google.com/open?id=1dbS3IcWZSpgWXtvpgk5LGlme73zL9W4Z",
+    "Guarantee": 1,
+    "Total": 19374,
+    "DiscordId": "320982936730075136"
+  },
+  {
+    "Ranking": 29,
+    "Discord": "Admiral Doomer#2547",
+    "Screenshots": "https://drive.google.com/open?id=1BNQXh1cyRe6evCDL1yJ9SxijMhlL2Crt, https://drive.google.com/open?id=1a2zMtJP7Fs6QrBW1668w865RgvP9D70b",
+    "Guarantee": 1,
+    "Total": 18486,
+    "DiscordId": "335390526410850305"
+  },
+  {
+    "Ranking": 30,
+    "Discord": "milemile#4891",
+    "Screenshots": "https://drive.google.com/open?id=14G55imSie4PLopPC6i1b80llCZawsRZP",
+    "Guarantee": 0,
+    "Total": 18008,
+    "DiscordId": "720730759731871744"
+  },
+  {
+    "Ranking": 31,
+    "Discord": "bami#9647",
+    "Screenshots": "https://drive.google.com/open?id=1WtoM9nvsH3aSW4Dp_kn10WPrhAfsNUl7",
+    "Guarantee": 0,
+    "Total": 17332,
+    "DiscordId": "617025398089187335"
+  },
+  {
+    "Ranking": 32,
+    "Discord": "Eijí#9994",
+    "Screenshots": "https://drive.google.com/open?id=1xnnt4XZDUq8wZgTESi0miYEperrmtTlq, https://drive.google.com/open?id=1-9oiNjPb_awfFmozwAJVl2lrK60oGu5k",
+    "Guarantee": 0,
+    "Total": 15997,
+    "DiscordId": "374706214300418048"
+  },
+  {
+    "Ranking": 33,
+    "Discord": "Ждун Яэ Сакуры#5663",
+    "Screenshots": "https://drive.google.com/open?id=1YZCAn-ywQkIwtdE5umHm1vJwJOgxhINp",
+    "Guarantee": 0,
+    "Total": 14197,
+    "DiscordId": "618962730770235392"
+  },
+  {
+    "Ranking": 34,
+    "Discord": "qwertyuiop7161#7256",
+    "Screenshots": "https://drive.google.com/open?id=1z0-Ip4P0Box0Wi9QhI9tbZaHv6GnMxcc",
+    "Guarantee": 0,
+    "Total": 13702,
+    "DiscordId": "476031597263716352"
+  },
+  {
+    "Ranking": 35,
+    "Discord": "helluhellu#9007",
+    "Screenshots": "https://drive.google.com/open?id=15-_MTGaBd6F5iYKA5xMSlnKtp7-LmAcO",
+    "Guarantee": 0,
+    "Total": 9658,
+    "DiscordId": "609577007512289281"
+  },
+  {
+    "Ranking": 36,
+    "Discord": "DarkerThanSnow#2134",
+    "Screenshots": "https://drive.google.com/open?id=17ySvza1uxR8XXxeBrC6Nhhp1G_uxklkU",
+    "Guarantee": 0,
+    "Total": 7918,
+    "DiscordId": "258066846916280323"
+  },
+  {
+    "Ranking": 37,
+    "Discord": "Sashimi#700603678",
+    "Screenshots": "https://drive.google.com/open?id=13QQban4SvfuoFKTuRN2ES8UYjOHOY2_l",
+    "Guarantee": 0,
+    "Total": 7121
+  },
+  {
+    "Ranking": 38,
+    "Discord": "Spicy#2560",
+    "Screenshots": "https://drive.google.com/open?id=1yENAAHCDPEAsf9lKDcJvDP2cRc-Vlz4c",
+    "Guarantee": 0,
+    "Total": 5823,
+    "DiscordId": "463768207715467274"
+  },
+  {
+    "Ranking": 39,
+    "Discord": "YamiXD#5933",
+    "Screenshots": "https://drive.google.com/open?id=1isgTesFACKzQF-RXt6DQUgdOMWkj4gBy",
+    "Guarantee": 0,
+    "Total": 5812,
+    "DiscordId": "484634196719960076"
+  },
+  {
+    "Ranking": 40,
+    "Discord": "Divinus#6758",
+    "Screenshots": "https://drive.google.com/open?id=1ZD49BZpzmpRu85TLccecFyl_FxVg8iVH",
+    "Guarantee": 0,
+    "Total": 2031,
+    "DiscordId": "338032094628282370"
+  }
 ]
