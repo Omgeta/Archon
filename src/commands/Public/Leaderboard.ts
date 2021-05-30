@@ -1,6 +1,6 @@
 import { Message, GuildMember } from "discord.js";
 import { Command } from "discord-akairo";
-import { LeaderboardManager, pityCalculator, PYRO_COLOR, ArchonEmbed } from "../../";
+import { pityCalculator, PYRO_COLOR, ArchonEmbed } from "../../";
 
 export default class LeaderboardCommand extends Command {
     public constructor() {
@@ -31,8 +31,7 @@ export default class LeaderboardCommand extends Command {
     // TODO: add feature to update leaderboard remotely
     // TODO: add feature to send full leaderboard
     public exec(message: Message, { member }: { member: GuildMember }): Promise<Message> {
-        const leaderboardManager = new LeaderboardManager(this.client);
-        const row = leaderboardManager.findUser(member.user);
+        const row = this.client.leaderboard.findUser(member.user);
         if (row) {
             const chances = pityCalculator.calculateStr(Math.floor(row.Total / 14400));
 

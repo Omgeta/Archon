@@ -109,7 +109,8 @@ export default class EmbedCommand extends Command {
                 }
             };
 
-        if (subCommand === "edit") message.channel.send("Fetching message...");
+        // if (subCommand === "edit") message.channel.send("Fetching message...");
+        // TODO: integrate into type
 
         return { target };
     }

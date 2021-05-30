@@ -4,6 +4,7 @@ import { Message } from "discord.js";
 import { Logger as WinstonLogger } from "winston";
 import { guildModel } from "../database";
 import { logger } from "../utils/Logger";
+import { LeaderboardManager } from "../";
 
 const prefix: string = process.env.PREFIX;
 const owners: string[] = (process.env.OWNERS || "").split(",");
@@ -14,6 +15,7 @@ declare module "discord-akairo" {
         listenerHandler: ListenerHandler;
         settings: MongooseProvider;
         log: WinstonLogger;
+        leaderboard: LeaderboardManager;
     }
 }
 
@@ -26,6 +28,7 @@ export default class ArchonClient extends AkairoClient {
     public config: BotOptions;
     public settings: MongooseProvider;
     public log: WinstonLogger = logger;
+    public leaderboard: LeaderboardManager = new LeaderboardManager(this)
     public listenerHandler: ListenerHandler = new ListenerHandler(this, {
         directory: join(__dirname, "..", "listeners")
     });

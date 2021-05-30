@@ -14,39 +14,38 @@ interface LeaderboardRow {
 
 export default class LeaderboardManager {
     private _client: AkairoClient;
-    private _leaderboard: LeaderboardRow[];
+    private _data: LeaderboardRow[];
     public constructor(client: AkairoClient) {
         this._client = client;
-        this.leaderboard = leaderboard;
+        this.data = leaderboard;
     }
 
-    public get leaderboard(): LeaderboardRow[] {
-        return this._leaderboard;
+    public get data(): LeaderboardRow[] {
+        return this._data;
     }
 
-    public set leaderboard(leaderboard: LeaderboardRow[]) {
-        if (leaderboard.some(e => e.Ranking < 0 || e.Total < 0)) {
+    public set data(newData: LeaderboardRow[]) {
+        if (newData.some(e => e.Ranking < 0 || e.Total < 0)) {
             throw new Error("Values for leaderboard cannot be negative");
         }
 
         // Adding UserIds
-        for (const leaderboardRow of leaderboard) {
-            if (!leaderboardRow.DiscordId) {
-                const discordUser = this._client.users.cache.find(user => user.tag === leaderboardRow.Discord);
-                if (discordUser) leaderboardRow.DiscordId = discordUser.id;
+        for (const row of newData) {
+            if (!row.DiscordId) {
+                const discordUser = this._client.users.cache.find(user => user.tag === row.Discord);
+                if (discordUser) row.DiscordId = discordUser.id;
             }
         }
 
         // temp
-        if (this._leaderboard !== leaderboard) {
-            this._leaderboard = leaderboard;
+        if (this._data !== newData) {
+            this._data = newData;
             this.updateJSON();
         }
-
     }
 
     private async updateJSON() {
-        fs.writeFile(__dirname + "/../assets/json/leaderboard.json", JSON.stringify(this.leaderboard, null, 2), err => {
+        fs.writeFile(__dirname + "/../assets/json/leaderboard.json", JSON.stringify(this.data, null, 2), err => {
             if (err) throw err;
             this._client.log.info("Leaderboard updated");
         });
@@ -55,8 +54,26 @@ export default class LeaderboardManager {
     public findUser(user: User): LeaderboardRow {
         const username = user.tag.toLowerCase();
         const userid = user.id;
-        for (const row of this._leaderboard) {
+        for (const row of this.data) {
             if (row.Discord.toLowerCase() === username || row.DiscordId === userid) return row;
         }
+    }
+
+    public toString(): string {
+        let cons = 1e99;
+
+        let res = "";
+        for (const row of this.data) {
+            const currCon = Math.floor(row.Total / 28800);
+            if (currCon < cons) {
+                if (currCon >= 0) res += `__**C${currCon}**__\n\n`;
+                else res += "__**No Guarantee**__\n\n";
+                cons = currCon;
+            }
+
+            res += `${row.Ranking}. **${row.Discord}** - ${row.Total}/${28800 * (currCon + 1)}\n\n`;
+        }
+
+        return res;
     }
 }

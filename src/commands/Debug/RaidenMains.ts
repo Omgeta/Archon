@@ -3,7 +3,6 @@ import { Command, Argument } from "discord-akairo";
 import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
 import roles from "../../assets/json/roles.json";
-import leaderboard from "../../assets/json/leaderboard.json";
 import { ArchonEmbed } from "../../";
 
 export default class RaidenMainsCommand extends Command {
@@ -63,24 +62,12 @@ export default class RaidenMainsCommand extends Command {
     }
 
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
-        let cons = 1e99;
-
-        let description = "";
-        for (const entry of leaderboard) {
-            const currCon = Math.floor(entry.Total / 28800);
-            if (currCon < cons) {
-                if (currCon >= 0) description += `__**C${currCon}**__\n\n`;
-                else description += "__**No Guarantee**__\n\n";
-                cons = currCon;
-            }
-
-            description += `${entry.Ranking}. **${entry.Discord}** - ${entry.Total}/${28800 * (currCon + 1)}\n\n`;
-        }
+        const description = this.client.leaderboard.toString();
         await target.send(new ArchonEmbed()
             .setAuthor("", "https://images-ext-1.discordapp.net/external/AefdtAO-E2pokACMM5WuBjMOggFGEgilOrpYumSa5ik/https/media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
             .setTitle("__**Leaderboard | Primogem Count**__")
             .setDescription(description)
-            .setImage("https://media1.tenor.com/images/aea9c4a0a5effb64f9fee81f0be442ba/tenor.gif")
+            .setImage("https://media.discordapp.net/attachments/596885761924661248/818843752504229898/3_mei_dance.gif")
         );
     }
 
