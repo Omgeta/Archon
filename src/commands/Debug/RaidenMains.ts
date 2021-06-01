@@ -60,12 +60,12 @@ export default class RaidenMainsCommand extends Command {
             .setDescription(
                 `
                 We hope you have a fun experience in our server! 
-
                 If you're having any trouble, please report it to a <@&811959425824587826> or a <@&801133647485730896>.
 
                 Click **[here](${first.url})** to jump to the start of this channel.
                 `
             )
+            .setColor("#00bb00")
         );
     }
 
