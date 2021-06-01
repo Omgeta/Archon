@@ -46,13 +46,27 @@ export default class RaidenMainsCommand extends Command {
     }
 
     private async sendInformation(target: NewsChannel | TextChannel): Promise<void> {
+        let first: Message;
         for (const embed of rules) {
-            await target.send(new MessageEmbed(embed));
+            const msg = await target.send(new MessageEmbed(embed));
+            if (!first) first = msg;
         }
 
         for (const embed of channels) {
             await target.send(new MessageEmbed(embed));
         }
+
+        await target.send(new MessageEmbed()
+            .setDescription(
+                `
+                We hope you have a fun experience in our server! 
+
+                If you're having any trouble, please report it to a <@&811959425824587826> or a <@&801133647485730896>.
+
+                Click **[here](${first.url})** to jump to the start of this channel.
+                `
+            )
+        );
     }
 
     private async sendRoles(target: NewsChannel | TextChannel): Promise<void> {
