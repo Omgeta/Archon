@@ -17,3 +17,4 @@ export { default as tsaritsa } from "./tsaritsa.json";
 export { default as sayu } from "./sayu.json";
 export { default as kazuha } from "./kazuha.json";
 export { default as raiden } from "./raiden.json";
+export { default as sara } from "./sara.json";

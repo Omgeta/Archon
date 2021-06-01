@@ -29,3 +29,10 @@ export function isURL(phrase: string): boolean {
 
     return false;
 }
+
+export function sprintf(text: string, ...values: string[]): string {
+    for (let i = 0; i < values.length; i++) {
+        text = text.replace(`{${i}}`, values[i]);
+    }
+    return text;
+}

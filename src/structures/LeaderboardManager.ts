@@ -32,7 +32,7 @@ export default class LeaderboardManager {
         // Adding UserIds
         for (const row of newData) {
             if (!row.DiscordId) {
-                const discordUser = this._client.users.cache.find(user => user.tag === row.Discord);
+                const discordUser = this._client.users.cache.find(user => user.tag.toLowerCase() === row.Discord.toLowerCase());
                 if (discordUser) row.DiscordId = discordUser.id;
             }
         }
