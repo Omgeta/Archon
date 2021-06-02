@@ -56,7 +56,7 @@ export default class ReadyListener extends Listener {
             type: "WATCHING"
         });
 
-        await this.cleanDatabase();
+        // await this.cleanDatabase();
 
 
         this.postInit();

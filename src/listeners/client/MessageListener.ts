@@ -1,4 +1,4 @@
-import { Message, TextChannel } from "discord.js";
+import { Message } from "discord.js";
 import { Listener } from "discord-akairo";
 import { boost as boostResponses } from "../../assets/json/phrases.json";
 import { sprintf } from "../../";

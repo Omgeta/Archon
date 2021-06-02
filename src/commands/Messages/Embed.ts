@@ -179,7 +179,7 @@ export default class EmbedCommand extends Command {
         const filter = (reaction, user) => {
             return reaction.emoji.name === "✅" && user.id === author.id;
         };
-        const confirmCollector = await previewMessage.createReactionCollector(filter, { max: 1, time: 6e4 });
+        const confirmCollector = await previewMessage.createReactionCollector(filter, { max: 1, time: 12e4 });
         await confirmCollector.on("collect", async () => {
             await this.handleConfirm(userData);
         });
@@ -195,9 +195,9 @@ export default class EmbedCommand extends Command {
             return msg.content.split(" ")[0].toLowerCase();
         };
         const filter = (msg) => {
-            return msg.author.id === author.id && [...keys, "text"].includes(firstToken(msg));
+            return msg.author.id === author.id && [...keys, "text", "json"].includes(firstToken(msg));
         };
-        const keyCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 3e4 });
+        const keyCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 6e4 });
         await keyCollector.on("collect", async m => {
             const key = firstToken(m);
             await previewMessage.edit(this.toPreviewEmbed(customText, customEmbed)
@@ -215,7 +215,7 @@ export default class EmbedCommand extends Command {
         const filter = (msg) => {
             return msg.author.id === author.id;
         };
-        const valueCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 3e4 });
+        const valueCollector = await previewMessage.channel.createMessageCollector(filter, { max: 1, time: 6e4 });
         await valueCollector.on("collect", async m => {
             const value = m.content;
             await this.handleAssignment(userData, key, value);
@@ -237,22 +237,24 @@ export default class EmbedCommand extends Command {
             this.client.log.debug("Editing message to embed");
             target.edit(customText, { embed: finalEmbed });
         }
-        previewMessage.reactions.removeAll();
+        await previewMessage.reactions.removeAll();
         await this.clearCollectors(userData);
     }
 
     private async handleAssignment(userData: UserData, key: string, value: string) {
-        const { previewMessage, customEmbed } = userData;
+        const { previewMessage } = userData;
 
         try {
             this.client.log.debug(`Setting ${key} to ${value}`);
             if (key === "text") {
                 userData.customText = value;
+            } else if (key === "json") {
+                userData.customEmbed = new CustomizableEmbed(JSON.parse(value));
             } else {
-                customEmbed.setProperty(key, value);
+                userData.customEmbed.setProperty(key, value);
             }
-            previewMessage.reactions.removeAll();
-            previewMessage.edit(this.toPreviewEmbed(userData.customText, customEmbed));
+            await previewMessage.reactions.removeAll();
+            previewMessage.edit(this.toPreviewEmbed(userData.customText, userData.customEmbed));
         } catch (err) {
             previewMessage.channel.send(new ArchonEmbed()
                 .setDescription(`\`${key}\` cannot be set to \`${value}\``)
