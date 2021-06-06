@@ -29,7 +29,7 @@ export default class SlapCommand extends Command {
         const gifLink = slap[Math.floor(Math.random() * slap.length)];
 
         return message.channel.send(new ArchonEmbed()
-            .setDescription(`**${message.member.displayName}** slaped **${target.displayName}**...`)
+            .setDescription(`**${message.member.displayName}** slapped **${target.displayName}**...`)
             .setImage(gifLink)
         );
     }
