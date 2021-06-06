@@ -29,7 +29,7 @@ export default class HugCommand extends Command {
         const gifLink = hug[Math.floor(Math.random() * hug.length)];
 
         return message.channel.send(new ArchonEmbed()
-            .setDescription(`${message.author} hugged ${target}`)
+            .setDescription(`**${message.member.displayName}** hugged **${target.displayName}**...`)
             .setImage(gifLink)
         );
     }

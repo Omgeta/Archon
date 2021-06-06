@@ -29,7 +29,7 @@ export default class PatCommand extends Command {
         const gifLink = pat[Math.floor(Math.random() * pat.length)];
 
         return message.channel.send(new ArchonEmbed()
-            .setDescription(`${message.author} is patting ${target}`)
+            .setDescription(`**${message.member.displayName}** is patting **${target.displayName}**...`)
             .setImage(gifLink)
         );
     }
