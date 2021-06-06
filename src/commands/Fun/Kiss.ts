@@ -29,7 +29,7 @@ export default class KissCommand extends Command {
         const gifLink = kiss[Math.floor(Math.random() * kiss.length)];
 
         return message.channel.send(new ArchonEmbed()
-            .setDescription(`**${message.member.displayName}** kissed **${target.displayName}**`)
+            .setDescription(`**${message.member.displayName}** kissed **${target.displayName}**...`)
             .setImage(gifLink)
         );
     }

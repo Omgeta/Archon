@@ -29,7 +29,7 @@ export default class PokeCommand extends Command {
         const gifLink = poke[Math.floor(Math.random() * poke.length)];
 
         return message.channel.send(new ArchonEmbed()
-            .setDescription(`**${message.member.displayName}** poked **${target.displayName}**`)
+            .setDescription(`**${message.member.displayName}** poked **${target.displayName}**...`)
             .setImage(gifLink)
         );
     }
