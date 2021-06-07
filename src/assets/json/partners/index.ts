@@ -18,3 +18,5 @@ export { default as sayu } from "./sayu.json";
 export { default as kazuha } from "./kazuha.json";
 export { default as raiden } from "./raiden.json";
 export { default as sara } from "./sara.json";
+export { default as ayato } from "./ayato.json";
+export { default as yoimiya } from "./yoimiya.json";
