@@ -37,6 +37,6 @@ export default class MathCommand extends Command {
             this.client.log.warn(`${message.author.tag} (${message.author.id}) called invalid math expression ${expr}`);
             return message.reply(`Invalid math expression: ${e.message}`);
         }
-        return message.util.reply(value);
+        return message.util.reply(value.toString());
     }
 }
