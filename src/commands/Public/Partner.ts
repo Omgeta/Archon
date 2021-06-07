@@ -64,7 +64,7 @@ export default class PartnerCommand extends Command {
     public async exec(message: Message, { name }: { name: string }): Promise<Message> {
         try {
             if (name in partners) {
-                const partner = partners[name];
+                const partner = partners[name.toLowerCase()];
                 const embed = this.omgetaStyle(partner);
                 return message.channel.send(embed);
             } else {
