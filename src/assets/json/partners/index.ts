@@ -20,3 +20,4 @@ export { default as raiden } from "./raiden.json";
 export { default as sara } from "./sara.json";
 export { default as ayato } from "./ayato.json";
 export { default as yoimiya } from "./yoimiya.json";
+export { default as ayaka } from "./ayaka.json";
