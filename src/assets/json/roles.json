@@ -11,7 +11,7 @@
     },
     {
         "title": "Roles | Region",
-        "description": "Select your server region!\n\n:red_circle: | <@&801386334237360128>\n\n:blue_circle: | <@&801386312749547520>\n\n:green_circle: | <@&801386291165659187>\n\n:yellow_circle: | <@&801386435504373770>",
+        "description": "Select your server region!\n\n:red_circle: | <@&801386334237360128>\n:blue_circle: | <@&801386312749547520>\n:green_circle: | <@&801386291165659187>\n:yellow_circle: | <@&801386435504373770>",
         "color": "#800080"
     },
     {
