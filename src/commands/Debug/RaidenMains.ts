@@ -81,7 +81,7 @@ export default class RaidenMainsCommand extends Command {
             .setAuthor("", "https://images-ext-1.discordapp.net/external/AefdtAO-E2pokACMM5WuBjMOggFGEgilOrpYumSa5ik/https/media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
             .setTitle("__**Leaderboard | Primogem Count**__")
             .setDescription(description)
-            .setImage("https://media.discordapp.net/attachments/596885761924661248/818843752504229898/3_mei_dance.gif")
+            .setImage("https://i.imgur.com/Lqf51wQ.gif")
         );
     }
 

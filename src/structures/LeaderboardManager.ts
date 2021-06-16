@@ -7,7 +7,8 @@ interface LeaderboardRow {
     Ranking: number;
     Discord: string;
     DiscordId?: string;
-    Screenshots: string;
+    BannerSS: string;
+    TopUpSS: string;
     Guarantee: number;
     Total: number;
 }
