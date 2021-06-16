@@ -1,27 +1,32 @@
 [
     {
         "title": "Roles | Members",
-        "description": "Various primary roles which belong to the members of the community.\n\n• <@&810500594048958494> - The Eternal Raiden Shogun.\n\n• <@&801133647485730896> - Server Admins.\n\n• <@&811959425824587826> - Server Moderators.\n\n• <@&803652074024730646> - Beloved Nitro Boosters.\n\n• <@&818945476673142855> - Trusted members of the community.\n\n• <@&801371184645931009> - Original 250 Members.\n\n• <@&807112576210305085> - All Members.",
+        "description": "Various primary roles which belong to the members of the community.\n\n<@&810500594048958494> | The Eternal Raiden Shogun.\n\n<@&801133647485730896> | Server Admins.\n\n<@&811959425824587826> | Server Moderators.\n\n<@&803652074024730646> | Beloved Nitro Boosters.\n\n<@&818945476673142855> | Trusted members of the community.\n\n<@&801371184645931009> | Original 250 Members.\n\n<@&807112576210305085> | All Members.",
         "color": "#800080"
     },
     {
         "title": "Roles | Special",
-        "description": "Special roles belonging to the members of the community that have contributed greatly to the server with their talents, efforts and dedication.\n\n• <@&811215570476466197> - Approved translators who have worked hard to provide many leaks and news.\n\n• <@&806920564554858496> - Approved leak compilers and providers\n\n• <@&813411660391776357> - Divine servants in charge of maintaining and moderating Raiden Mei channels.\n\n• <@&822098072174854244> - Honkai addicts in charge of providing announcements for Honkai Impact.\n\n• <@&822812384845496341> - Approved emote artists who have created many lovely emotes for the server.",
+        "description": "Special roles belonging to the members of the community that have contributed greatly to the server with their talents, efforts and dedication.\n\n<@&811215570476466197> | Approved translators who have worked hard to provide many leaks and news.\n\n<@&806920564554858496> | Approved leak compilers and providers\n\n<@&813411660391776357> | Divine servants in charge of maintaining and moderating Raiden Mei channels.\n\n<@&822098072174854244> | Honkai addicts in charge of providing announcements for Honkai Impact.\n\n<@&822812384845496341> | Approved emote artists who have created many lovely emotes for the server.",
         "color": "#800080"
     },
     {
         "title": "Roles | Region",
-        "description": "Select your server region!\n\n• :red_circle: - <@&801386334237360128>\n\n• :blue_circle: - <@&801386312749547520>\n\n• :green_circle: - <@&801386291165659187>\n\n• :yellow_circle: - <@&801386435504373770>",
+        "description": "Select your server region!\n\n:red_circle: | <@&801386334237360128>\n\n:blue_circle: | <@&801386312749547520>\n\n:green_circle: | <@&801386291165659187>\n\n:yellow_circle: | <@&801386435504373770>",
         "color": "#800080"
     },
     {
         "title": "Roles | Pings",
-        "description": "Select roles which you wish to be pinged for!\n\n• :loudspeaker: - <@&801386231233249350>\n\n• :mega: - <@&822827927963697212>\n\n• :mag_right: - <@&811571844787339314>\n\n• :gem: - <@&832580092987047936>\n\n• :pray: - <@&808750641144397904>",
+        "description": "Select roles which you wish to be pinged for!\n\n:loudspeaker: | <@&801386231233249350>\n\n:mega: | <@&822827927963697212>\n\n:mag_right: | <@&811571844787339314>\n\n:gem: | <@&832580092987047936>\n\n:pray: | <@&808750641144397904>",
         "color": "#800080"
     },
     {
         "title": "Roles | Vanity Colors",
-        "description": "Select your favourite colour!\n\n:space_invader: - <@&815008183809605654>\n\n:umbrella2: - <@&814968487743062068>\n\n:crab: - <@&814971196331393046>\n\n:peach: - <@&814984435992756286>\n\n:squid: - <@&814956837556191236>\n\n:chestnut: - <@&814976403777912872>\n\n:cherry_blossom: - <@&814976075494064152>\n\n:cloud_tornado: - <@&814987540368719936>\n\n:fish_cake: - <@&814969875960692736>\n\n:snail: - <@&814958926185365545>\n\n:diamond_shape_with_a_dot_inside: - <@&814969092078305280>\n\n:peacock: - <@&814980649965977630>\n\n:pear: - <@&814966376028438548>\n\n:crocodile: - <@&814986572419039323>\n\n:zap: - <@&814994637450117180>\n\n:tea: - <@&814992719150972980>\n\n:evergreen_tree: - <@&814990645965750273>",
+        "description": "Select your favourite colour!\n\n<:colour_violet:854793531969503312> | <@&815008183809605654>\n<:colour_magenta:854793532845981706> | <@&814968487743062068>\n<:colour_red:854793540021911552> | <@&814971196331393046>\n<:colour_orange:854793895115096104> | <@&814984435992756286>\n<:colour_yellow:854793895744241696> | <@&814994637450117180>\n<:colour_citrus:854793938555633708> | <@&814992719150972980>\n<:colour_greendark:854793947884421150> | <@&814990645965750273>\n<:colour_greenlight:854793961869017099> | <@&814966376028438548>\n<:colour_turquoise:854793974664396800> | <@&814980649965977630>\n<:colour_bluelight:854794006814523402> | <@&847865983137349695>\n<:colour_bluedark:854794028558450698> | <@&814969092078305280>\n<:colour_lilac:854794043325808671> | <@&814958926185365545>\n<:colour_pinklight:854794135235461171> | <@&814956837556191236>\n<:colour_pinkdark:854794174695342090> | <@&814976075494064152>\n<:colour_grey:854797774812610590> | <@&814987540368719936>",
+        "color": "#800080"
+    },
+    {
+        "title": "Roles | Access",
+        "description": "Select which channels to unlock!\n\n:closed_book: | <@&847149537155481630>",
         "color": "#800080"
     }
 ]
