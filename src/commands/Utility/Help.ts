@@ -63,11 +63,14 @@ export default class HelpCommand extends Command {
             for (const category of this.handler.categories.values()) {
                 if (category.id === "default") continue;
 
-                embed.addField(category.id, category
+                const categoryCommands = category
                     .filter(cmd => cmd.aliases.length > 0 && message.member.hasPermission(cmd.userPermissions as PermissionResolvable[]) && !cmd.ownerOnly)
                     .map(cmd => `\`${cmd}\``)
-                    .join(", " || "*No commands in this category*"), true
-                );
+                    .join(", ");
+
+                if (categoryCommands) {
+                    embed.addField(category.id, categoryCommands, true);
+                }
             }
 
             return message.util.send(embed);
