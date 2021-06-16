@@ -15,18 +15,13 @@
         "color": "#800080"
     },
     {
-        "title": "Roles | Pings",
-        "description": "Select roles which you wish to be pinged for!\n\n:loudspeaker: | <@&801386231233249350>\n\n:mega: | <@&822827927963697212>\n\n:mag_right: | <@&811571844787339314>\n\n:gem: | <@&832580092987047936>\n\n:pray: | <@&808750641144397904>\n\n:question: | <@&845326034156519465>",
+        "title": "Roles | Pings and Access",
+        "description": "Select roles which you wish to be pinged for or select channels to unlock!\n:loudspeaker: | <@&801386231233249350>\n:mega: | <@&822827927963697212>\n:mag_right: | <@&811571844787339314>\n:gem: | <@&832580092987047936>\n:pray: | <@&808750641144397904>\n:question: | <@&845326034156519465>\n\n:closed_book: | <@&847144754402557953>",
         "color": "#800080"
     },
     {
-        "title": "Roles | Vanity Colors",
+        "title": "Roles | Vanity",
         "description": "Select your favourite colour!\n\n<:colour_violet:854793531969503312> | <@&815008183809605654>\n<:colour_magenta:854793532845981706> | <@&814968487743062068>\n<:colour_red:854793540021911552> | <@&814971196331393046>\n<:colour_orange:854793895115096104> | <@&814984435992756286>\n<:colour_yellow:854793895744241696> | <@&814994637450117180>\n<:colour_citrus:854793938555633708> | <@&814992719150972980>\n<:colour_greendark:854793947884421150> | <@&814990645965750273>\n<:colour_greenlight:854793961869017099> | <@&814966376028438548>\n<:colour_turquoise:854793974664396800> | <@&814980649965977630>\n<:colour_bluelight:854794006814523402> | <@&847865983137349695>\n<:colour_bluedark:854794028558450698> | <@&814969092078305280>\n<:colour_lilac:854794043325808671> | <@&814958926185365545>\n<:colour_pinklight:854794135235461171> | <@&814956837556191236>\n<:colour_pinkdark:854794174695342090> | <@&814976075494064152>\n<:colour_grey:854797774812610590> | <@&814987540368719936>",
-        "color": "#800080"
-    },
-    {
-        "title": "Roles | Access",
-        "description": "Select which channels to unlock!\n\n:closed_book: | <@&847144754402557953>",
         "color": "#800080"
     }
 ]
