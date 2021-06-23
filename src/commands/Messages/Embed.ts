@@ -249,7 +249,10 @@ export default class EmbedCommand extends Command {
             if (key === "text") {
                 userData.customText = value;
             } else if (key === "json") {
-                userData.customEmbed = new CustomizableEmbed(JSON.parse(value));
+                const jsonData = JSON.parse(value);
+                if (jsonData.image) jsonData.image = { url: jsonData.image };
+                if (jsonData.thumbnail) jsonData.thumbnail = { url: jsonData.thumbnail };
+                userData.customEmbed = new CustomizableEmbed(jsonData);
             } else {
                 userData.customEmbed.setProperty(key, value);
             }
