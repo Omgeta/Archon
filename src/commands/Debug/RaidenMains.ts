@@ -85,7 +85,8 @@ export default class RaidenMainsCommand extends Command {
         await target.send(new MessageEmbed()
             .setDescription(
                 `
-                We hope you have an enlightening experience in the Lyceum! Please remember to always stay on-topic here.
+                We hope you have an enlightening experience in the Lyceum!
+                Please remember to always stay on-topic here.
                 If you're having any trouble, please report it to a <@&845638574983741460> or a <@&811959425824587826>.
 
                 Click **[here](${first.url})** to jump to the start of this channel.
