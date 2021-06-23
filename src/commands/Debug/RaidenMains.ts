@@ -23,7 +23,7 @@ export default class RaidenMainsCommand extends Command {
             args: [
                 {
                     id: "subcommand",
-                    type: ["info", "roles", "leaderboard"],
+                    type: ["info", "roles", "leaderboard", "lyceum"],
                     prompt: {
                         start: message => `Which subcommand would you like to call? (info/roles) ${message.author}?`,
                         retry: message => `That isn't a valid subcommand! Try again ${message.author}`
