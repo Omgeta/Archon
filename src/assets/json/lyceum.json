@@ -1,0 +1,35 @@
+[
+    {
+        "title": "The Inazuma Bakufu | Raiden Mei",
+        "description": "Welcome to the Bakufu Lyceum: a section reserved for intellectual and technical discussions about all things Genshin Impact.\n\nBe sure to read all of the rules so that you know how to behave in the server. Please remain respectful and friendly at all times in any channel, even if your opinions are different to others.\n\n**[Discord](https://discord.gg/cytxTu52EQ)** | **[r/RaidenMains](https://www.reddit.com/r/RaidenMains/)** | **[r/RaidenMei](https://www.reddit.com/r/RaidenMei/)**",
+        "image": {
+            "url": "https://i.imgur.com/5Yww8gH.jpg"
+        },
+        "color": "#DD2233"
+    },
+    {
+        "title": "Rules | Lyceum and Theorycrafting",
+        "description": "• All rules from <#836546089527672872> applies to this category.\n\n• Conversations must stay on-topic to the purpose of the channel.\n\n• Trolling, disrespectful behavior, deliberating baiting controversial topics and intentionally spreading misinformation is prohibited.\n\n• Plagiarism is not tolerated in any shape or form. If your work is derivative, please give credit to the original authors.\n\n• Do not share the content of other theorycrafters without their express permission.",
+        "color": "#800080"
+    },
+    {
+        "title": "Channels | Information",
+        "description": "• <#851854425088720916> - Read up about the purpose and rules for everything within the Lyceum.\n• <#845673587963854908> - Collection of dedicated resources for technical aspects of Genshin Impact.",
+        "color": "#800080"
+    },
+    {
+        "title": "Channels | Discussion and Help",
+        "description": "• <#813190950250741831> - Ask or answer any questions about Genshin Impact.\n• <#805154279601602581> - Discuss about Genshin lore and story theories. Please spoiler tag any possible major spoilers.",
+        "color": "#800080"
+    },
+    {
+        "title": "Channels | Theorycrafting",
+        "description": "• <#810445359297855539> - Discuss about the Genshin Impact in-depth theorycrafting.\n• <#810445480554922004> - Submit your significant theorycrafting submissions. Please ensure that your submission is well-formatted, coherent and valid.",
+        "color": "#800080"
+    },
+    {
+        "title": "Unlocking Theorycrafting",
+        "description": "To unlock the theorycrafting channels in the Lyceum, please select the reaction role for the <@&847144754402557953> role in <#832588075178655785>.",
+        "color": "#DD2233"
+    }
+]

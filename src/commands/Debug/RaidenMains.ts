@@ -3,6 +3,7 @@ import { Command, Argument } from "discord-akairo";
 import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
 import roles from "../../assets/json/roles.json";
+import lyceum from "../../assets/json/lyceum.json";
 import { ArchonEmbed } from "../../";
 
 export default class RaidenMainsCommand extends Command {
@@ -73,6 +74,25 @@ export default class RaidenMainsCommand extends Command {
         for (const embed of roles) {
             await target.send(new MessageEmbed(embed));
         }
+    }
+
+    private async sendLyceum(target: NewsChannel | TextChannel): Promise<void> {
+        let first: Message;
+        for (const embed of lyceum) {
+            const msg = await target.send(new MessageEmbed(embed));
+            if (!first) first = msg;
+        }
+        await target.send(new MessageEmbed()
+            .setDescription(
+                `
+                We hope you have an enlightening experience in the Lyceum! Please remember to always stay on-topic here.
+                If you're having any trouble, please report it to a <@&845638574983741460> or a <@&811959425824587826>.
+
+                Click **[here](${first.url})** to jump to the start of this channel.
+                `
+            )
+            .setColor("#00bb00")
+        );
     }
 
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
