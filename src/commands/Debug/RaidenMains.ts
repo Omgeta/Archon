@@ -111,6 +111,8 @@ export default class RaidenMainsCommand extends Command {
                 await this.sendInformation(target); break;
             case "roles":
                 await this.sendRoles(target); break;
+            case "lyceum":
+                await this.sendLyceum(target); break;
             case "leaderboard":
                 await this.sendLeaderboard(target); break;
         }
