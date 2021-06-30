@@ -554,7 +554,8 @@
     "Primogems": 118,
     "Fate": 370,
     "Pity": 70,
-    "Guarantee": 0,
-    "Whale": false
+    "Guarantee": 1,
+    "Whale": false,
+    "DiscordId": "277773360270802944"
   }
 ]
