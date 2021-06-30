@@ -1,7 +1,7 @@
 import { Message, MessageEmbed } from "discord.js";
 import { Command } from "discord-akairo";
 import * as partners from "../../assets/json/partners";
-import { isString, ArchonEmbed } from "../../";
+import { ArchonEmbed } from "../../";
 
 interface Partner {
     tc?: boolean,
@@ -46,7 +46,7 @@ export default class PartnerCommand extends Command {
         const title = partner.tc ? `TC | ${partner.title.replace(" ", "")}` : partner.title;
         let desc = partner.description;
         if (partner.reddit) {
-            if (isString(partner.reddit)) partner.reddit = partner.reddit.split(null);
+            if (typeof partner.reddit === "string") partner.reddit = partner.reddit.split(null);
             const redditLinks = partner.reddit.map(e => `**[r/${this.getRedditName(e)}](${e})**`).join(" | ");
             desc += `\n\n${redditLinks}`;
         }

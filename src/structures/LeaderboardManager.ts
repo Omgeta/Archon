@@ -2,15 +2,17 @@ import fs from "fs";
 import leaderboard from "../assets/json/leaderboard.json";
 import { User } from "discord.js";
 import { AkairoClient } from "discord-akairo";
+import { partitionArray } from "../";
 
 interface LeaderboardRow {
-    Ranking: number;
     Discord: string;
     DiscordId?: string;
-    BannerSS: string;
-    TopUpSS: string;
+    Fate: number;
+    Primogems: number;
+    Pity: number;
     Guarantee: number;
-    Total: number;
+    GenesisCrystals: number;
+    Whale: boolean;
 }
 
 export default class LeaderboardManager {
@@ -26,10 +28,6 @@ export default class LeaderboardManager {
     }
 
     public set data(newData: LeaderboardRow[]) {
-        if (newData.some(e => e.Ranking < 0 || e.Total < 0)) {
-            throw new Error("Values for leaderboard cannot be negative");
-        }
-
         // Adding UserIds
         for (const row of newData) {
             if (!row.DiscordId) {
@@ -51,27 +49,68 @@ export default class LeaderboardManager {
         });
     }
 
-    public findUser(user: User): LeaderboardRow {
+    public findUser(user: User): [number, LeaderboardRow] {
         const username = user.tag.toLowerCase();
         const userid = user.id;
         for (const row of this.data) {
-            if (row.Discord.toLowerCase() === username || row.DiscordId === userid) return row;
+            if (row.Discord.toLowerCase() === username || row.DiscordId === userid) {
+                const [paidCategory, freeCategory] = this.getCategories();
+                const rank = row.Whale ? paidCategory.findIndex(r => r === row) : freeCategory.findIndex(r => r === row);
+
+                return [rank, row];
+            }
         }
     }
 
-    public toString(): string {
+    public getCategories(): LeaderboardRow[][] {
+        const sorted = LeaderboardManager.quickSort(this.data);
+        const [paidCategory, freeCategory] = partitionArray(sorted, (row: LeaderboardRow) => { return row.Whale; });
+        return [paidCategory, freeCategory];
+    }
+
+    public static calculateTotal(row: LeaderboardRow): number {
+        const { Fate, Primogems, Pity, Guarantee, GenesisCrystals } = row;
+        const total = (Fate + Pity + Guarantee * 90) * 160 + Primogems + GenesisCrystals;
+        return total;
+    }
+
+    public static quickSort(rows: LeaderboardRow[]): LeaderboardRow[] {
+        if (rows.length > 1) {
+            const pivot = rows[rows.length - 1];
+            let [ltePivot, gtPivot]: LeaderboardRow[][] = [[], []];
+
+            for (let i = 0; i < rows.length - 1; i++) {
+                if (LeaderboardManager.calculateTotal(rows[i]) <= LeaderboardManager.calculateTotal(pivot)) {
+                    ltePivot.push(rows[i]);
+                } else {
+                    gtPivot.push(rows[i]);
+                }
+            }
+
+            ltePivot = LeaderboardManager.quickSort(ltePivot);
+            gtPivot = LeaderboardManager.quickSort(gtPivot);
+
+            return [...gtPivot, pivot, ...ltePivot];
+        } else {
+            return rows;
+        }
+    }
+
+    public static toString(category: LeaderboardRow[]): string {
         let cons = 1e9;
 
         let res = "";
-        for (const row of this.data) {
-            const currCon = Math.floor(row.Total / 28800);
+        for (let i = 0; i < category.length; i++) {
+            const row = category[i];
+            const total = LeaderboardManager.calculateTotal(row);
+            const currCon = Math.floor(total / 28800);
             if (currCon < cons) {
                 if (currCon >= 0) res += `__**C${currCon}**__\n\n`;
                 else res += "__**No Guarantee**__\n\n";
                 cons = currCon;
             }
 
-            res += `${row.Ranking}. **${row.Discord}** - ${row.Total}/${28800 * (currCon + 1)}\n\n`;
+            res += `${i + 1}. **${row.Discord}** - ${total}/${28800 * (currCon + 1)}\n\n`;
         }
 
         return res;

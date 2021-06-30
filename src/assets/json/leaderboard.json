@@ -1,418 +1,560 @@
 [
   {
-    "Ranking": 1,
-    "Discord": "Lyagren#7480",
-    "BannerSS": "https://drive.google.com/open?id=1SbVVWopJ6cN4dyNTcJCobmcHBOt5dTp_",
-    "TopUpSS": "https://drive.google.com/open?id=1g7FSdvtdkaQvpd10jqRfK5_B3nmJc8bw",
-    "Guarantee": 0,
-    "Total": 90719
-  },
-  {
-    "Ranking": 2,
-    "Discord": "omgeta#8841",
-    "BannerSS": "https://drive.google.com/open?id=1jUFX2nkft4kIog7qJhKg6db_V4_YPU88",
-    "TopUpSS": "https://drive.google.com/open?id=1ZoTR_H6o1YIYjif_sbfL_x24RA_4ZDGo",
+    "Discord": "brrr#1606",
+    "GenesisCrystals": 900,
+    "Primogems": 10525,
+    "Fate": 3,
+    "Pity": 55,
     "Guarantee": 1,
-    "Total": 83878
+    "Whale": true
   },
   {
-    "Ranking": 3,
-    "Discord": "🌸Raiden Simp🌸#8731",
-    "BannerSS": "https://drive.google.com/open?id=1-kcqwbbRD4oHpfSddAsYv9rDXVWzNurK",
-    "TopUpSS": "https://drive.google.com/open?id=1invI4zeDHzm_LjCsH93JATwVEBh5GqDO",
-    "Guarantee": 1,
-    "Total": 83250
-  },
-  {
-    "Ranking": 4,
-    "Discord": "OVERLORD#4794",
-    "BannerSS": "https://drive.google.com/open?id=1phmV6ptl5UcgDGUq8Ce4crfWcHQXMwjZ",
-    "TopUpSS": "https://drive.google.com/open?id=1oGpad3d4m_WH9MHGj-ASOuO2yX2PtNOF",
-    "Guarantee": 1,
-    "Total": 78340
-  },
-  {
-    "Ranking": 5,
-    "Discord": "Claire#5337",
-    "BannerSS": "https://drive.google.com/open?id=119Oo8YkMeHLWouBclv_PBJ0gWbHI3cR0",
-    "TopUpSS": "https://drive.google.com/open?id=1HpH1FWaDgkTKjyXfKfxmG-quTaUskyCy",
-    "Guarantee": 1,
-    "Total": 78081
-  },
-  {
-    "Ranking": 6,
-    "Discord": "Scaramouche_gaming#6666",
-    "BannerSS": "https://drive.google.com/open?id=12Xi9YQbOmIpWQ5ORQT5le9Ya38Dswm2d",
-    "TopUpSS": "https://drive.google.com/open?id=1qJtEAWU2cRmXkobhoSmhDTEA8R9pl1z9",
-    "Guarantee": 0,
-    "Total": 68733
-  },
-  {
-    "Ranking": 7,
-    "Discord": "Akiha#4086",
-    "BannerSS": "https://drive.google.com/open?id=1bNB71VR7gAs_fxIDXSWOF_VbbiZ5Lrl6",
-    "TopUpSS": "https://drive.google.com/open?id=1ZaASQW4UhJMfeVm5ROMRlHWiTTmRs0W5",
-    "Guarantee": 1,
-    "Total": 58499
-  },
-  {
-    "Ranking": 8,
-    "Discord": "kagoou#1905",
-    "BannerSS": "https://drive.google.com/open?id=1IWnLYOiV39f5oV74DjyPPb2tnCXtb9t4",
-    "TopUpSS": "https://drive.google.com/open?id=1AEE1voLGD2RWBu57J0pgbK_KK-NIT50Q",
-    "Guarantee": 0,
-    "Total": 57037
-  },
-  {
-    "Ranking": 9,
-    "Discord": "AX#9789",
-    "BannerSS": "https://drive.google.com/open?id=18FqeBqS_CUwlFNJ0nwDAf0OkBrH98hm7",
-    "TopUpSS": "https://drive.google.com/open?id=1oSPveQsrqkwrdP1XDDQ05vc8mLHbb0GM",
-    "Guarantee": 1,
-    "Total": 56205
-  },
-  {
-    "Ranking": 10,
-    "Discord": "ryuma3#8820",
-    "BannerSS": "https://drive.google.com/open?id=1MkAHm5--F5fvazagFNzndCyhvscGGp5v",
-    "TopUpSS": "https://drive.google.com/open?id=17cYXpFcGK3BKUcAJ-h22A6-pGMVWzmQO",
-    "Guarantee": 1,
-    "Total": 55044
-  },
-  {
-    "Ranking": 11,
-    "Discord": "Eufrasia#2536",
-    "BannerSS": "https://drive.google.com/open?id=1TgOXX9B_RQgs7xT6cTfHNl36Z69HgrEp",
-    "TopUpSS": "https://drive.google.com/open?id=1Y2CKo3hlRdfFBShdzRiOFPIr2fgokAvC",
-    "Guarantee": 0,
-    "Total": 53156
-  },
-  {
-    "Ranking": 12,
-    "Discord": "Monica#0459",
-    "BannerSS": "https://drive.google.com/open?id=1S58Dlr6VMkUGdl4_X11VPwRTSMH20C1H",
-    "TopUpSS": "https://drive.google.com/open?id=1Wfzy4UykDxE9FXOV-EKibCMkyck8mboh",
-    "Guarantee": 0,
-    "Total": 52370
-  },
-  {
-    "Ranking": 13,
-    "Discord": "General-chan#0004",
-    "BannerSS": "https://drive.google.com/open?id=1UvWa67O8AuXq2WhevBAQQCbdWk5dgt0M",
-    "TopUpSS": "https://drive.google.com/open?id=1guMI1SvfbsEd74EdjTb6T30-XniTqaGc",
-    "Guarantee": 1,
-    "Total": 49965
-  },
-  {
-    "Ranking": 14,
-    "Discord": "Arjuon#1023",
-    "BannerSS": "https://drive.google.com/open?id=10OUQ_hQAdRODKRiyL2EH4xEJsvOUcOHc",
-    "TopUpSS": "https://drive.google.com/open?id=1_4a37pn83Ry1wrmqsKTZYxsPpYAvCV9O",
-    "Guarantee": 1,
-    "Total": 48536
-  },
-  {
-    "Ranking": 15,
-    "Discord": "loFiProto#0862",
-    "BannerSS": "https://drive.google.com/open?id=1XEJ1Z5YcOpiApMzrZvPltDbpL2GLrBp-",
-    "TopUpSS": "https://drive.google.com/open?id=1FPQJkBKRx3CaVW_TFRLuLXzlr5gTm3cL",
-    "Guarantee": 0,
-    "Total": 43561
-  },
-  {
-    "Ranking": 16,
-    "Discord": "Iota#5264",
-    "BannerSS": "https://drive.google.com/open?id=1fBWWSwzwF4ziKKNno-7W52cjthBf-w3e",
-    "TopUpSS": "https://drive.google.com/open?id=1VCPw1Y7NIgLk8AyKO2ouJsssN8VVa-Zp",
-    "Guarantee": 1,
-    "Total": 43031
-  },
-  {
-    "Ranking": 17,
-    "Discord": "ICantFindAName#4020",
-    "BannerSS": "https://drive.google.com/open?id=15Nd_CWu5x0GSJZQgiyVqjYdWLcRneaNP",
-    "TopUpSS": "https://drive.google.com/open?id=1O-1SJV0sKyWorkeWj_bVc2P5NzinKOjp",
-    "Guarantee": 0,
-    "Total": 41432
-  },
-  {
-    "Ranking": 18,
-    "Discord": "AedanadeA#2317",
-    "BannerSS": "https://drive.google.com/open?id=11AaqyTLS6EZ2UqcFAi5Bf6c8kNyhhazV",
-    "TopUpSS": "https://drive.google.com/open?id=1eIWYrvBgpyJ33sz8bHJcbVr5gcze5ddp",
-    "Guarantee": 1,
-    "Total": 40266
-  },
-  {
-    "Ranking": 19,
-    "Discord": "Schnitzel5#4828",
-    "BannerSS": "https://drive.google.com/open?id=1UAsxX7e6G9UDMaPOafTNWAycf0uOIYBY",
-    "TopUpSS": "",
-    "Guarantee": 1,
-    "Total": 40260
-  },
-  {
-    "Ranking": 20,
-    "Discord": "kekwing#2722",
-    "BannerSS": "https://drive.google.com/open?id=1OJYWxtNE3VCVqbIa4WpkWWACdjLsgpz-",
-    "TopUpSS": "https://drive.google.com/open?id=1K_46-FudkqnEtxq65npvqa8jFNLndX0x",
-    "Guarantee": 1,
-    "Total": 38399
-  },
-  {
-    "Ranking": 21,
-    "Discord": "Branjazz#0002",
-    "BannerSS": "https://drive.google.com/open?id=1qGLAyKrDzm_05i9xk9kAcnlx1U9vB7qi",
-    "TopUpSS": "",
-    "Guarantee": 1,
-    "Total": 37906
-  },
-  {
-    "Ranking": 22,
-    "Discord": "Meliocuri#9245",
-    "BannerSS": "https://drive.google.com/open?id=1nyI5OPHcTHOGVGIYl-QJjYP3EixdwVjs",
-    "TopUpSS": "https://drive.google.com/open?id=1OzvDmgeBqGJga3tekRhEWmL4l5usqNpY",
-    "Guarantee": 0,
-    "Total": 37866
-  },
-  {
-    "Ranking": 23,
-    "Discord": "Typh#0978",
-    "BannerSS": "https://drive.google.com/open?id=1VEomosGW4Dnt_bJbjWoV_cKPK-a6ycHp",
-    "TopUpSS": "",
-    "Guarantee": 0,
-    "Total": 36678
-  },
-  {
-    "Ranking": 24,
-    "Discord": "Nep#6636",
-    "BannerSS": "https://drive.google.com/open?id=1EM3irsvgB3XFjVZq5cNaBEzQh27JCZLI",
-    "TopUpSS": "https://drive.google.com/open?id=1PATbpJV9YC8_Ei-k6WcuN1u06ou1mN7o",
-    "Guarantee": 0,
-    "Total": 33876
-  },
-  {
-    "Ranking": 25,
-    "Discord": "ah yes but of corpse#6285",
-    "BannerSS": "https://drive.google.com/open?id=1w0ptNYkZMC6L17YiwdBPkO4qIvjEHoca",
-    "TopUpSS": "https://drive.google.com/open?id=1hOk2z2oVihtwLPJl8k7eU1HkHopOcYAc",
-    "Guarantee": 1,
-    "Total": 31323
-  },
-  {
-    "Ranking": 26,
-    "Discord": "ItsAnOo#3843",
-    "BannerSS": "https://drive.google.com/open?id=1fHH2zaoqiOican281N9FHyHl06RkKNbK",
-    "TopUpSS": "https://drive.google.com/open?id=1ff3-PD4-MM_wEVCTT4dCm-2VZTp3ycJc",
-    "Guarantee": 0,
-    "Total": 29288
-  },
-  {
-    "Ranking": 27,
-    "Discord": "Muel#9778",
-    "BannerSS": "https://drive.google.com/open?id=1J4UC-iJv-VuRcJwYl7X_sR1qwCGRkiLF",
-    "TopUpSS": "https://drive.google.com/open?id=1g92J2TTM0DrmXc4s9n4ZsQ-ELxw1Ru1X",
-    "Guarantee": 1,
-    "Total": 28734
-  },
-  {
-    "Ranking": 28,
-    "Discord": "Koga#3808",
-    "BannerSS": "https://drive.google.com/open?id=1IoWjEXMy1iinszqBnRu9u3lOTvMaTQk9",
-    "TopUpSS": "",
-    "Guarantee": 0,
-    "Total": 26941
-  },
-  {
-    "Ranking": 29,
-    "Discord": "ilyraf#4846",
-    "BannerSS": "https://drive.google.com/open?id=1lG7Zvb_YKMou4IQyO4lFzldRSLvEw_Mk",
-    "TopUpSS": "https://drive.google.com/open?id=14H8-_KwDo72cBt45ZBQNxc9byJfuIF3L",
-    "Guarantee": 0,
-    "Total": 26801
-  },
-  {
-    "Ranking": 30,
-    "Discord": "WonderGuard_Spiritomb#9899",
-    "BannerSS": "https://drive.google.com/open?id=1pFxFVgm_VEre2N29BViJzCcY7cRxfoxt",
-    "TopUpSS": "",
-    "Guarantee": 0,
-    "Total": 25582
-  },
-  {
-    "Ranking": 31,
-    "Discord": "FeaReaper#3861",
-    "BannerSS": "https://drive.google.com/open?id=1HasRdI8MsqpSxEE9bVuphr1qSfHHrBKw",
-    "TopUpSS": "https://drive.google.com/open?id=1pJ4S6mDAIrgDOowclH0cEA3RFlzFyw-q",
-    "Guarantee": 0,
-    "Total": 25063
-  },
-  {
-    "Ranking": 32,
-    "Discord": "Chad Thundercock#8900",
-    "BannerSS": "https://drive.google.com/open?id=1iv38EFSR57s6fr01jXSJXsVea_ybszIs",
-    "TopUpSS": "https://drive.google.com/open?id=1GfQNSgxMxl3oSDYBJGlaZKScsm-mRP-N",
-    "Guarantee": 1,
-    "Total": 23860
-  },
-  {
-    "Ranking": 33,
-    "Discord": "Mast.Ros#3302",
-    "BannerSS": "https://drive.google.com/open?id=1HetDOaoXelf5nZdHUjy83Ml3iWBS90s5",
-    "TopUpSS": "https://drive.google.com/open?id=1koMTMUu3QPVb7BNiIEMQTMfhmHduOhU8",
-    "Guarantee": 1,
-    "Total": 23155
-  },
-  {
-    "Ranking": 34,
-    "Discord": "BlackMeteorite#7739",
-    "BannerSS": "https://drive.google.com/open?id=1XtXzR5dxaaSQ0RaB5YulyMt0qJ23y5Aw",
-    "TopUpSS": "https://drive.google.com/open?id=1RP2Y_-81EmfQ4SfoFNTJzIKfpujS1h8P",
-    "Guarantee": 1,
-    "Total": 22437
-  },
-  {
-    "Ranking": 35,
-    "Discord": "Mugen☕#9326",
-    "BannerSS": "https://drive.google.com/open?id=1UBC55a38IrSOcFnbwmH8VrV0T_skmEgA",
-    "TopUpSS": "",
-    "Guarantee": 0,
-    "Total": 22403
-  },
-  {
-    "Ranking": 36,
-    "Discord": "nerfhurdur#1801",
-    "BannerSS": "https://drive.google.com/open?id=1cIQHI3ZlKZYm-lt5sDjC8LwmeYtK3Wi2",
-    "TopUpSS": "https://drive.google.com/open?id=16kGOqLjnW4kZf-KSViqveei7xoPd4PU9",
-    "Guarantee": 1,
-    "Total": 22393
-  },
-  {
-    "Ranking": 37,
-    "Discord": "Eijí#9994",
-    "BannerSS": "https://drive.google.com/open?id=16klqLPTCMjFt3EA9jKgP7Ovq7sSXKEnB",
-    "TopUpSS": "https://drive.google.com/open?id=1a5hIvB_xy6XCwKiIYUqOGXHCFiEFBKEr",
-    "Guarantee": 0,
-    "Total": 21707
-  },
-  {
-    "Ranking": 38,
-    "Discord": "Cobus#0284",
-    "BannerSS": "https://drive.google.com/open?id=1Pim3pw1sNvwC3X3lg_LUCeZr0wgYoTlz",
-    "TopUpSS": "https://drive.google.com/open?id=1VJFvrZPay6OQNwYrpsBllywELNB2ExEC",
-    "Guarantee": 0,
-    "Total": 21239
-  },
-  {
-    "Ranking": 39,
-    "Discord": "Ждун Яэ Сакуры#5663",
-    "BannerSS": "https://drive.google.com/open?id=1Se29agL4GZ35ITEmt9JVxupvmHu80toj",
-    "TopUpSS": "https://drive.google.com/open?id=1lnLhx1t2QYSA5k0w5rQSBoAB0Ul3e9Y9",
-    "Guarantee": 0,
-    "Total": 21107
-  },
-  {
-    "Ranking": 40,
     "Discord": "qwertyuiop7161#7256",
-    "BannerSS": "https://drive.google.com/open?id=1UKjbRejSYXfZYBkiqMbtTTNgYOA8PkRF",
-    "TopUpSS": "https://drive.google.com/open?id=1XAYVsCbG-dHUze6ksUccrMpwnJ-Y5EKC",
+    "GenesisCrystals": 0,
+    "Primogems": 2,
+    "Fate": 116,
+    "Pity": 10,
     "Guarantee": 0,
-    "Total": 17694
+    "Whale": true
   },
   {
-    "Ranking": 41,
-    "Discord": "helluhellu#9007",
-    "BannerSS": "https://drive.google.com/open?id=1av6TWnwG5D-D2TBiIs6_MB3_t5_FCGbW",
-    "TopUpSS": "https://drive.google.com/open?id=1nsiSIuMbJBozwMdNO_Rg6siGLijG4ilx",
+    "Discord": "Seigam#2303",
+    "GenesisCrystals": 0,
+    "Primogems": 7669,
+    "Fate": 0,
+    "Pity": 73,
     "Guarantee": 0,
-    "Total": 15376
+    "Whale": false
   },
   {
-    "Ranking": 42,
-    "Discord": "xCadd#3250",
-    "BannerSS": "https://drive.google.com/open?id=15N82_I_n0KCZLAr0c6q4GORzRzusCSdZ",
-    "TopUpSS": "https://drive.google.com/open?id=1gIJGONROAbpSDEtX0M0pirUzCd7PUXNE",
-    "Guarantee": 0,
-    "Total": 14725
+    "Discord": "sacu#8855",
+    "GenesisCrystals": 0,
+    "Primogems": 10015,
+    "Fate": 0,
+    "Pity": 0,
+    "Guarantee": 1,
+    "Whale": false
   },
   {
-    "Ranking": 43,
-    "Discord": "AvatarATLA 86/180#4781",
-    "BannerSS": "https://drive.google.com/open?id=1s7wa32U6p6-yywEf4xVpGM_zo1OaNYuR",
-    "TopUpSS": "https://drive.google.com/open?id=1wjoXNeSCiMsrpr7V87nuz-u8Bs-EcSfJ",
-    "Guarantee": 0,
-    "Total": 13826
+    "Discord": "Pluvios#1605",
+    "GenesisCrystals": 0,
+    "Primogems": 447,
+    "Fate": 31,
+    "Pity": 25,
+    "Guarantee": 1,
+    "Whale": false
   },
   {
-    "Ranking": 44,
-    "Discord": "zhangpenguin #3207",
-    "BannerSS": "https://drive.google.com/open?id=1z9aeylzZCWdtW5DgxEtGVrPiQZ1NbiN_",
-    "TopUpSS": "https://drive.google.com/open?id=1i4-ipqabHBvESkuMX0A2S8-e1imW0S4m",
+    "Discord": "Wait What#0912",
+    "GenesisCrystals": 0,
+    "Primogems": 6645,
+    "Fate": 0,
+    "Pity": 77,
     "Guarantee": 0,
-    "Total": 13171
+    "Whale": true
   },
   {
-    "Ranking": 45,
-    "Discord": "Wan#2623",
-    "BannerSS": "https://drive.google.com/open?id=1_JZpaxu0U4ZTmHSRDShHtkpv78PE-nMo",
-    "TopUpSS": "https://drive.google.com/open?id=1bVNQCMuJA_9RWsby3YsC1b4Qvi22dkes",
+    "Discord": "Xe1ynn_#3342",
+    "GenesisCrystals": 0,
+    "Primogems": 15423,
+    "Fate": 5,
+    "Pity": 1,
     "Guarantee": 0,
-    "Total": 12831
+    "Whale": false
   },
   {
-    "Ranking": 46,
+    "Discord": "Cobus#0284",
+    "GenesisCrystals": 0,
+    "Primogems": 1267,
+    "Fate": 90,
+    "Pity": 55,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "AedanadeA#2317",
+    "GenesisCrystals": 0,
+    "Primogems": 16712,
+    "Fate": 4,
+    "Pity": 75,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "NotJD#1447",
+    "GenesisCrystals": 0,
+    "Primogems": 5621,
+    "Fate": 1,
+    "Pity": 0,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Shrine#3521",
+    "GenesisCrystals": 0,
+    "Primogems": 308,
+    "Fate": 50,
+    "Pity": 75,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Branjazz#0002",
+    "GenesisCrystals": 0,
+    "Primogems": 47,
+    "Fate": 105,
+    "Pity": 70,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Avi#9069",
+    "GenesisCrystals": 0,
+    "Primogems": 24,
+    "Fate": 27,
+    "Pity": 30,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Koga#3808",
+    "GenesisCrystals": 0,
+    "Primogems": 1807,
+    "Fate": 131,
+    "Pity": 54,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Blazer#4956",
+    "GenesisCrystals": 59,
+    "Primogems": 10832,
+    "Fate": 1,
+    "Pity": 39,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Nep#6636",
+    "GenesisCrystals": 0,
+    "Primogems": 31279,
+    "Fate": 8,
+    "Pity": 31,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "AvatarATLA 116/180#4781",
+    "GenesisCrystals": 600,
+    "Primogems": 10332,
+    "Fate": 3,
+    "Pity": 46,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "DarkerThanSnow#2134",
+    "GenesisCrystals": 0,
+    "Primogems": 14812,
+    "Fate": 0,
+    "Pity": 3,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Gardios#4037",
+    "GenesisCrystals": 98560,
+    "Primogems": 46321,
+    "Fate": 38,
+    "Pity": 45,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Sloth | BAAL#7022",
+    "GenesisCrystals": 5700,
+    "Primogems": 30851,
+    "Fate": 5,
+    "Pity": 32,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Zibzagoon#9999",
+    "GenesisCrystals": 0,
+    "Primogems": 456,
+    "Fate": 30,
+    "Pity": 49,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "FeaReaper#3861",
+    "GenesisCrystals": 300,
+    "Primogems": 23432,
+    "Fate": 12,
+    "Pity": 34,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Scaramouche_gaming#6666",
+    "GenesisCrystals": 0,
+    "Primogems": 68137,
+    "Fate": 11,
+    "Pity": 33,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
     "Discord": "Jhynx#3865",
-    "BannerSS": "https://drive.google.com/open?id=1jqE19O0hWFapxs0mrnhSxz_MBAlQUDWC",
-    "TopUpSS": "https://drive.google.com/open?id=1oP78eo-NaMQLrDxCvF16yeIUssveEChG",
+    "GenesisCrystals": 0,
+    "Primogems": 10128,
+    "Fate": 5,
+    "Pity": 36,
     "Guarantee": 0,
-    "Total": 12091
+    "Whale": false
   },
   {
-    "Ranking": 47,
+    "Discord": "TechnoThunder#0615",
+    "GenesisCrystals": 0,
+    "Primogems": 22002,
+    "Fate": 22,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "PUCCI#0893",
+    "GenesisCrystals": 0,
+    "Primogems": 24,
+    "Fate": 33,
+    "Pity": 65,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "ItsAnOo#3843",
+    "GenesisCrystals": 0,
+    "Primogems": 22911,
+    "Fate": 5,
+    "Pity": 69,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Arjden#1023",
+    "GenesisCrystals": 0,
+    "Primogems": 33551,
+    "Fate": 3,
+    "Pity": 30,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Lyagren#7480",
+    "GenesisCrystals": 610,
+    "Primogems": 86041,
+    "Fate": 44,
+    "Pity": 10,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "duhhbobo#0014",
+    "GenesisCrystals": 0,
+    "Primogems": 1679,
+    "Fate": 0,
+    "Pity": 4,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "name b_#6945",
+    "GenesisCrystals": 0,
+    "Primogems": 7802,
+    "Fate": 2,
+    "Pity": 31,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "kagoou#1905",
+    "GenesisCrystals": 2400,
+    "Primogems": 21404,
+    "Fate": 168,
+    "Pity": 70,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "ICantFindAName#4020",
+    "GenesisCrystals": 300,
+    "Primogems": 37900,
+    "Fate": 0,
+    "Pity": 43,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "xCadd#3250",
+    "GenesisCrystals": 0,
+    "Primogems": 10481,
+    "Fate": 0,
+    "Pity": 47,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
     "Discord": "YamiXD#5933",
-    "BannerSS": "https://drive.google.com/open?id=1P93RvTAURcbeHuIpcfjPR2EP90zrCPwM",
-    "TopUpSS": "https://drive.google.com/open?id=1qIkg45SgFdL1ofyD05FUkmDIwRscrWzc",
+    "GenesisCrystals": 0,
+    "Primogems": 10359,
+    "Fate": 0,
+    "Pity": 0,
     "Guarantee": 0,
-    "Total": 11638
+    "Whale": false
   },
   {
-    "Ranking": 48,
-    "Discord": "ChippedJosh#7728",
-    "BannerSS": "https://drive.google.com/open?id=1EUWCuY0mpWAfW6HwgYCg506tyOJH1C2B",
-    "TopUpSS": "https://drive.google.com/open?id=1JG0ilpzp8LB3Gn0fmjDJcRuGtf2r06eT",
-    "Guarantee": 0,
-    "Total": 11298
+    "Discord": "Iota#5264",
+    "GenesisCrystals": 0,
+    "Primogems": 23955,
+    "Fate": 0,
+    "Pity": 56,
+    "Guarantee": 1,
+    "Whale": false
   },
   {
-    "Ranking": 49,
-    "Discord": "im in pain#5582",
-    "BannerSS": "https://drive.google.com/open?id=1BSTlTRgz4S5l2y6aXBwRy2qyuzXl2g6z",
-    "TopUpSS": "",
+    "Discord": "Monica#0459",
+    "GenesisCrystals": 2100,
+    "Primogems": 43269,
+    "Fate": 56,
+    "Pity": 9,
     "Guarantee": 0,
-    "Total": 11223
+    "Whale": false
   },
   {
-    "Ranking": 50,
-    "Discord": "XTsurxj#6510",
-    "BannerSS": "https://drive.google.com/open?id=1HxGKhrHemNlcGKXNt6dFNAVCqqc0vDRv",
-    "TopUpSS": "https://drive.google.com/open?id=1j3AhT95yAPV_1yKZX9oM-bTEnh8HDru8",
+    "Discord": "Cy#7630",
+    "GenesisCrystals": 300,
+    "Primogems": 11652,
+    "Fate": 0,
+    "Pity": 28,
     "Guarantee": 0,
-    "Total": 6942
+    "Whale": false
   },
   {
-    "Ranking": 51,
-    "Discord": "Divinus#6758",
-    "BannerSS": "https://drive.google.com/open?id=1-RP055uLCCv_5O22crxZDux_osBIH_Jp",
-    "TopUpSS": "https://drive.google.com/open?id=1y1zRpT9U3ybs9WohjWeJd-p4JeN-qU_F",
-    "Guarantee": 0,
-    "Total": 6735
+    "Discord": "NDGames#0021",
+    "GenesisCrystals": 0,
+    "Primogems": 124,
+    "Fate": 97,
+    "Pity": 0,
+    "Guarantee": 1,
+    "Whale": false
   },
   {
-    "Ranking": 52,
-    "Discord": "Humid Fungus#0934",
-    "BannerSS": "https://drive.google.com/open?id=1-GoRpGhgioVb2IWRP45AGgGfjmFCaIpK",
-    "TopUpSS": "",
+    "Discord": "Kirazuto#7661",
+    "GenesisCrystals": 0,
+    "Primogems": 32412,
+    "Fate": 11,
+    "Pity": 15,
     "Guarantee": 0,
-    "Total": 4342
+    "Whale": true
+  },
+  {
+    "Discord": "WonderGuard_Spiritomb#9899",
+    "GenesisCrystals": 0,
+    "Primogems": 25969,
+    "Fate": 10,
+    "Pity": 11,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "ElAxelZzZ...#0065",
+    "GenesisCrystals": 0,
+    "Primogems": 3,
+    "Fate": 89,
+    "Pity": 62,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Muel#9778",
+    "GenesisCrystals": 0,
+    "Primogems": 9055,
+    "Fate": 5,
+    "Pity": 43,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Chad Thundercock#8900",
+    "GenesisCrystals": 0,
+    "Primogems": 69,
+    "Fate": 7,
+    "Pity": 70,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Hypernova451#3619",
+    "GenesisCrystals": 2400,
+    "Primogems": 46529,
+    "Fate": 16,
+    "Pity": 8,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "nerfhurdur#1801",
+    "GenesisCrystals": 0,
+    "Primogems": 10660,
+    "Fate": 1,
+    "Pity": 7,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "🌸Raiden Simp🌸#8731",
+    "GenesisCrystals": 150,
+    "Primogems": 59292,
+    "Fate": 17,
+    "Pity": 70,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Lizard#3814",
+    "GenesisCrystals": 0,
+    "Primogems": 16609,
+    "Fate": 10,
+    "Pity": 2,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "𝐻𝓊 𝒯𝒶𝑜#0001",
+    "GenesisCrystals": 0,
+    "Primogems": 215,
+    "Fate": 0,
+    "Pity": 31,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "peefman48#4805",
+    "GenesisCrystals": 0,
+    "Primogems": 6047,
+    "Fate": 0,
+    "Pity": 73,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "OVERLORD#4794",
+    "GenesisCrystals": 2400,
+    "Primogems": 49079,
+    "Fate": 31,
+    "Pity": 75,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Dank Panda#3274",
+    "GenesisCrystals": 300,
+    "Primogems": 2853,
+    "Fate": 70,
+    "Pity": 40,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Solidsinek#1304",
+    "GenesisCrystals": 600,
+    "Primogems": 77,
+    "Fate": 169,
+    "Pity": 53,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "BlackMeteorite#7739",
+    "GenesisCrystals": 300,
+    "Primogems": 4349,
+    "Fate": 0,
+    "Pity": 60,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Claire#5337",
+    "GenesisCrystals": 2400,
+    "Primogems": 55025,
+    "Fate": 13,
+    "Pity": 57,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "baodiepp#7087",
+    "GenesisCrystals": 0,
+    "Primogems": 133,
+    "Fate": 210,
+    "Pity": 3,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "ilyraf#4846",
+    "GenesisCrystals": 1435,
+    "Primogems": 76,
+    "Fate": 125,
+    "Pity": 54,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "AX#9789",
+    "GenesisCrystals": 0,
+    "Primogems": 728,
+    "Fate": 211,
+    "Pity": 62,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Barbatos#1334",
+    "GenesisCrystals": 60,
+    "Primogems": 15,
+    "Fate": 0,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "rollo#0498",
+    "GenesisCrystals": 669,
+    "Primogems": 13631,
+    "Fate": 0,
+    "Pity": 30,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Eufrasia#0413",
+    "GenesisCrystals": 0,
+    "Primogems": 41824,
+    "Fate": 9,
+    "Pity": 80,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "omgeta#8841",
+    "GenesisCrystals": 2400,
+    "Primogems": 118,
+    "Fate": 370,
+    "Pity": 70,
+    "Guarantee": 0,
+    "Whale": false
   }
 ]

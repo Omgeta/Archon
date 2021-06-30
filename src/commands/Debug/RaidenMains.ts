@@ -4,7 +4,7 @@ import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
 import roles from "../../assets/json/roles.json";
 import lyceum from "../../assets/json/lyceum.json";
-import { ArchonEmbed } from "../../";
+import { ArchonEmbed, LeaderboardManager } from "../../";
 
 export default class RaidenMainsCommand extends Command {
     public constructor() {
@@ -97,13 +97,20 @@ export default class RaidenMainsCommand extends Command {
     }
 
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
-        const description = this.client.leaderboard.toString();
-        await target.send(new ArchonEmbed()
-            .setAuthor("", "https://images-ext-1.discordapp.net/external/AefdtAO-E2pokACMM5WuBjMOggFGEgilOrpYumSa5ik/https/media.discordapp.net/attachments/814485432959500308/822171244723830824/latest.png")
-            .setTitle("__**Leaderboard | Primogem Count**__")
-            .setDescription(description)
-            .setImage("https://i.imgur.com/Lqf51wQ.gif")
-        );
+        const leaderboardManager = new LeaderboardManager(this.client);
+        const [paidCategory, freeCategory] = leaderboardManager.getCategories();
+
+        const paidLeaderboardEmbed = new ArchonEmbed()
+            .setTitle("__**Primogem Leaderboard | Paid Category**__")
+            .setDescription(LeaderboardManager.toString(paidCategory))
+            .setColor("#DD2233");
+
+        const freeLeaderboardEmbed = new ArchonEmbed()
+            .setTitle("__**Primogem Leaderboard | Free Category**__")
+            .setDescription(LeaderboardManager.toString(freeCategory));
+
+        await target.send(paidLeaderboardEmbed);
+        await target.send(freeLeaderboardEmbed);
     }
 
     public async exec(message: Message, { subcommand, target }: { subcommand: string, target: NewsChannel | TextChannel }): Promise<Message> {
@@ -117,6 +124,7 @@ export default class RaidenMainsCommand extends Command {
             case "leaderboard":
                 await this.sendLeaderboard(target); break;
         }
+
 
         return message.channel.send(`Finished sending raiden information to ${target}`);
     }
