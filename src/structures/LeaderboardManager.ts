@@ -55,7 +55,7 @@ export default class LeaderboardManager {
         for (const row of this.data) {
             if (row.Discord.toLowerCase() === username || row.DiscordId === userid) {
                 const [paidCategory, freeCategory] = this.getCategories();
-                const rank = row.Whale ? paidCategory.findIndex(r => r === row) : freeCategory.findIndex(r => r === row);
+                const rank = (row.Whale ? paidCategory.findIndex(r => r === row) : freeCategory.findIndex(r => r === row)) + 1;
 
                 return [rank, row];
             }

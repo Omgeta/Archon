@@ -48,7 +48,11 @@ export default class LeaderboardCommand extends Command {
             );
         } else {
             return message.util.send(new ArchonEmbed()
-                .setDescription(`${member.displayName} doesn't have an entry in the leaderboard! Please try again`)
+                .setDescription(
+                    `${member.displayName} doesn't have an entry in the leaderboard!
+                    Please submit your details when the next announcement is made for Raiden Check.
+                    `
+                )
                 .setColor(PYRO_COLOR)
             );
         }

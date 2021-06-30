@@ -6,7 +6,8 @@
     "Fate": 3,
     "Pity": 55,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "529047079356465172"
   },
   {
     "Discord": "qwertyuiop7161#7256",
@@ -15,7 +16,8 @@
     "Fate": 116,
     "Pity": 10,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "476031597263716352"
   },
   {
     "Discord": "Seigam#2303",
@@ -24,7 +26,8 @@
     "Fate": 0,
     "Pity": 73,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "639897515826741276"
   },
   {
     "Discord": "sacu#8855",
@@ -33,7 +36,8 @@
     "Fate": 0,
     "Pity": 0,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "425946296860278785"
   },
   {
     "Discord": "Pluvios#1605",
@@ -42,7 +46,8 @@
     "Fate": 31,
     "Pity": 25,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "679473064009924677"
   },
   {
     "Discord": "Wait What#0912",
@@ -51,7 +56,8 @@
     "Fate": 0,
     "Pity": 77,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "401764441802145805"
   },
   {
     "Discord": "Xe1ynn_#3342",
@@ -60,7 +66,8 @@
     "Fate": 5,
     "Pity": 1,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "373840104650702859"
   },
   {
     "Discord": "Cobus#0284",
@@ -69,7 +76,8 @@
     "Fate": 90,
     "Pity": 55,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "191166714971422722"
   },
   {
     "Discord": "AedanadeA#2317",
@@ -78,7 +86,8 @@
     "Fate": 4,
     "Pity": 75,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "280180012278087682"
   },
   {
     "Discord": "NotJD#1447",
@@ -87,7 +96,8 @@
     "Fate": 1,
     "Pity": 0,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "587908048136306699"
   },
   {
     "Discord": "Shrine#3521",
@@ -96,7 +106,8 @@
     "Fate": 50,
     "Pity": 75,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "350114443633360897"
   },
   {
     "Discord": "Branjazz#0002",
@@ -105,7 +116,8 @@
     "Fate": 105,
     "Pity": 70,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": true,
+    "DiscordId": "178594294184148995"
   },
   {
     "Discord": "Avi#9069",
@@ -114,7 +126,8 @@
     "Fate": 27,
     "Pity": 30,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "853569804480413706"
   },
   {
     "Discord": "Koga#3808",
@@ -123,7 +136,8 @@
     "Fate": 131,
     "Pity": 54,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "706453701564563476"
   },
   {
     "Discord": "Blazer#4956",
@@ -132,7 +146,8 @@
     "Fate": 1,
     "Pity": 39,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "520211253377892371"
   },
   {
     "Discord": "Nep#6636",
@@ -141,7 +156,8 @@
     "Fate": 8,
     "Pity": 31,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "412564238876540940"
   },
   {
     "Discord": "AvatarATLA 116/180#4781",
@@ -159,7 +175,8 @@
     "Fate": 0,
     "Pity": 3,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "258066846916280323"
   },
   {
     "Discord": "Gardios#4037",
@@ -168,7 +185,8 @@
     "Fate": 38,
     "Pity": 45,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": true,
+    "DiscordId": "686176090913505303"
   },
   {
     "Discord": "Sloth | BAAL#7022",
@@ -177,7 +195,8 @@
     "Fate": 5,
     "Pity": 32,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": true,
+    "DiscordId": "386086053863358465"
   },
   {
     "Discord": "Zibzagoon#9999",
@@ -186,7 +205,8 @@
     "Fate": 30,
     "Pity": 49,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "716007691650334760"
   },
   {
     "Discord": "FeaReaper#3861",
@@ -195,7 +215,8 @@
     "Fate": 12,
     "Pity": 34,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "243514726347309059"
   },
   {
     "Discord": "Scaramouche_gaming#6666",
@@ -204,7 +225,8 @@
     "Fate": 11,
     "Pity": 33,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "265216832871333898"
   },
   {
     "Discord": "Jhynx#3865",
@@ -213,7 +235,8 @@
     "Fate": 5,
     "Pity": 36,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "240516108006719499"
   },
   {
     "Discord": "TechnoThunder#0615",
@@ -222,7 +245,8 @@
     "Fate": 22,
     "Pity": 0,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "235530310123520000"
   },
   {
     "Discord": "PUCCI#0893",
@@ -231,7 +255,8 @@
     "Fate": 33,
     "Pity": 65,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "429972332560252929"
   },
   {
     "Discord": "ItsAnOo#3843",
@@ -240,7 +265,8 @@
     "Fate": 5,
     "Pity": 69,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "447732931000008704"
   },
   {
     "Discord": "Arjden#1023",
@@ -249,7 +275,8 @@
     "Fate": 3,
     "Pity": 30,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "288869172337967114"
   },
   {
     "Discord": "Lyagren#7480",
@@ -258,7 +285,8 @@
     "Fate": 44,
     "Pity": 10,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": true,
+    "DiscordId": "314406662863716353"
   },
   {
     "Discord": "duhhbobo#0014",
@@ -267,7 +295,8 @@
     "Fate": 0,
     "Pity": 4,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "800799026320375898"
   },
   {
     "Discord": "name b_#6945",
@@ -285,7 +314,8 @@
     "Fate": 168,
     "Pity": 70,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "747438390927949834"
   },
   {
     "Discord": "ICantFindAName#4020",
@@ -294,7 +324,8 @@
     "Fate": 0,
     "Pity": 43,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "190706140600860672"
   },
   {
     "Discord": "xCadd#3250",
@@ -303,7 +334,8 @@
     "Fate": 0,
     "Pity": 47,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "436886204819177473"
   },
   {
     "Discord": "YamiXD#5933",
@@ -312,7 +344,8 @@
     "Fate": 0,
     "Pity": 0,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "484634196719960076"
   },
   {
     "Discord": "Iota#5264",
@@ -321,7 +354,8 @@
     "Fate": 0,
     "Pity": 56,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "211289591469178881"
   },
   {
     "Discord": "Monica#0459",
@@ -330,7 +364,8 @@
     "Fate": 56,
     "Pity": 9,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "276458316228460546"
   },
   {
     "Discord": "Cy#7630",
@@ -339,7 +374,8 @@
     "Fate": 0,
     "Pity": 28,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "836292404624883773"
   },
   {
     "Discord": "NDGames#0021",
@@ -348,7 +384,8 @@
     "Fate": 97,
     "Pity": 0,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "603106158613364738"
   },
   {
     "Discord": "Kirazuto#7661",
@@ -357,7 +394,8 @@
     "Fate": 11,
     "Pity": 15,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "210870085407997952"
   },
   {
     "Discord": "WonderGuard_Spiritomb#9899",
@@ -366,7 +404,8 @@
     "Fate": 10,
     "Pity": 11,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false,
+    "DiscordId": "457896566624092161"
   },
   {
     "Discord": "ElAxelZzZ...#0065",
@@ -375,7 +414,8 @@
     "Fate": 89,
     "Pity": 62,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "357537799454326784"
   },
   {
     "Discord": "Muel#9778",
@@ -384,7 +424,8 @@
     "Fate": 5,
     "Pity": 43,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "696588623231057960"
   },
   {
     "Discord": "Chad Thundercock#8900",
@@ -393,7 +434,8 @@
     "Fate": 7,
     "Pity": 70,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "320982936730075136"
   },
   {
     "Discord": "Hypernova451#3619",
@@ -402,7 +444,8 @@
     "Fate": 16,
     "Pity": 8,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "403829481325854721"
   },
   {
     "Discord": "nerfhurdur#1801",
@@ -411,7 +454,8 @@
     "Fate": 1,
     "Pity": 7,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "365104127375835136"
   },
   {
     "Discord": "🌸Raiden Simp🌸#8731",
@@ -420,7 +464,8 @@
     "Fate": 17,
     "Pity": 70,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": true,
+    "DiscordId": "314598295311745025"
   },
   {
     "Discord": "Lizard#3814",
@@ -429,7 +474,8 @@
     "Fate": 10,
     "Pity": 2,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "454517219670622209"
   },
   {
     "Discord": "𝐻𝓊 𝒯𝒶𝑜#0001",
@@ -438,7 +484,8 @@
     "Fate": 0,
     "Pity": 31,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "630687306294099979"
   },
   {
     "Discord": "peefman48#4805",
@@ -447,7 +494,8 @@
     "Fate": 0,
     "Pity": 73,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "173444403145342978"
   },
   {
     "Discord": "OVERLORD#4794",
@@ -456,7 +504,8 @@
     "Fate": 31,
     "Pity": 75,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "579706194340610098"
   },
   {
     "Discord": "Dank Panda#3274",
@@ -465,7 +514,8 @@
     "Fate": 70,
     "Pity": 40,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "305255326431707148"
   },
   {
     "Discord": "Solidsinek#1304",
@@ -474,7 +524,8 @@
     "Fate": 169,
     "Pity": 53,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": true,
+    "DiscordId": "171298016391593985"
   },
   {
     "Discord": "BlackMeteorite#7739",
@@ -483,7 +534,8 @@
     "Fate": 0,
     "Pity": 60,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "703587762560958465"
   },
   {
     "Discord": "Claire#5337",
@@ -492,7 +544,8 @@
     "Fate": 13,
     "Pity": 57,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "242388745276489728"
   },
   {
     "Discord": "baodiepp#7087",
@@ -501,7 +554,8 @@
     "Fate": 210,
     "Pity": 3,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "696815804833857618"
   },
   {
     "Discord": "ilyraf#4846",
@@ -510,7 +564,8 @@
     "Fate": 125,
     "Pity": 54,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "586098457387728917"
   },
   {
     "Discord": "AX#9789",
@@ -519,7 +574,8 @@
     "Fate": 211,
     "Pity": 62,
     "Guarantee": 1,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "710144274905301082"
   },
   {
     "Discord": "Barbatos#1334",
@@ -528,7 +584,8 @@
     "Fate": 0,
     "Pity": 0,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "469875482649690122"
   },
   {
     "Discord": "rollo#0498",
@@ -537,7 +594,8 @@
     "Fate": 0,
     "Pity": 30,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "691615993524387850"
   },
   {
     "Discord": "Eufrasia#0413",
@@ -546,7 +604,8 @@
     "Fate": 9,
     "Pity": 80,
     "Guarantee": 0,
-    "Whale": false
+    "Whale": false,
+    "DiscordId": "230799800671404042"
   },
   {
     "Discord": "omgeta#8841",
