@@ -18,7 +18,11 @@ export default class PokeCommand extends Command {
             args: [
                 {
                     id: "target",
-                    type: "member"
+                    type: "member",
+                    prompt: {
+                        start: message => `Who would you like to perform that action on ${message.author}?`,
+                        retry: message => `That isn't a valid user! Try again ${message.author}`
+                    }
                 }
             ],
             ratelimit: 3
