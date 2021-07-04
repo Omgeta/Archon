@@ -31,8 +31,10 @@ export default class LeaderboardCommand extends Command {
     // TODO: add feature to update leaderboard remotely
     public exec(message: Message, { member }: { member: GuildMember }): Promise<Message> {
         const leaderboardManager = new LeaderboardManager(this.client);
-        const [rank, row] = leaderboardManager.findUser(member.user);
-        if (row) {
+        const userData = leaderboardManager.findUser(member.user);
+
+        if (userData) {
+            const [rank, row] = userData;
             const total = LeaderboardManager.calculateTotal(row);
             const chances = pityCalculator.calculateStr(Math.floor(total / 14400));
 
