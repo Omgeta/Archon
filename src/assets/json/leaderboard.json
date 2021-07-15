@@ -1,623 +1,1082 @@
 [
   {
-    "Discord": "brrr#1606",
-    "GenesisCrystals": 900,
-    "Primogems": 10525,
-    "Fate": 3,
-    "Pity": 55,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "529047079356465172"
-  },
-  {
-    "Discord": "qwertyuiop7161#7256",
+    "Discord": "-Isa-#1518",
     "GenesisCrystals": 0,
-    "Primogems": 2,
-    "Fate": 116,
-    "Pity": 10,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "476031597263716352"
+    "Primogems": 107,
+    "Fates": 0,
+    "Pity": 0,
+    "Guarantee": 1,
+    "Whale": true
   },
   {
     "Discord": "Seigam#2303",
-    "GenesisCrystals": 0,
-    "Primogems": 7669,
-    "Fate": 0,
+    "GenesisCrystals": 300,
+    "Primogems": 11834,
+    "Fates": 0,
     "Pity": 73,
     "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "639897515826741276"
+    "Whale": true
   },
   {
-    "Discord": "sacu#8855",
+    "Discord": "Meliocuri#9245",
     "GenesisCrystals": 0,
-    "Primogems": 10015,
-    "Fate": 0,
+    "Primogems": 32339,
+    "Fates": 10,
+    "Pity": 68,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "FantsyWarrior#8408",
+    "GenesisCrystals": 0,
+    "Primogems": 18,
+    "Fates": 0,
+    "Pity": 4,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Da best#8911",
+    "GenesisCrystals": 1200,
+    "Primogems": 26203,
+    "Fates": 18,
     "Pity": 0,
-    "Guarantee": 1,
-    "Whale": true,
-    "DiscordId": "425946296860278785"
-  },
-  {
-    "Discord": "Pluvios#1605",
-    "GenesisCrystals": 0,
-    "Primogems": 447,
-    "Fate": 31,
-    "Pity": 25,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "679473064009924677"
-  },
-  {
-    "Discord": "Wait What#0912",
-    "GenesisCrystals": 0,
-    "Primogems": 6645,
-    "Fate": 0,
-    "Pity": 77,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "401764441802145805"
+    "Whale": true
   },
   {
-    "Discord": "Xe1ynn_#3342",
+    "Discord": "iKamiKaze#4256",
     "GenesisCrystals": 0,
-    "Primogems": 15423,
-    "Fate": 5,
-    "Pity": 1,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "373840104650702859"
-  },
-  {
-    "Discord": "Cobus#0284",
-    "GenesisCrystals": 0,
-    "Primogems": 1267,
-    "Fate": 90,
-    "Pity": 55,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "191166714971422722"
-  },
-  {
-    "Discord": "AedanadeA#2317",
-    "GenesisCrystals": 0,
-    "Primogems": 16712,
-    "Fate": 4,
-    "Pity": 75,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "280180012278087682"
-  },
-  {
-    "Discord": "NotJD#1447",
-    "GenesisCrystals": 0,
-    "Primogems": 5621,
-    "Fate": 1,
+    "Primogems": 5279,
+    "Fates": 4,
     "Pity": 0,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "587908048136306699"
-  },
-  {
-    "Discord": "Shrine#3521",
-    "GenesisCrystals": 0,
-    "Primogems": 308,
-    "Fate": 50,
-    "Pity": 75,
     "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "350114443633360897"
+    "Whale": false
   },
   {
-    "Discord": "Branjazz#0002",
+    "Discord": "GlariousZ#7580",
     "GenesisCrystals": 0,
-    "Primogems": 47,
-    "Fate": 105,
-    "Pity": 70,
-    "Guarantee": 1,
-    "Whale": true,
-    "DiscordId": "178594294184148995"
-  },
-  {
-    "Discord": "Avi#9069",
-    "GenesisCrystals": 0,
-    "Primogems": 24,
-    "Fate": 27,
-    "Pity": 30,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "853569804480413706"
-  },
-  {
-    "Discord": "Koga#3808",
-    "GenesisCrystals": 0,
-    "Primogems": 1807,
-    "Fate": 131,
-    "Pity": 54,
+    "Primogems": 1657,
+    "Fates": 105,
+    "Pity": 20,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "706453701564563476"
+    "Whale": false
   },
   {
-    "Discord": "Blazer#4956",
-    "GenesisCrystals": 59,
-    "Primogems": 10832,
-    "Fate": 1,
-    "Pity": 39,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "520211253377892371"
+    "Discord": "Invisiboo#1622",
+    "GenesisCrystals": 0,
+    "Primogems": 1481,
+    "Fates": 169,
+    "Pity": 21,
+    "Guarantee": 1,
+    "Whale": false
   },
   {
     "Discord": "Nep#6636",
     "GenesisCrystals": 0,
-    "Primogems": 31279,
-    "Fate": 8,
+    "Primogems": 35547,
+    "Fates": 9,
     "Pity": 31,
     "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "412564238876540940"
+    "Whale": true
   },
   {
-    "Discord": "AvatarATLA 116/180#4781",
-    "GenesisCrystals": 600,
-    "Primogems": 10332,
-    "Fate": 3,
-    "Pity": 46,
-    "Guarantee": 0,
+    "Discord": "Gilgamesh#0231",
+    "GenesisCrystals": 300,
+    "Primogems": 448,
+    "Fates": 50,
+    "Pity": 0,
+    "Guarantee": 1,
     "Whale": false
   },
   {
-    "Discord": "DarkerThanSnow#2134",
-    "GenesisCrystals": 0,
-    "Primogems": 14812,
-    "Fate": 0,
-    "Pity": 3,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "258066846916280323"
-  },
-  {
-    "Discord": "Gardios#4037",
-    "GenesisCrystals": 98560,
-    "Primogems": 46321,
-    "Fate": 38,
-    "Pity": 45,
-    "Guarantee": 1,
-    "Whale": true,
-    "DiscordId": "686176090913505303"
-  },
-  {
-    "Discord": "Sloth | BAAL#7022",
-    "GenesisCrystals": 5700,
-    "Primogems": 30851,
-    "Fate": 5,
-    "Pity": 32,
-    "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "386086053863358465"
-  },
-  {
-    "Discord": "Zibzagoon#9999",
-    "GenesisCrystals": 0,
-    "Primogems": 456,
-    "Fate": 30,
-    "Pity": 49,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "716007691650334760"
-  },
-  {
-    "Discord": "FeaReaper#3861",
+    "Discord": "Scarlls#4682",
     "GenesisCrystals": 300,
-    "Primogems": 23432,
-    "Fate": 12,
-    "Pity": 34,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "243514726347309059"
-  },
-  {
-    "Discord": "Scaramouche_gaming#6666",
-    "GenesisCrystals": 0,
-    "Primogems": 68137,
-    "Fate": 11,
-    "Pity": 33,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "265216832871333898"
-  },
-  {
-    "Discord": "Jhynx#3865",
-    "GenesisCrystals": 0,
-    "Primogems": 10128,
-    "Fate": 5,
-    "Pity": 36,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "240516108006719499"
-  },
-  {
-    "Discord": "TechnoThunder#0615",
-    "GenesisCrystals": 0,
-    "Primogems": 22002,
-    "Fate": 22,
-    "Pity": 0,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "235530310123520000"
-  },
-  {
-    "Discord": "PUCCI#0893",
-    "GenesisCrystals": 0,
-    "Primogems": 24,
-    "Fate": 33,
-    "Pity": 65,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "429972332560252929"
-  },
-  {
-    "Discord": "ItsAnOo#3843",
-    "GenesisCrystals": 0,
-    "Primogems": 22911,
-    "Fate": 5,
-    "Pity": 69,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "447732931000008704"
-  },
-  {
-    "Discord": "Arjden#1023",
-    "GenesisCrystals": 0,
-    "Primogems": 33551,
-    "Fate": 3,
-    "Pity": 30,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "288869172337967114"
-  },
-  {
-    "Discord": "Lyagren#7480",
-    "GenesisCrystals": 610,
-    "Primogems": 86041,
-    "Fate": 44,
+    "Primogems": 359,
+    "Fates": 36,
     "Pity": 10,
     "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "314406662863716353"
+    "Whale": true
   },
   {
-    "Discord": "duhhbobo#0014",
+    "Discord": "mylizard#9375",
+    "GenesisCrystals": 900,
+    "Primogems": 5210,
+    "Fates": 3,
+    "Pity": 61,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Muji#4269",
+    "GenesisCrystals": 2349,
+    "Primogems": 21083,
+    "Fates": 0,
+    "Pity": 47,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Kraft#1741",
+    "GenesisCrystals": 1200,
+    "Primogems": 29845,
+    "Fates": 10,
+    "Pity": 8,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Not_A_Nerd#5420",
     "GenesisCrystals": 0,
-    "Primogems": 1679,
-    "Fate": 0,
-    "Pity": 4,
+    "Primogems": 10655,
+    "Fates": 13,
+    "Pity": 5,
     "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "800799026320375898"
+    "Whale": false
   },
   {
-    "Discord": "name b_#6945",
+    "Discord": "Zack#5946",
     "GenesisCrystals": 0,
-    "Primogems": 7802,
-    "Fate": 2,
+    "Primogems": 6408,
+    "Fates": 3,
+    "Pity": 62,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "sacu#8855",
+    "GenesisCrystals": 0,
+    "Primogems": 12873,
+    "Fates": 0,
+    "Pity": 10,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Mk.#5231",
+    "GenesisCrystals": 0,
+    "Primogems": 150,
+    "Fates": 10,
+    "Pity": 10,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "qwertyuiop7161#7256",
+    "GenesisCrystals": 0,
+    "Primogems": 157,
+    "Fates": 133,
+    "Pity": 10,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Dr.EPIC#8492",
+    "GenesisCrystals": 8380,
+    "Primogems": 35348,
+    "Fates": 2,
+    "Pity": 40,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "hyuntokkiii#5662",
+    "GenesisCrystals": 168,
+    "Primogems": 190,
+    "Fates": 79,
+    "Pity": 3,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "ashmitshinde13#6012",
+    "GenesisCrystals": 0,
+    "Primogems": 6441,
+    "Fates": 0,
+    "Pity": 9,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Solidsinek#1304",
+    "GenesisCrystals": 600,
+    "Primogems": 92,
+    "Fates": 200,
+    "Pity": 53,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Branjazz#0002",
+    "GenesisCrystals": 0,
+    "Primogems": 2,
+    "Fates": 144,
+    "Pity": 70,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "nme b_#6979",
+    "GenesisCrystals": 0,
+    "Primogems": 10366,
+    "Fates": 3,
     "Pity": 31,
     "Guarantee": 1,
     "Whale": false
   },
   {
-    "Discord": "kagoou#1905",
-    "GenesisCrystals": 2400,
-    "Primogems": 21404,
-    "Fate": 168,
+    "Discord": "TanKay#6143",
+    "GenesisCrystals": 900,
+    "Primogems": 28,
+    "Fates": 172,
+    "Pity": 3,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Pa3r1ck#5707",
+    "GenesisCrystals": 0,
+    "Primogems": 110,
+    "Fates": 0,
     "Pity": 70,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "747438390927949834"
+    "Whale": false
+  },
+  {
+    "Discord": "decaffinatedturtle#0910",
+    "GenesisCrystals": 0,
+    "Primogems": 60,
+    "Fates": 86,
+    "Pity": 0,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "nerfhurdur#1801",
+    "GenesisCrystals": 0,
+    "Primogems": 14649,
+    "Fates": 0,
+    "Pity": 7,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Sheikh-Sama#0002",
+    "GenesisCrystals": 0,
+    "Primogems": 16770,
+    "Fates": 1,
+    "Pity": 20,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "IAmKhayNine#1267",
+    "GenesisCrystals": 0,
+    "Primogems": 1074,
+    "Fates": 0,
+    "Pity": 4,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Teien#0541",
+    "GenesisCrystals": 300,
+    "Primogems": 11918,
+    "Fates": 10,
+    "Pity": 51,
+    "Guarantee": 1,
+    "Whale": true
   },
   {
     "Discord": "ICantFindAName#4020",
     "GenesisCrystals": 300,
-    "Primogems": 37900,
-    "Fate": 0,
+    "Primogems": 40624,
+    "Fates": 5,
     "Pity": 43,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "190706140600860672"
+    "Whale": false
   },
   {
-    "Discord": "xCadd#3250",
-    "GenesisCrystals": 0,
-    "Primogems": 10481,
-    "Fate": 0,
-    "Pity": 47,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "436886204819177473"
-  },
-  {
-    "Discord": "YamiXD#5933",
-    "GenesisCrystals": 0,
-    "Primogems": 10359,
-    "Fate": 0,
-    "Pity": 0,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "484634196719960076"
-  },
-  {
-    "Discord": "Iota#5264",
-    "GenesisCrystals": 0,
-    "Primogems": 23955,
-    "Fate": 0,
-    "Pity": 56,
+    "Discord": "Evan/#8114",
+    "GenesisCrystals": 600,
+    "Primogems": 291,
+    "Fates": 80,
+    "Pity": 52,
     "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "211289591469178881"
+    "Whale": false
   },
   {
-    "Discord": "Monica#0459",
-    "GenesisCrystals": 2100,
-    "Primogems": 43269,
-    "Fate": 56,
-    "Pity": 9,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "276458316228460546"
-  },
-  {
-    "Discord": "Cy#7630",
+    "Discord": "peefman48#4805",
     "GenesisCrystals": 300,
-    "Primogems": 11652,
-    "Fate": 0,
-    "Pity": 28,
+    "Primogems": 8990,
+    "Fates": 5,
+    "Pity": 73,
     "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "836292404624883773"
+    "Whale": false
+  },
+  {
+    "Discord": "ASTRAIOS#7777",
+    "GenesisCrystals": 0,
+    "Primogems": 22,
+    "Fates": 0,
+    "Pity": 57,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Spyl3x#2919",
+    "GenesisCrystals": 600,
+    "Primogems": 14701,
+    "Fates": 5,
+    "Pity": 14,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "NotJD#1447",
+    "GenesisCrystals": 0,
+    "Primogems": 7448,
+    "Fates": 0,
+    "Pity": 10,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Hapheles#6941",
+    "GenesisCrystals": 0,
+    "Primogems": 12996,
+    "Fates": 0,
+    "Pity": 44,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "kuma#2820",
+    "GenesisCrystals": 300,
+    "Primogems": 49094,
+    "Fates": 7,
+    "Pity": 58,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "MLN#4805",
+    "GenesisCrystals": 600,
+    "Primogems": 4,
+    "Fates": 90,
+    "Pity": 40,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "AedanadeA#2317",
+    "GenesisCrystals": 0,
+    "Primogems": 19567,
+    "Fates": 11,
+    "Pity": 75,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Anomandaris#1707",
+    "GenesisCrystals": 0,
+    "Primogems": 26277,
+    "Fates": 6,
+    "Pity": 61,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Raidenshrimp#6134",
+    "GenesisCrystals": 0,
+    "Primogems": 9346,
+    "Fates": 10,
+    "Pity": 51,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "K to the Y #1134",
+    "GenesisCrystals": 600,
+    "Primogems": 438,
+    "Fates": 77,
+    "Pity": 27,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "lillith#5146",
+    "GenesisCrystals": 78,
+    "Primogems": 15312,
+    "Fates": 9,
+    "Pity": 5,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Zenix#7529",
+    "GenesisCrystals": 300,
+    "Primogems": "10,356",
+    "Fates": 1,
+    "Pity": 15,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "aertanis#2025",
+    "GenesisCrystals": 840,
+    "Primogems": 73517,
+    "Fates": 43,
+    "Pity": 10,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "im in pain#5582",
+    "GenesisCrystals": 0,
+    "Primogems": 78,
+    "Fates": 63,
+    "Pity": 30,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "noraku#4789",
+    "GenesisCrystals": 0,
+    "Primogems": 14373,
+    "Fates": 0,
+    "Pity": 21,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Xe1ynn_#3342",
+    "GenesisCrystals": 0,
+    "Primogems": 18083,
+    "Fates": 10,
+    "Pity": 1,
+    "Guarantee": 0,
+    "Whale": false
   },
   {
     "Discord": "NDGames#0021",
     "GenesisCrystals": 0,
-    "Primogems": 124,
-    "Fate": 97,
+    "Primogems": 1,
+    "Fates": 127,
     "Pity": 0,
     "Guarantee": 1,
-    "Whale": true,
-    "DiscordId": "603106158613364738"
+    "Whale": true
   },
   {
-    "Discord": "Kirazuto#7661",
+    "Discord": "KE KE#0470",
     "GenesisCrystals": 0,
-    "Primogems": 32412,
-    "Fate": 11,
+    "Primogems": 855,
+    "Fates": 0,
     "Pity": 15,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "210870085407997952"
+    "Whale": true
   },
   {
-    "Discord": "WonderGuard_Spiritomb#9899",
-    "GenesisCrystals": 0,
-    "Primogems": 25969,
-    "Fate": 10,
-    "Pity": 11,
+    "Discord": "Revain Nigh#2250",
+    "GenesisCrystals": "600 (saving for any skin they could probably release a baal skin)",
+    "Primogems": 20368,
+    "Fates": 23,
+    "Pity": 50,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "457896566624092161"
+    "Whale": false
+  },
+  {
+    "Discord": "Loserface#7303",
+    "GenesisCrystals": 0,
+    "Primogems": 4,
+    "Fates": 0,
+    "Pity": 41,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Gilgamesh#0987",
+    "GenesisCrystals": 300,
+    "Primogems": 520,
+    "Fates": 230,
+    "Pity": 27,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Crellod#3577",
+    "GenesisCrystals": 0,
+    "Primogems": 15160,
+    "Fates": 0,
+    "Pity": 28,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "tigerlily#0008",
+    "GenesisCrystals": 0,
+    "Primogems": 14213,
+    "Fates": 10,
+    "Pity": 43,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Koga#3808",
+    "GenesisCrystals": 0,
+    "Primogems": 3866,
+    "Fates": 132,
+    "Pity": 54,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Crazyfox#2626",
+    "GenesisCrystals": 0,
+    "Primogems": 432,
+    "Fates": 0,
+    "Pity": 16,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Nate#5888",
+    "GenesisCrystals": 0,
+    "Primogems": 88,
+    "Fates": 74,
+    "Pity": 6,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Arjden#1023",
+    "GenesisCrystals": "o",
+    "Primogems": 37601,
+    "Fates": 4,
+    "Pity": 30,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Norman_gaming#2270",
+    "GenesisCrystals": 0,
+    "Primogems": 8013,
+    "Fates": 1,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Melona#8774",
+    "GenesisCrystals": 300,
+    "Primogems": 2716,
+    "Fates": 8,
+    "Pity": 20,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Sixth Fool#6666",
+    "GenesisCrystals": 0,
+    "Primogems": 53687,
+    "Fates": 6,
+    "Pity": 7,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Big DuDu is da beast#5363",
+    "GenesisCrystals": 0,
+    "Primogems": 133,
+    "Fates": 92,
+    "Pity": 42,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "FernandaRojas#1404",
+    "GenesisCrystals": 900,
+    "Primogems": 30940,
+    "Fates": 16,
+    "Pity": 73,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "sephi#0218",
+    "GenesisCrystals": 0,
+    "Primogems": 20926,
+    "Fates": 6,
+    "Pity": 23,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Jhynx#3865",
+    "GenesisCrystals": 0,
+    "Primogems": 13563,
+    "Fates": 10,
+    "Pity": 36,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "mofumofu#5141",
+    "GenesisCrystals": 0,
+    "Primogems": 2579,
+    "Fates": 0,
+    "Pity": 1,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Taked#7440",
+    "GenesisCrystals": 0,
+    "Primogems": 12914,
+    "Fates": 5,
+    "Pity": 10,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Ney-ver gonna give you up#1655",
+    "GenesisCrystals": 0,
+    "Primogems": 33222,
+    "Fates": 11,
+    "Pity": 1,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Wan#2623",
+    "GenesisCrystals": 1800,
+    "Primogems": 5187,
+    "Fates": 65,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Shiro__#5206",
+    "GenesisCrystals": 5259,
+    "Primogems": 27750,
+    "Fates": 9,
+    "Pity": 39,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "𝓑𝓪𝓪𝓵#0001",
+    "GenesisCrystals": 0,
+    "Primogems": 1197,
+    "Fates": 0,
+    "Pity": 40,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Нат#1840",
+    "GenesisCrystals": 0,
+    "Primogems": 24046,
+    "Fates": 0,
+    "Pity": 2,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "chuu#2869",
+    "GenesisCrystals": 630,
+    "Primogems": 18100,
+    "Fates": 5,
+    "Pity": 1,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Mystichunterz#1922",
+    "GenesisCrystals": 0,
+    "Primogems": 26327,
+    "Fates": 20,
+    "Pity": 66,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "radmouse#7313",
+    "GenesisCrystals": 0,
+    "Primogems": 1734,
+    "Fates": 0,
+    "Pity": 50,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Humid Fungus#0934",
+    "GenesisCrystals": 0,
+    "Primogems": 1964,
+    "Fates": 0,
+    "Pity": 35,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "kei raiden#0828",
+    "GenesisCrystals": 600,
+    "Primogems": 8791,
+    "Fates": 0,
+    "Pity": 46,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Broken_Bunny#7671",
+    "GenesisCrystals": 0,
+    "Primogems": 12311,
+    "Fates": 15,
+    "Pity": 70,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Hypernova451#3619",
+    "GenesisCrystals": 2700,
+    "Primogems": 50459,
+    "Fates": 21,
+    "Pity": 8,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "YamiXD#5933",
+    "GenesisCrystals": 0,
+    "Primogems": 13191,
+    "Fates": 0,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "MidnightRose182#3071",
+    "GenesisCrystals": 0,
+    "Primogems": 9638,
+    "Fates": 9,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "SIVAAA#6097",
+    "GenesisCrystals": 0,
+    "Primogems": 1754,
+    "Fates": 100,
+    "Pity": 1,
+    "Guarantee": 0,
+    "Whale": false
   },
   {
     "Discord": "ElAxelZzZ...#0065",
     "GenesisCrystals": 0,
     "Primogems": 3,
-    "Fate": 89,
+    "Fates": 97,
     "Pity": 62,
     "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "357537799454326784"
+    "Whale": false
+  },
+  {
+    "Discord": "loshmi2017#7480",
+    "GenesisCrystals": 0,
+    "Primogems": 8214,
+    "Fates": 0,
+    "Pity": 68,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Iota#5264",
+    "GenesisCrystals": 0,
+    "Primogems": 27444,
+    "Fates": 1,
+    "Pity": 62,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "AvatarATLA 82/180#4781",
+    "GenesisCrystals": 600,
+    "Primogems": 5237,
+    "Fates": 5,
+    "Pity": 37,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Dank Panda#3274",
+    "GenesisCrystals": 600,
+    "Primogems": 6928,
+    "Fates": 75,
+    "Pity": 40,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Zerarose#2703",
+    "GenesisCrystals": 615,
+    "Primogems": 9061,
+    "Fates": 0,
+    "Pity": 12,
+    "Guarantee": 1,
+    "Whale": false
   },
   {
     "Discord": "Muel#9778",
     "GenesisCrystals": 0,
-    "Primogems": 9055,
-    "Fate": 5,
+    "Primogems": 11735,
+    "Fates": 10,
     "Pity": 43,
     "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "696588623231057960"
-  },
-  {
-    "Discord": "Chad Thundercock#8900",
-    "GenesisCrystals": 0,
-    "Primogems": 69,
-    "Fate": 7,
-    "Pity": 70,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "320982936730075136"
-  },
-  {
-    "Discord": "Hypernova451#3619",
-    "GenesisCrystals": 2400,
-    "Primogems": 46529,
-    "Fate": 16,
-    "Pity": 8,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "403829481325854721"
-  },
-  {
-    "Discord": "nerfhurdur#1801",
-    "GenesisCrystals": 0,
-    "Primogems": 10660,
-    "Fate": 1,
-    "Pity": 7,
-    "Guarantee": 1,
-    "Whale": true,
-    "DiscordId": "365104127375835136"
-  },
-  {
-    "Discord": "🌸Raiden Simp🌸#8731",
-    "GenesisCrystals": 150,
-    "Primogems": 59292,
-    "Fate": 17,
-    "Pity": 70,
-    "Guarantee": 1,
-    "Whale": true,
-    "DiscordId": "314598295311745025"
-  },
-  {
-    "Discord": "Lizard#3814",
-    "GenesisCrystals": 0,
-    "Primogems": 16609,
-    "Fate": 10,
-    "Pity": 2,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "454517219670622209"
-  },
-  {
-    "Discord": "𝐻𝓊 𝒯𝒶𝑜#0001",
-    "GenesisCrystals": 0,
-    "Primogems": 215,
-    "Fate": 0,
-    "Pity": 31,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "630687306294099979"
-  },
-  {
-    "Discord": "peefman48#4805",
-    "GenesisCrystals": 0,
-    "Primogems": 6047,
-    "Fate": 0,
-    "Pity": 73,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "173444403145342978"
-  },
-  {
-    "Discord": "OVERLORD#4794",
-    "GenesisCrystals": 2400,
-    "Primogems": 49079,
-    "Fate": 31,
-    "Pity": 75,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "579706194340610098"
-  },
-  {
-    "Discord": "Dank Panda#3274",
-    "GenesisCrystals": 300,
-    "Primogems": 2853,
-    "Fate": 70,
-    "Pity": 40,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "305255326431707148"
-  },
-  {
-    "Discord": "Solidsinek#1304",
-    "GenesisCrystals": 600,
-    "Primogems": 77,
-    "Fate": 169,
-    "Pity": 53,
-    "Guarantee": 0,
-    "Whale": true,
-    "DiscordId": "171298016391593985"
-  },
-  {
-    "Discord": "BlackMeteorite#7739",
-    "GenesisCrystals": 300,
-    "Primogems": 4349,
-    "Fate": 0,
-    "Pity": 60,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "703587762560958465"
-  },
-  {
-    "Discord": "Claire#5337",
-    "GenesisCrystals": 2400,
-    "Primogems": 55025,
-    "Fate": 13,
-    "Pity": 57,
-    "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "242388745276489728"
-  },
-  {
-    "Discord": "baodiepp#7087",
-    "GenesisCrystals": 0,
-    "Primogems": 133,
-    "Fate": 210,
-    "Pity": 3,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "696815804833857618"
-  },
-  {
-    "Discord": "ilyraf#4846",
-    "GenesisCrystals": 1435,
-    "Primogems": 76,
-    "Fate": 125,
-    "Pity": 54,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "586098457387728917"
+    "Whale": false
   },
   {
     "Discord": "AX#9789",
     "GenesisCrystals": 0,
-    "Primogems": 728,
-    "Fate": 211,
+    "Primogems": 3286,
+    "Fates": 211,
     "Pity": 62,
     "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "710144274905301082"
+    "Whale": false
   },
   {
-    "Discord": "Barbatos#1334",
-    "GenesisCrystals": 60,
-    "Primogems": 15,
-    "Fate": 0,
+    "Discord": "#EMA0110",
+    "GenesisCrystals": 0,
+    "Primogems": 19806,
+    "Fates": 262,
+    "Pity": 6,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Blazer#4956",
+    "GenesisCrystals": 59,
+    "Primogems": 14671,
+    "Fates": 1,
+    "Pity": 39,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "PUCCI#0893",
+    "GenesisCrystals": 0,
+    "Primogems": 34,
+    "Fates": 50,
+    "Pity": 66,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "PanDaAnna#9250",
+    "GenesisCrystals": 300,
+    "Primogems": 2398,
+    "Fates": 80,
+    "Pity": 17,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Gardios#4037",
+    "GenesisCrystals": 98560,
+    "Primogems": 52220,
+    "Fates": 28,
+    "Pity": 60,
+    "Guarantee": 1,
+    "Whale": true
+  },
+  {
+    "Discord": "Aruberuto#4945",
+    "GenesisCrystals": 0,
+    "Primogems": 5513,
+    "Fates": 0,
     "Pity": 0,
     "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "469875482649690122"
+    "Whale": false
   },
   {
-    "Discord": "rollo#0498",
-    "GenesisCrystals": 669,
-    "Primogems": 13631,
-    "Fate": 0,
-    "Pity": 30,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "691615993524387850"
+    "Discord": "ah yes but of corpse#6285",
+    "GenesisCrystals": 547,
+    "Primogems": 14924,
+    "Fates": 7,
+    "Pity": 49,
+    "Guarantee": 1,
+    "Whale": true
   },
   {
-    "Discord": "Eufrasia#0413",
+    "Discord": "Chad Thundercock#8900",
     "GenesisCrystals": 0,
-    "Primogems": 41824,
-    "Fate": 9,
-    "Pity": 80,
-    "Guarantee": 0,
-    "Whale": false,
-    "DiscordId": "230799800671404042"
-  },
-  {
-    "Discord": "omgeta#8841",
-    "GenesisCrystals": 2400,
-    "Primogems": 118,
-    "Fate": 370,
+    "Primogems": 37,
+    "Fates": 46,
     "Pity": 70,
     "Guarantee": 1,
-    "Whale": false,
-    "DiscordId": "277773360270802944"
+    "Whale": false
   },
-{ 
-"Discord": "Revain Nigh#2250", "GenesisCrystals": 600, "Primogems": 16222, "Fate": 18, "Pity": 50, "Guarantee": 0, "Whale": false, "DiscordId": "386878494866407434" 
-}
+  {
+    "Discord": "ItsAnOo#3843",
+    "GenesisCrystals": 0,
+    "Primogems": 27709,
+    "Fates": 7,
+    "Pity": 69,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "TopGod神#9999",
+    "GenesisCrystals": 300,
+    "Primogems": 8100,
+    "Fates": 0,
+    "Pity": 27,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "xCadd#3250",
+    "GenesisCrystals": 300,
+    "Primogems": 12536,
+    "Fates": 4,
+    "Pity": 71,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "kern#1603",
+    "GenesisCrystals": 0,
+    "Primogems": 67,
+    "Fates": 64,
+    "Pity": 10,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "helluhellu#9007",
+    "GenesisCrystals": 13860,
+    "Primogems": 11184,
+    "Fates": 5,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "AX#9789",
+    "GenesisCrystals": 0,
+    "Primogems": 3438,
+    "Fates": 211,
+    "Pity": 62,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Lizard#3814",
+    "GenesisCrystals": 0,
+    "Primogems": 18394,
+    "Fates": 1,
+    "Pity": 10,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "yasu#6579",
+    "GenesisCrystals": 0,
+    "Primogems": 307,
+    "Fates": 0,
+    "Pity": 72,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "Claire#5337",
+    "GenesisCrystals": 2400,
+    "Primogems": 59845,
+    "Fates": 13,
+    "Pity": 57,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "hannah ❋#4962",
+    "GenesisCrystals": 0,
+    "Primogems": 11695,
+    "Fates": 5,
+    "Pity": 30,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Monica#0459",
+    "GenesisCrystals": 2400,
+    "Primogems": 48401,
+    "Fates": 60,
+    "Pity": 9,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "tushikisan#2135",
+    "GenesisCrystals": 582,
+    "Primogems": 260,
+    "Fates": 6,
+    "Pity": 5,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "WonderGuard_Spiritomb#9899",
+    "GenesisCrystals": 0,
+    "Primogems": 29719,
+    "Fates": 15,
+    "Pity": 11,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "Vigeroy#7689",
+    "GenesisCrystals": 0,
+    "Primogems": 23899,
+    "Fates": 11,
+    "Pity": 16,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "ilyraf#4846",
+    "GenesisCrystals": 1735,
+    "Primogems": 103,
+    "Fates": 133,
+    "Pity": 0,
+    "Guarantee": 1,
+    "Whale": false
+  },
+  {
+    "Discord": "RonxK#6969",
+    "GenesisCrystals": 0,
+    "Primogems": 979,
+    "Fates": 0,
+    "Pity": 72,
+    "Guarantee": 0,
+    "Whale": true
+  },
+  {
+    "Discord": "Mickey#5836",
+    "GenesisCrystals": 0,
+    "Primogems": 18787,
+    "Fates": 16,
+    "Pity": 0,
+    "Guarantee": 0,
+    "Whale": false
+  },
+  {
+    "Discord": "??Raiden Simp??#8731",
+    "GenesisCrystals": 0,
+    "Primogems": 72412,
+    "Fates": 23,
+    "Pity": 70,
+    "Guarantee": 1,
+    "Whale": true
+  }
 ]
