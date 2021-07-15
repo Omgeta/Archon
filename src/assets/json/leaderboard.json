@@ -416,7 +416,7 @@
   {
     "Discord": "Zenix#7529",
     "GenesisCrystals": 300,
-    "Primogems": "10,356",
+    "Primogems": 10356,
     "Fate": 1,
     "Pity": 15,
     "Guarantee": 1,
@@ -478,7 +478,7 @@
   },
   {
     "Discord": "Revain Nigh#2250",
-    "GenesisCrystals": "600 (saving for any skin they could probably release a baal skin)",
+    "GenesisCrystals": 600,
     "Primogems": 20368,
     "Fate": 23,
     "Pity": 50,
@@ -550,7 +550,7 @@
   },
   {
     "Discord": "Arjden#1023",
-    "GenesisCrystals": "o",
+    "GenesisCrystals": 0,
     "Primogems": 37601,
     "Fate": 4,
     "Pity": 30,
@@ -1071,7 +1071,7 @@
     "Whale": false
   },
   {
-    "Discord": "??Raiden Simp??#8731",
+    "Discord": "🌸Raiden Simp🌸#8731",
     "GenesisCrystals": 0,
     "Primogems": 72412,
     "Fate": 23,
