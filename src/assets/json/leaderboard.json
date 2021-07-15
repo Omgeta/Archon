@@ -1,4 +1,5 @@
 [
+{ "Discord": "kuma#2820", "GenesisCrystals": 300, "Primogems": 49094, "Fate": 7, "Pity": 58, "Guarantee": 0, "Whale": false },
   {
     "Discord": "-Isa-#1518",
     "GenesisCrystals": 0,
@@ -78,7 +79,7 @@
     "Fate": 9,
     "Pity": 31,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "Gilgamesh#0231",
@@ -96,7 +97,7 @@
     "Fate": 36,
     "Pity": 10,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "mylizard#9375",
@@ -150,7 +151,7 @@
     "Fate": 0,
     "Pity": 10,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "Mk.#5231",
@@ -348,7 +349,7 @@
     "Fate": 0,
     "Pity": 44,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "MLN#4805",
@@ -465,7 +466,7 @@
     "Fate": 0,
     "Pity": 15,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "Revain Nigh#2250",
@@ -537,7 +538,7 @@
     "Fate": 74,
     "Pity": 6,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "Arjden#1023",
@@ -681,7 +682,7 @@
     "Fate": 5,
     "Pity": 1,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "Mystichunterz#1922",
@@ -888,7 +889,7 @@
     "Fate": 7,
     "Pity": 49,
     "Guarantee": 1,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "Chad Thundercock#8900",
@@ -915,7 +916,7 @@
     "Fate": 0,
     "Pity": 27,
     "Guarantee": 0,
-    "Whale": true
+    "Whale": false
   },
   {
     "Discord": "xCadd#3250",
