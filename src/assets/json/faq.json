@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Raiden FAQ",
+        "description": "Placeholder",
+        "fields": [
+            {
+                "name": "Contents",
+                "value": "1. Who is Raiden?\n2. When will Raiden be released?\n3. What is Raiden's weapon and skillset?",
+                "inline": true
+            },
+            {
+                "name": "\u200b",
+                "value": "4. Is she connected to Raiden Mei from Honkai Impact?"
+            }
+        ],
+        "image": {
+            "url": ""
+        },
+        "footer": {
+            "text": "References are linked in-line."
+        },
+        "color": "#800080"
+    },
+    {
+        "title": "Who is Raiden?",
+        "description": "Placeholder",
+        "color": "#800080"
+    },
+    {
+        "title": "When will Raiden be released?",
+        "description": "Placeholder",
+        "color": "#800080"
+    },
+    {
+        "title": "What is Raiden's weapon and skillset?",
+        "description": "Placeholder",
+        "color": "#800080"
+    },
+    {
+        "title": "Is she connected to Raiden Mei from Honkai Impact?",
+        "description": "Placeholder",
+        "color": "#800080"
+    }
+]

@@ -4,6 +4,7 @@ import rules from "../../assets/json/rules.json";
 import channels from "../../assets/json/channels.json";
 import roles from "../../assets/json/roles.json";
 import lyceum from "../../assets/json/lyceum.json";
+import faq from "../../assets/json/faq.json";
 import { ArchonEmbed, LeaderboardManager } from "../../";
 
 export default class RaidenMainsCommand extends Command {
@@ -23,7 +24,7 @@ export default class RaidenMainsCommand extends Command {
             args: [
                 {
                     id: "subcommand",
-                    type: ["info", "roles", "leaderboard", "lyceum"],
+                    type: ["info", "roles", "leaderboard", "lyceum", "faq"],
                     prompt: {
                         start: message => `Which subcommand would you like to call? (info/roles) ${message.author}?`,
                         retry: message => `That isn't a valid subcommand! Try again ${message.author}`
@@ -96,6 +97,12 @@ export default class RaidenMainsCommand extends Command {
         );
     }
 
+    private async sendFAQ(target: NewsChannel | TextChannel): Promise<void> {
+        for (const embed of faq) {
+            await target.send(new ArchonEmbed(embed));
+        }
+    }
+
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
         const leaderboardManager = new LeaderboardManager(this.client);
         const [paidCategory, freeCategory] = leaderboardManager.getCategories();
@@ -119,6 +126,8 @@ export default class RaidenMainsCommand extends Command {
                 await this.sendInformation(target); break;
             case "roles":
                 await this.sendRoles(target); break;
+            case "faq":
+                await this.sendFAQ(target); break;
             case "lyceum":
                 await this.sendLyceum(target); break;
             case "leaderboard":

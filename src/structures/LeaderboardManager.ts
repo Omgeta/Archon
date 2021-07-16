@@ -28,8 +28,13 @@ export default class LeaderboardManager {
     }
 
     public set data(newData: LeaderboardRow[]) {
-        // Adding UserIds
         for (const row of newData) {
+            // Stripping spaces
+            const splitName = row.Discord.split("#");
+            splitName[splitName.length - 2] = splitName[splitName.length - 2].trim();
+            row.Discord = splitName.join("#");
+
+            // Adding UserIds
             if (!row.DiscordId) {
                 const discordUser = this._client.users.cache.find(user => user.tag.toLowerCase() === row.Discord.toLowerCase());
                 if (discordUser) row.DiscordId = discordUser.id;
