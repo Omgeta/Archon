@@ -101,12 +101,12 @@ export default class RaidenMainsCommand extends Command {
         const [paidCategory, freeCategory] = leaderboardManager.getCategories();
 
         const paidLeaderboardEmbed = new ArchonEmbed()
-            .setTitle("__**Primogem Leaderboard | Paid Category**__")
+            .setTitle("__**Primogem Leaderboard | Whale/Dolphin Category**__")
             .setDescription(LeaderboardManager.toString(paidCategory))
             .setColor("#DD2233");
 
         const freeLeaderboardEmbed = new ArchonEmbed()
-            .setTitle("__**Primogem Leaderboard | Free Category**__")
+            .setTitle("__**Primogem Leaderboard | F2P+ Category**__")
             .setDescription(LeaderboardManager.toString(freeCategory));
 
         await target.send(paidLeaderboardEmbed);
