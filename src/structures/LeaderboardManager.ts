@@ -32,7 +32,7 @@ export default class LeaderboardManager {
             // Stripping spaces
             const splitName = row.Discord.split("#");
             splitName[splitName.length - 2] = splitName[splitName.length - 2].trim();
-            row.Discord = splitName.join("#");
+            row.Discord = splitName.join("#").trim();
 
             // Adding UserIds
             if (!row.DiscordId) {
