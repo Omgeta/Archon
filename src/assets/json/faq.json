@@ -10,10 +10,11 @@
             },
             {
                 "name": "\u200b",
-                "value": "4. Is she connected to Raiden Mei from Honkai Impact?"
+                "value": "4. Is she connected to Raiden Mei from Honkai Impact?",
+                "inline": true
             }
         ],
-        "image": {
+        "thumbnail": {
             "url": ""
         },
         "footer": {
@@ -23,15 +24,15 @@
     },
     {
         "title": "Who is Raiden?",
-        "description": "Raiden is the [Shogun](https://en.wikipedia.org/wiki/Shogun) of [Inazuma](https://genshin-impact.fandom.com/wiki/Inazuma) and the [Electro Archon](https://genshin-impact.fandom.com/wiki/Archon) of the Seven, representing the divine ideal of Eternity.\n\n**About her name**\nRaiden is referred to in multiple ways: Raiden is her personal name, Baal is her Archon name (from Ars Goetia), and her titles are Shogun and Narukami Ogosho. (source needed from zhonglis voicelines)\n\n**About her personality**\n> The Almighty Shogun? It would be improper of me to comment, given that I am one of her subjects. All I will say is that... I think that Her Excellency must get lonely on the road to eternity.\n\nNot much is known of her personality at the moment other than her nobility, obsession with pursuing eternity, and her cruelty in conducting the Vision Hunt.\n\nShe does have a soft side however, seen from her love of the Shiba dog breed.\n\n**About her relationships**\nIn the [1.5 CN Livestream](https://www.bilibili.com/video/BV17y4y147fa), it was revealed that she is old friends with [Morax](https://genshin-impact.fandom.com/wiki/Morax) and [Yae](https://genshin-impact.fandom.com/wiki/Yae).\n\nShe also naturally has a close relationship with her close aide and bodyguard, Kujou Sara.",
+        "description": "Raiden is the [Shogun](https://en.wikipedia.org/wiki/Shogun) of [Inazuma](https://genshin-impact.fandom.com/wiki/Inazuma) and the [Electro Archon](https://genshin-impact.fandom.com/wiki/Archon) of the Seven, representing the divine ideal of Eternity.\n\n**About her name**\nIn [Zhongli's voicelines about Raiden](https://imgur.com/a/dTWwQqi), we learn about her different names: Raiden is her personal name, Baal is her Archon name (from [Ars Goetia](https://en.wikipedia.org/wiki/List_of_demons_in_the_Ars_Goetia) ), and her titles are Shogun and Narukami Ogosho.\n\n**About her personality**\nAyaka's voiceline about Raiden:\n> The Almighty Shogun? It would be improper of me to comment, given that I am one of her subjects. All I will say is that... I think that Her Excellency must get lonely on the road to eternity.\n\nNot much is known of her personality at the moment other than her nobility, obsession with pursuing eternity, and her cruelty in conducting the Vision Hunt.\n\n**About her relationships**\nIn the [1.5 CN Livestream](https://www.bilibili.com/video/BV17y4y147fa), it was revealed that she is old friends with [Morax](https://genshin-impact.fandom.com/wiki/Morax) and [Yae](https://genshin-impact.fandom.com/wiki/Yae).\n\nShe also naturally has a close relationship with her close aide and bodyguard, [Kujou Sara](https://genshin-impact.fandom.com/wiki/Kujou_Sara).",
         "image": {
-            "url": ""
+            "url": "https://cdn.discordapp.com/attachments/811960884582023188/866037605397037116/genshin-impact-baal-banner-release-date.png"
         },
         "color": "#800080"
     },
     {
         "title": "When will Raiden be released?",
-        "description": "[2.2 or 2.3](https://twitter.com/GenshinReport/status/1416016663896633352)\n\nExact release information has not been revealed yet by MiHoYo, but datamines have determined that [her playable character is somewhat \"complete\"](https://twitter.com/dimbreath/status/1413924401091915784)",
+        "description": "[2.2 or 2.3](https://twitter.com/GenshinReport/status/1416016663896633352)\n\nExact release information has not been revealed yet by MiHoYo, but datamines have determined that [her playable character is somewhat \"complete\".](https://twitter.com/dimbreath/status/1413924401091915784)",
         "color": "#800080"
     },
     {
