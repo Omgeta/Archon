@@ -10,33 +10,33 @@
             },
             {
                 "name": "\u200b",
-                "value": "4. Is she connected to Raiden Mei from Honkai Impact?",
+                "value": "4. Is Raiden her real name?\n5. Is she connected to Raiden Mei from Honkai Impact?",
                 "inline": true
             }
         ],
         "thumbnail": {
-            "url": ""
+            "url": "https://cdn.discordapp.com/attachments/804718655648301146/866169766511247380/Chibiden.png"
         },
         "footer": {
             "text": "References are linked in-line."
         },
-        "color": "#800080"
+        "color": "#DD2233"
     },
     {
-        "title": "Who is Raiden?",
-        "description": "Raiden is the [Shogun](https://en.wikipedia.org/wiki/Shogun) of [Inazuma](https://genshin-impact.fandom.com/wiki/Inazuma) and the [Electro Archon](https://genshin-impact.fandom.com/wiki/Archon) of the Seven, representing the divine ideal of Eternity.\n\n**About her name**\nIn [Zhongli's voicelines about Raiden](https://imgur.com/a/dTWwQqi), we learn about her different names: Raiden is her personal name, Baal is her Archon name (from [Ars Goetia](https://en.wikipedia.org/wiki/List_of_demons_in_the_Ars_Goetia) ), and her titles are Shogun and Narukami Ogosho.\n\n**About her personality**\nAyaka's voiceline about Raiden:\n> The Almighty Shogun? It would be improper of me to comment, given that I am one of her subjects. All I will say is that... I think that Her Excellency must get lonely on the road to eternity.\n\nNot much is known of her personality at the moment other than her nobility, obsession with pursuing eternity, and her cruelty in conducting the Vision Hunt.\n\n**About her relationships**\nIn the [1.5 CN Livestream](https://www.bilibili.com/video/BV17y4y147fa), it was revealed that she is old friends with [Morax](https://genshin-impact.fandom.com/wiki/Morax) and [Yae](https://genshin-impact.fandom.com/wiki/Yae).\n\nShe also naturally has a close relationship with her close aide and bodyguard, [Kujou Sara](https://genshin-impact.fandom.com/wiki/Kujou_Sara).",
+        "title": "1 | Who is Raiden?",
+        "description": "Raiden is the [Shogun](https://en.wikipedia.org/wiki/Shogun) of [Inazuma](https://genshin-impact.fandom.com/wiki/Inazuma) and the [Electro Archon](https://genshin-impact.fandom.com/wiki/Archon) of the Seven, representing the divine ideal of Eternity.\n\n**About her personality**\nAyaka's [voiceline](https://genshin.honeyhunterworld.com/db/char/ayaka/?lang=EN) about Raiden:\n> The Almighty Shogun? It would be improper of me to comment, given that I am one of her subjects. All I will say is that... I think that Her Excellency must get lonely on the road to eternity.\n\nNot much is known of her personality at the moment other than her nobility, obsession with pursuing eternity, and her cruelty in conducting the Vision Hunt.\n\n**About her relationships**\nIn the [1.5 CN Livestream](https://www.bilibili.com/video/BV17y4y147fa), it was revealed that she is old friends with [Morax](https://genshin-impact.fandom.com/wiki/Morax) and [Yae](https://genshin-impact.fandom.com/wiki/Yae).\n\nShe also naturally has a close relationship with her close aide and bodyguard, [Kujou Sara](https://genshin-impact.fandom.com/wiki/Kujou_Sara).",
         "image": {
             "url": "https://cdn.discordapp.com/attachments/811960884582023188/866037605397037116/genshin-impact-baal-banner-release-date.png"
         },
         "color": "#800080"
     },
     {
-        "title": "When will Raiden be released?",
+        "title": "2 | When will Raiden be released?",
         "description": "[2.2 or 2.3](https://twitter.com/GenshinReport/status/1416016663896633352)\n\nExact release information has not been revealed yet by MiHoYo, but datamines have determined that [her playable character is somewhat \"complete\".](https://twitter.com/dimbreath/status/1413924401091915784)",
         "color": "#800080"
     },
     {
-        "title": "What is Raiden's weapon and skillset?",
+        "title": "3 | What is Raiden's weapon and skillset?",
         "description": "Both her weapon and skillset are currently unconfirmed but there is some information from dataminers and leakers.\n\n**About her weapon**\nAll official miHoYo media have shown Raiden's weapon as being a sword. *(add imgur link to different pics)*\nHowever, [datamines have shown](https://twitter.com/projectcelestia/status/1404871077394882569?s=19) that her weapon is polearm instead.\nIn the boss fight, she wields both weapons but the weapon that Raiden will equip in her playable form is still unconfirmed.\n\n**About her skillset**\nSkillset data has not yet been datamined and the only information we have is from insider sources.\n\nTrustworthy leakers have stated that Raiden has a [new, unique skillset that is strong](https://twitter.com/SsukunaaA/status/1399027401376419846) and leans towards a supporting style of gameplay. *(still need to add more sources)*\n\nPopular theories about her skillset include having timestop abilities, being completely based on energy recharge, having an \"awakening\" mode change from a polearm support to a sword DPS and having the ability to disable enemies.",
         "image": {
             "url": "https://pbs.twimg.com/media/E3SsH3TWEAMo4rI?format=jpg&name=large"
@@ -44,7 +44,12 @@
         "color": "#800080"
     },
     {
-        "title": "Is she connected to Raiden Mei from Honkai Impact?",
+        "title": "4 | Is Raiden her real name?",
+        "description": "As of the version 1.6, her personal name is believed to be Raiden.\n\nFrom [Zhongli's voicelines](https://imgur.com/a/dTWwQqi) in the Liyue Archon Quest, we learn that her Archon Name is Baal (as per the demon names in [Ars Goetia]((https://en.wikipedia.org/wiki/List_of_demons_in_the_Ars_Goetia) ):\n> The Electro Archon, Baal\n\nIn the same dialogue, we also see that her personal name is Raiden and her title is Shogun: \n> ...since Raiden is also the Shogun of the Inazuma Bakufu, people call her the Raiden Shogun.\n\nIn recent media, there have also been references to the title \"Narukami Ogosho\", however that title has not yet been confirmed to belong to Raiden.",
+        "color": "#800080"
+    },
+    {
+        "title": "5 | Is she connected to Raiden Mei from Honkai Impact?",
         "description": "Placeholder",
         "color": "#800080"
     }
