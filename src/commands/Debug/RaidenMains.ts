@@ -98,9 +98,34 @@ export default class RaidenMainsCommand extends Command {
     }
 
     private async sendFAQ(target: NewsChannel | TextChannel): Promise<void> {
+        let first: Message;
+        let firstData: MessageEmbed;
+        const body: Message[] = [];
+        const bodyData: MessageEmbed[] = [];
         for (const embed of faq) {
-            await target.send(new ArchonEmbed(embed));
+            const data = new ArchonEmbed(embed);
+            const msg = await target.send(data);
+            if (!first) {
+                first = msg;
+                firstData = data;
+            } else {
+                body.push(msg);
+                bodyData.push(data);
+            }
         }
+
+        const bodyLinks = body.map(m => m.url);
+        const bodyString = bodyData.map((e, i) => `${i + 1}. [${e.title.replaceAll("*", "")}](${bodyLinks[i]})`);
+        const half = Math.ceil(bodyString.length / 2);
+        const firstHalf = bodyString.slice(0, half).join("\n");
+        const secondHalf = bodyString.slice(-half).join("\n");
+
+        const newData = firstData.addFields(
+            { name: "Contents", value: firstHalf, inline: true },
+            { name: "\u200b", value: secondHalf, inline: true }
+        );
+
+        await first.edit(newData);
     }
 
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
