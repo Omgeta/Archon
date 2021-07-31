@@ -22,3 +22,4 @@ export { default as ayato } from "./ayato.json";
 export { default as yoimiya } from "./yoimiya.json";
 export { default as ayaka } from "./ayaka.json";
 export { default as homeworld } from "./homeworld.json";
+export { default as ganyu } from "./ganyu.json";

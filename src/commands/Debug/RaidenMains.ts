@@ -78,23 +78,9 @@ export default class RaidenMainsCommand extends Command {
     }
 
     private async sendLyceum(target: NewsChannel | TextChannel): Promise<void> {
-        let first: Message;
         for (const embed of lyceum) {
-            const msg = await target.send(new MessageEmbed(embed));
-            if (!first) first = msg;
+            await target.send(new MessageEmbed(embed));
         }
-        await target.send(new MessageEmbed()
-            .setDescription(
-                `
-                We hope you have an enlightening experience in the Lyceum!
-                Please remember to always stay on-topic here.
-                If you're having any trouble, please report it to a <@&845638574983741460> or a <@&811959425824587826>.
-
-                Click **[here](${first.url})** to jump to the start of this channel.
-                `
-            )
-            .setColor("#00bb00")
-        );
     }
 
     private async sendFAQ(target: NewsChannel | TextChannel): Promise<void> {
@@ -128,21 +114,49 @@ export default class RaidenMainsCommand extends Command {
         await first.edit(newData);
     }
 
+    private getLeaderboardEmbeds(categoryTitle: string, categoryDescription: string): MessageEmbed[] {
+        const descSections = categoryDescription.split("\n\n");
+        const descSubstrings: string[] = [];
+
+        let c = 0;
+        let tempSubarr = [];
+        while (descSections.length) {
+            c += descSections[0].length + 2;
+            if (c > 4096) {
+                descSubstrings.push(tempSubarr.join("\n\n"));
+                c = 0;
+                tempSubarr = [];
+            } else {
+                tempSubarr.push(descSections.shift());
+            }
+        }
+        descSubstrings.push(tempSubarr.join("\n\n"));
+
+        const resultEmbeds: MessageEmbed[] = [];
+        for (let i = 0; i < descSubstrings.length; i++) {
+            const newEmbed = new ArchonEmbed()
+                .setTitle(`__**${categoryTitle} ${i ? "cont." : ""}**__`)
+                .setDescription(descSubstrings[i]);
+            resultEmbeds.push(newEmbed);
+        }
+        return resultEmbeds;
+    }
+
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
         const leaderboardManager = new LeaderboardManager(this.client);
         const [paidCategory, freeCategory] = leaderboardManager.getCategories();
 
-        const paidLeaderboardEmbed = new ArchonEmbed()
-            .setTitle("__**Primogem Leaderboard | Whale/Dolphin Category**__")
-            .setDescription(LeaderboardManager.toString(paidCategory))
-            .setColor("#DD2233");
+        const paidEmbeds = this.getLeaderboardEmbeds(
+            "Primogem Leaderboard | Whale/Dolphin Category",
+            LeaderboardManager.toString(paidCategory)
+        ).map(e => e.setColor("#DD2233"));
+        paidEmbeds.forEach(async e => await target.send(e));
 
-        const freeLeaderboardEmbed = new ArchonEmbed()
-            .setTitle("__**Primogem Leaderboard | F2P+ Category**__")
-            .setDescription(LeaderboardManager.toString(freeCategory));
-
-        await target.send(paidLeaderboardEmbed);
-        await target.send(freeLeaderboardEmbed);
+        const freeEmbeds = this.getLeaderboardEmbeds(
+            "Primogem Leaderboard | F2P+ Category",
+            LeaderboardManager.toString(freeCategory)
+        );
+        freeEmbeds.forEach(async e => await target.send(e));
     }
 
     public async exec(message: Message, { subcommand, target }: { subcommand: string, target: NewsChannel | TextChannel }): Promise<Message> {

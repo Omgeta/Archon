@@ -110,12 +110,12 @@ export default class LeaderboardManager {
             const total = LeaderboardManager.calculateTotal(row);
             const currCon = Math.floor(total / 28800);
             if (currCon < cons) {
-                if (currCon >= 0) res += `__**C${currCon}**__\n\n`;
-                else res += "__**No Guarantee**__\n\n";
+                if (currCon >= 0) res += `\n__**C${currCon}**__\n`;
+                else res += "\n__**No Guarantee**__\n";
                 cons = currCon;
             }
 
-            res += `${i + 1}. **${row.Discord}** - ${total}/${28800 * (currCon + 1)}\n\n`;
+            res += `${i + 1}. **${row.Discord}** - ${total}/${28800 * (currCon + 1)}\n`;
         }
 
         return res;
