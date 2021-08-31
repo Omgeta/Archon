@@ -114,49 +114,59 @@ export default class RaidenMainsCommand extends Command {
         await first.edit(newData);
     }
 
-    private getLeaderboardEmbeds(categoryTitle: string, categoryDescription: string): MessageEmbed[] {
-        const descSections = categoryDescription.split("\n\n");
-        const descSubstrings: string[] = [];
+    private async sendLeaderboardEmbed(target: NewsChannel | TextChannel, categoryTitle: string, embedDescription: string, color: string, i: number) {
+        const newEmbed = new ArchonEmbed()
+            .setTitle(`__**${categoryTitle} ${i ? "cont." : ""}**__`)
+            .setDescription(embedDescription)
+            .setColor(color);
+        await target.send(newEmbed);
+    }
 
+    private async sendLeaderboardCategories(target: NewsChannel | TextChannel, categoryTitle: string, categoryDescription: string, color: string) {
+        const descSections = categoryDescription.split("\n\n");
+
+        let i = 0;
         let c = 0;
         let tempSubarr = [];
         while (descSections.length) {
-            c += descSections[0].length + 2;
-            if (c > 4096) {
-                descSubstrings.push(tempSubarr.join("\n\n"));
-                c = 0;
-                tempSubarr = [];
+            if (descSections[0].length + 2 <= 4096) {
+                c += descSections[0].length + 2;
+                if (c > 4096) {
+                    await this.sendLeaderboardEmbed(target, categoryTitle, tempSubarr.join("\n\n"), color, i);
+                    i++;
+                    c = 0;
+                    tempSubarr = [];
+                } else {
+                    tempSubarr.push(descSections.shift());
+                }
             } else {
-                tempSubarr.push(descSections.shift());
+                const arr = descSections.shift().split("\n");
+                const half = Math.ceil(arr.length / 2);
+                const firstHalf = arr.splice(0, half).join("\n");
+                const secondHalf = arr.splice(-half).join("\n");
+                descSections.unshift(firstHalf, secondHalf);
             }
         }
-        descSubstrings.push(tempSubarr.join("\n\n"));
-
-        const resultEmbeds: MessageEmbed[] = [];
-        for (let i = 0; i < descSubstrings.length; i++) {
-            const newEmbed = new ArchonEmbed()
-                .setTitle(`__**${categoryTitle} ${i ? "cont." : ""}**__`)
-                .setDescription(descSubstrings[i]);
-            resultEmbeds.push(newEmbed);
-        }
-        return resultEmbeds;
+        await this.sendLeaderboardEmbed(target, categoryTitle, tempSubarr.join("\n\n"), color, i);
     }
 
     private async sendLeaderboard(target: NewsChannel | TextChannel): Promise<void> {
         const leaderboardManager = new LeaderboardManager(this.client);
         const [paidCategory, freeCategory] = leaderboardManager.getCategories();
 
-        const paidEmbeds = this.getLeaderboardEmbeds(
+        await this.sendLeaderboardCategories(
+            target,
             "Primogem Leaderboard | Whale/Dolphin Category",
-            LeaderboardManager.toString(paidCategory)
-        ).map(e => e.setColor("#DD2233"));
-        paidEmbeds.forEach(async e => await target.send(e));
-
-        const freeEmbeds = this.getLeaderboardEmbeds(
-            "Primogem Leaderboard | F2P+ Category",
-            LeaderboardManager.toString(freeCategory)
+            LeaderboardManager.toString(paidCategory),
+            "#DD2233"
         );
-        freeEmbeds.forEach(async e => await target.send(e));
+
+        await this.sendLeaderboardCategories(
+            target,
+            "Primogem Leaderboard | F2P+ Category",
+            LeaderboardManager.toString(freeCategory),
+            "#800080"
+        );
     }
 
     public async exec(message: Message, { subcommand, target }: { subcommand: string, target: NewsChannel | TextChannel }): Promise<Message> {

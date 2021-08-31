@@ -29,9 +29,6 @@ export default class LeaderboardManager {
 
     public set data(newData: LeaderboardRow[]) {
         for (const row of newData) {
-            if (!(row.Discord.includes("#"))) {
-                console.log(row.Discord);
-            }
             // Stripping spaces
             const splitName = row.Discord.split("#");
             splitName[splitName.length - 2] = splitName[splitName.length - 2].trim();
